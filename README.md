@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Manitham HRMS — Marketing Website
 
-## Getting Started
+The public, SEO-first marketing site for Manitham HRMS. Next.js App Router, TypeScript, Tailwind CSS v4. No authentication or app logic lives here — this repo is `www`, not `app`.
 
-First, run the development server:
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Before launch — placeholders to replace
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A few things are intentionally stubbed rather than fabricated, since real values weren't available while building this:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| What | Where | Notes |
+|---|---|---|
+| Production domain | `lib/site-config.ts` (`url`), or set `NEXT_PUBLIC_SITE_URL` | Currently `https://www.manithamhrms.com` — drives every canonical URL, sitemap entry and OG tag. |
+| Contact email/phone/WhatsApp | `lib/site-config.ts` (`contact`) | Placeholder phone number — update before launch. |
+| Lead form delivery | `LEAD_WEBHOOK_URL` env var, read in `lib/actions/submit-lead.ts` | Contact/demo forms validate and "succeed" today but don't deliver anywhere until this points at a CRM intake endpoint or email function. |
+| Analytics | `NEXT_PUBLIC_GA_MEASUREMENT_ID` env var | `components/analytics/GoogleAnalytics.tsx` only loads GA4 if this is set — no ID is hardcoded. |
+| Customer logos / testimonials / usage stats | `lib/data/social-proof.ts` | Empty on purpose — the `TrustBar` and `Testimonials` components render nothing until real, factual entries are added. Never fill these with placeholder numbers. |
+| Legal pages | `/privacy-policy`, `/terms-of-service` | Generic templates — have counsel review before launch. |
+| Favicon / OG image | `app/icon.tsx`, `app/apple-icon.tsx`, `app/opengraph-image.tsx` | Generated programmatically (brand-colored "M" mark) since no real logo asset existed. Swap for real brand assets if/when available. |
 
-## Learn More
+## Architecture
 
-To learn more about Next.js, take a look at the following resources:
+- **`lib/seo/keyword-map.ts`** — single source of truth for every core page's primary/secondary keywords, title, description and H1. Pages build their metadata from this instead of hardcoding strings, so no two pages compete for the same primary keyword.
+- **`lib/seo/metadata.ts` / `lib/seo/schema.ts`** — shared helpers for `Metadata` objects and JSON-LD (Organization, WebSite, SoftwareApplication, BreadcrumbList, FAQPage, Article).
+- **`components/templates/FeaturePageTemplate.tsx`** — shared layout for the 10 core product pages (`/hrms-software`, `/payroll-software`, etc.) — hero, overview, capabilities, benefits, FAQ, related links, CTA. Each page supplies its own content object.
+- **`components/templates/IndustryPageTemplate.tsx`** / **`ArticleLayout.tsx`** — same idea for `/industries/*` and `/resources/*`.
+- **`components/illustrations/AppMockup.tsx`** — stylized CSS/SVG product illustrations (no stock photography, no fabricated screenshots).
+- Almost everything is a Server Component. Client boundaries are limited to the nav dropdown/mobile menu (`components/layout/SiteNav.tsx`) and the lead form (`components/forms/LeadForm.tsx`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Adding a page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Add a `PageSeoEntry` to `lib/seo/keyword-map.ts`.
+2. Create `app/<route>/page.tsx`, build `metadata` via `buildMetadata(keywordMap.yourEntry)`, and either use `FeaturePageTemplate`/`IndustryPageTemplate` or compose sections directly (see `app/pricing/page.tsx` for a fully custom example).
+3. Add the route to any relevant nav in `lib/data/nav.ts` and to internal links (`RelatedLinks`) on related pages.
+4. `app/sitemap.ts` picks up every `keywordMap` entry automatically — no manual step needed there.
 
-## Deploy on Vercel
+## What's scaffolded vs. what's left
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Built out fully: homepage, all 10 core feature pages, pricing, about, contact, book-demo, 3 industry pages (small business, startups, manufacturing), a 4-article resource hub, sitemap/robots/manifest, legal pages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Intentionally not built (per the original scope — avoid thin/duplicate pages): the remaining industries listed in the brief (schools, hospitals, restaurants, construction, retail) and city/location landing pages. Add them only when there's genuinely unique content for that industry or location, following the pattern above.
