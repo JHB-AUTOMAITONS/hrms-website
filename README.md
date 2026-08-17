@@ -20,7 +20,7 @@ A few things are intentionally stubbed rather than fabricated, since real values
 | Production domain | `lib/site-config.ts` (`url`), or set `NEXT_PUBLIC_SITE_URL` | Currently `https://www.manithamhrms.com` — drives every canonical URL, sitemap entry and OG tag. |
 | Contact email/phone/WhatsApp | `lib/site-config.ts` (`contact`) | Placeholder phone number — update before launch. |
 | Lead form delivery | `LEAD_WEBHOOK_URL` env var, read in `lib/actions/submit-lead.ts` | Contact/demo forms validate and "succeed" today but don't deliver anywhere until this points at a CRM intake endpoint or email function. |
-| Analytics | `NEXT_PUBLIC_GA_MEASUREMENT_ID` env var | `components/analytics/GoogleAnalytics.tsx` only loads GA4 if this is set — no ID is hardcoded. |
+| Analytics | ~~`NEXT_PUBLIC_GA_MEASUREMENT_ID` env var~~ done | Wired to the production GA4 property (`G-LZKB2JYJ4G`) in `components/analytics/GoogleAnalytics.tsx`; override with the env var for a different environment. |
 | Customer logos / testimonials / usage stats | `lib/data/social-proof.ts` | Empty on purpose — the `TrustBar` and `Testimonials` components render nothing until real, factual entries are added. Never fill these with placeholder numbers. |
 | Legal pages | `/privacy-policy`, `/terms-of-service` | Generic templates — have counsel review before launch. |
 | Favicon / OG image | `app/icon.tsx`, `app/apple-icon.tsx`, `app/opengraph-image.tsx` | Generated programmatically (brand-colored "M" mark) since no real logo asset existed. Swap for real brand assets if/when available. |
