@@ -50,6 +50,56 @@ export const keywordMap = {
       "HRMS software built around Indian payroll, statutory compliance and multi-state HR needs. PF, ESI, PT and TDS-ready payroll for Indian businesses.",
     h1: "HRMS software built for how Indian businesses run HR",
   },
+  hrmsSoftwareUsa: {
+    path: "/hrms-software-usa",
+    primaryKeyword: "HRMS software in the US",
+    secondaryKeywords: ["HR software USA", "payroll software for US companies", "HRIS software"],
+    searchIntent: "commercial",
+    title: "HRMS Software in the US — Payroll & HR Compliance | Manitham HRMS",
+    description:
+      "HRMS software built for US HR teams — FICA, federal and state payroll tax, W-2 filing and multi-state compliance in one cloud platform.",
+    h1: "HRMS software built for US payroll and HR compliance",
+  },
+  hrmsSoftwareUk: {
+    path: "/hrms-software-uk",
+    primaryKeyword: "HRMS software in the UK",
+    secondaryKeywords: ["HR software UK", "payroll software UK", "PAYE payroll software"],
+    searchIntent: "commercial",
+    title: "HRMS Software in the UK — PAYE & Pension Compliance | Manitham HRMS",
+    description:
+      "HRMS software for UK businesses — PAYE, National Insurance, HMRC RTI submissions and workplace pension auto-enrolment in one platform.",
+    h1: "HRMS software built for UK payroll and PAYE compliance",
+  },
+  hrmsSoftwareSingapore: {
+    path: "/hrms-software-singapore",
+    primaryKeyword: "HRMS software in Singapore",
+    secondaryKeywords: ["HR software Singapore", "payroll software Singapore", "CPF payroll software"],
+    searchIntent: "commercial",
+    title: "HRMS Software in Singapore — CPF & IRAS Compliance | Manitham HRMS",
+    description:
+      "HRMS software for Singapore businesses — CPF contributions, IRAS IR8A reporting and itemised payslips under the Employment Act.",
+    h1: "HRMS software built for Singapore payroll and CPF compliance",
+  },
+  hrmsSoftwareMalaysia: {
+    path: "/hrms-software-malaysia",
+    primaryKeyword: "HRMS software in Malaysia",
+    secondaryKeywords: ["HR software Malaysia", "payroll software Malaysia", "EPF SOCSO payroll software"],
+    searchIntent: "commercial",
+    title: "HRMS Software in Malaysia — EPF, SOCSO & EIS | Manitham HRMS",
+    description:
+      "HRMS software for Malaysian businesses — EPF, SOCSO and EIS contributions with PCB/MTD tax deductions calculated automatically.",
+    h1: "HRMS software built for Malaysia payroll and statutory compliance",
+  },
+  hrmsSoftwareAustralia: {
+    path: "/hrms-software-australia",
+    primaryKeyword: "HRMS software in Australia",
+    secondaryKeywords: ["HR software Australia", "payroll software Australia", "Single Touch Payroll software"],
+    searchIntent: "commercial",
+    title: "HRMS Software in Australia — STP & Superannuation | Manitham HRMS",
+    description:
+      "HRMS software for Australian businesses — Single Touch Payroll (STP) reporting to the ATO, Superannuation Guarantee and PAYG withholding.",
+    h1: "HRMS software built for Australia payroll and STP compliance",
+  },
   payrollSoftware: {
     path: "/payroll-software",
     primaryKeyword: "payroll software",

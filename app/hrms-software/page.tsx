@@ -53,6 +53,7 @@ const content: FeaturePageContent = {
   ],
   relatedLinks: [
     { title: "HRMS Software in India", description: "How Manitham HRMS handles Indian payroll and compliance specifically.", href: "/hrms-software-india" },
+    { title: "HRMS Software Worldwide", description: "How the platform handles payroll compliance in the US, UK, Singapore, Malaysia and Australia.", href: "/hrms-software-usa" },
     { title: "Payroll Software", description: "See exactly how salary processing and statutory deductions work.", href: "/payroll-software" },
     { title: "Employee Self Service", description: "What employees can do for themselves in the portal.", href: "/employee-self-service" },
   ],

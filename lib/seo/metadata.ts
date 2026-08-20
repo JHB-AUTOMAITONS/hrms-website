@@ -21,6 +21,7 @@ export function buildMetadata(entry: PageSeoEntry, options: BuildMetadataOptions
   return {
     title: entry.title,
     description: entry.description,
+    keywords: [entry.primaryKeyword, ...entry.secondaryKeywords],
     alternates: {
       canonical: url,
     },
