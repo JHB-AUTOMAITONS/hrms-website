@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-300: #a5b4fc;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
-  --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
+  /* Deep, confident navy-blue — deliberately not the generic indigo/violet
+     every AI-SaaS template ships with. */
+  --color-brand-50: #eef4fc;
+  --color-brand-100: #dbe8f8;
+  --color-brand-200: #b8d2f1;
+  --color-brand-300: #8bb3e6;
+  --color-brand-400: #578fd6;
+  --color-brand-500: #3570bf;
+  --color-brand-600: #2557a0;
+  --color-brand-700: #1f4682;
+  --color-brand-800: #1c3968;
+  --color-brand-900: #1a2f54;
+  --color-brand-950: #0f1c34;
 
   --color-ink-950: #05070f;
   --color-ink-900: #0b1120;
@@ -19,6 +22,12 @@
 
   --color-accent-500: #059669;
   --color-accent-600: #047857;
+
+  /* Warm brass — used sparingly for premium accents (a "most popular" ring,
+     a small eyebrow dot), never as a primary color. */
+  --color-gold-400: #dbb463;
+  --color-gold-500: #c99a3e;
+  --color-gold-600: #a97e2c;
 
   --background: #ffffff;
   --foreground: var(--color-ink-900);
@@ -38,6 +47,7 @@
   --color-brand-700: var(--color-brand-700);
   --color-brand-800: var(--color-brand-800);
   --color-brand-900: var(--color-brand-900);
+  --color-brand-950: var(--color-brand-950);
 
   --color-ink-950: var(--color-ink-950);
   --color-ink-900: var(--color-ink-900);
@@ -47,7 +57,12 @@
   --color-accent-500: var(--color-accent-500);
   --color-accent-600: var(--color-accent-600);
 
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-600: var(--color-gold-600);
+
   --font-sans: var(--font-inter);
+  --font-display: var(--font-jakarta);
 
   --container-8xl: 90rem;
 }
@@ -64,6 +79,18 @@ body {
   }
   .text-pretty {
     text-wrap: pretty;
+  }
+
+  /* Subtle dot-grid texture for dark, high-contrast bands (hero, CTA). */
+  .bg-dot-grid-dark {
+    background-image: radial-gradient(circle, rgb(255 255 255 / 14%) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Same texture, tuned for light section backgrounds. */
+  .bg-dot-grid-light {
+    background-image: radial-gradient(circle, rgb(15 23 42 / 7%) 1px, transparent 1px);
+    background-size: 22px 22px;
   }
 }
 

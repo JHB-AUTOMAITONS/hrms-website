@@ -10,12 +10,11 @@ export const siteConfig = {
     "Manitham HRMS is a cloud-based HR management system for Indian businesses — employee management, attendance, leave, payroll, performance, recruitment and employee self-service in one platform.",
   locale: "en_IN",
   contact: {
-    email: "hello@manithamhrms.com",
-    salesEmail: "sales@manithamhrms.com",
-    // Update with a real business phone number and WhatsApp Business number before launch.
-    phoneDisplay: "+91 00000 00000",
-    phoneHref: "+910000000000",
-    whatsappHref: "https://wa.me/910000000000",
+    email: "info@hrms.work",
+    salesEmail: "info@hrms.work",
+    phoneDisplay: "+91 86829 27187",
+    phoneHref: "+918682927187",
+    whatsappHref: "https://wa.me/918682927187",
   },
   social: {
     linkedin: "",

@@ -6,13 +6,13 @@ import { siteConfig } from "@/lib/site-config";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-ink-900/5 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-ink-900/5 bg-white/90 shadow-sm shadow-ink-900/[0.03] backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="flex size-9 items-center justify-center rounded-lg bg-brand-600 text-base font-black text-white">
+          <span className="flex size-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-800 text-base font-black text-white shadow-sm shadow-brand-900/30">
             M
           </span>
-          <span className="text-lg font-bold text-ink-900">
+          <span className="font-display text-lg font-bold text-ink-900">
             {siteConfig.shortName}
             <span className="text-brand-600">HRMS</span>
           </span>

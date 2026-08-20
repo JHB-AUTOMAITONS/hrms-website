@@ -45,12 +45,12 @@ export default function IndustriesPage() {
               <Link
                 key={industry.href}
                 href={industry.href}
-                className="group flex flex-col rounded-2xl border border-ink-900/8 bg-white p-6 transition-colors hover:border-brand-300"
+                className="group flex flex-col rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg hover:shadow-ink-900/[0.06]"
               >
-                <div className="flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+                <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-brand-700 ring-1 ring-brand-900/5">
                   <industry.icon className="size-5" aria-hidden="true" />
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-ink-900">{industry.title}</h3>
+                <h3 className="font-display mt-4 text-lg font-bold text-ink-900">{industry.title}</h3>
                 <p className="mt-2 flex-1 text-sm text-pretty text-slate-600">{industry.description}</p>
                 <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
                   Explore

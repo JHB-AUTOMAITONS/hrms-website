@@ -60,11 +60,11 @@ export default function AboutPage() {
           <SectionHeading title="What we care about" align="center" />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {principles.map((principle) => (
-              <div key={principle.title} className="rounded-2xl border border-ink-900/8 bg-white p-6">
-                <div className="flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+              <div key={principle.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/[0.06]">
+                <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-brand-700 ring-1 ring-brand-900/5">
                   <principle.icon className="size-5" aria-hidden="true" />
                 </div>
-                <h3 className="mt-4 font-semibold text-ink-900">{principle.title}</h3>
+                <h3 className="font-display mt-4 font-bold text-ink-900">{principle.title}</h3>
                 <p className="mt-2 text-sm text-pretty text-slate-600">{principle.description}</p>
               </div>
             ))}

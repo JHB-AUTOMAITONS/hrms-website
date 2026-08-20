@@ -30,7 +30,7 @@ export default function BookDemoPage() {
               <ol className="mt-8 space-y-6">
                 {steps.map((step, index) => (
                   <li key={step.title} className="flex gap-4">
-                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-brand-50 text-sm font-bold text-brand-700">
+                    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-brand-700 text-sm font-bold text-white shadow-sm shadow-brand-900/20">
                       {index + 1}
                     </span>
                     <div>

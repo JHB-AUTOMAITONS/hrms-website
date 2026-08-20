@@ -24,7 +24,7 @@ export function ArticleLayout({ meta, children, relatedLinks }: ArticleLayoutPro
       <article className="py-14 sm:py-16">
         <Container className="max-w-3xl">
           <Badge>{meta.category}</Badge>
-          <h1 className="mt-3 text-balance text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">{meta.title}</h1>
+          <h1 className="font-display mt-3 text-balance text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">{meta.title}</h1>
           <p className="mt-3 text-sm text-slate-500">
             {new Date(meta.publishedDate).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })} · {meta.readTime}
           </p>
@@ -50,11 +50,11 @@ export function ArticleLayout({ meta, children, relatedLinks }: ArticleLayoutPro
 }
 
 export function H2({ children }: { children: ReactNode }) {
-  return <h2 className="mt-10 text-2xl font-bold text-ink-900">{children}</h2>;
+  return <h2 className="font-display mt-10 text-2xl font-bold text-ink-900">{children}</h2>;
 }
 
 export function H3({ children }: { children: ReactNode }) {
-  return <h3 className="mt-7 text-xl font-semibold text-ink-900">{children}</h3>;
+  return <h3 className="font-display mt-7 text-xl font-bold text-ink-900">{children}</h3>;
 }
 
 export function P({ children }: { children: ReactNode }) {

@@ -36,15 +36,15 @@ export function FeatureGrid({ id, eyebrow, title, subtitle, items, columns = 3, 
           {items.map((item) => {
             const card = (
               <>
-                <div className="flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+                <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-brand-700 ring-1 ring-brand-900/5">
                   <item.icon className="size-5" aria-hidden="true" />
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-ink-900">{item.title}</h3>
+                <h3 className="font-display mt-4 text-base font-bold text-ink-900">{item.title}</h3>
                 <p className="mt-2 text-sm text-pretty text-slate-600">{item.description}</p>
                 {item.href ? (
                   <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-600">
                     Learn more
-                    <ArrowRight className="size-3.5" aria-hidden="true" />
+                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                   </span>
                 ) : null}
               </>
@@ -55,7 +55,7 @@ export function FeatureGrid({ id, eyebrow, title, subtitle, items, columns = 3, 
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="group rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.02] transition-colors hover:border-brand-300"
+                  className="group rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg hover:shadow-ink-900/[0.06]"
                 >
                   {card}
                 </Link>
@@ -63,7 +63,7 @@ export function FeatureGrid({ id, eyebrow, title, subtitle, items, columns = 3, 
             }
 
             return (
-              <div key={item.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.02]">
+              <div key={item.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03]">
                 {card}
               </div>
             );

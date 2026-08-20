@@ -49,16 +49,18 @@ export default function PricingPage() {
             {pricingTiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`flex flex-col rounded-2xl border p-6 ${
-                  tier.highlighted ? "border-brand-500 bg-brand-50/40 shadow-lg shadow-brand-500/10" : "border-ink-900/8 bg-white"
+                className={`flex flex-col rounded-2xl p-6 transition-all hover:-translate-y-0.5 ${
+                  tier.highlighted
+                    ? "ring-2 ring-gold-500 bg-white shadow-xl shadow-ink-900/[0.08]"
+                    : "border border-ink-900/8 bg-white shadow-sm shadow-ink-900/[0.03] hover:shadow-lg hover:shadow-ink-900/[0.06]"
                 }`}
               >
                 {tier.highlighted ? (
-                  <span className="mb-3 inline-flex w-fit items-center rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white">
+                  <span className="bg-gold-500 mb-3 inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-semibold text-white">
                     Most popular
                   </span>
                 ) : null}
-                <h3 className="text-xl font-bold text-ink-900">{tier.name}</h3>
+                <h3 className="font-display text-xl font-bold text-ink-900">{tier.name}</h3>
                 <p className="mt-1 text-sm text-slate-600">{tier.description}</p>
                 <p className="mt-3 text-xs font-medium text-brand-600">{tier.bestFor}</p>
                 <div className="mt-5 flex-1">

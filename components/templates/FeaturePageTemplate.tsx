@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CheckList } from "@/components/ui/CheckList";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ButtonLink } from "@/components/ui/Button";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { FeatureGrid, type FeatureGridItem } from "@/components/sections/FeatureGrid";
@@ -40,11 +41,12 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
     <>
       <Breadcrumbs items={[{ name: content.breadcrumbLabel, path: content.path }]} />
 
-      <section className="bg-gradient-to-b from-brand-50/50 to-white py-14 sm:py-16">
+      <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white py-14 sm:py-16">
+        <div className="bg-dot-grid-light pointer-events-none absolute inset-0 -z-10" aria-hidden="true" />
         <Container className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold tracking-wide text-brand-600 uppercase">{content.heroEyebrow}</p>
-            <h1 className="mt-2 text-balance text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl lg:text-[2.75rem] lg:leading-tight">
+            <Eyebrow>{content.heroEyebrow}</Eyebrow>
+            <h1 className="font-display mt-2 text-balance text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl lg:text-[2.75rem] lg:leading-tight">
               {content.h1}
             </h1>
             <p className="mt-4 max-w-xl text-pretty text-lg text-slate-600">{content.heroSubtitle}</p>
@@ -72,7 +74,7 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
 
       <section className="py-14 sm:py-16">
         <Container className="max-w-3xl">
-          <h2 className="text-2xl font-bold text-ink-900 sm:text-3xl">{content.overviewTitle}</h2>
+          <h2 className="font-display text-2xl font-bold text-ink-900 sm:text-3xl">{content.overviewTitle}</h2>
           <div className="mt-4 space-y-4">
             {content.overviewParagraphs.map((paragraph, index) => (
               <p key={index} className="text-pretty text-slate-600">
@@ -101,8 +103,8 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
             <SectionHeading title={content.benefitsTitle ?? "Why it matters"} align="center" />
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               {content.benefits.map((benefit) => (
-                <div key={benefit.title} className="rounded-2xl border border-ink-900/8 p-6">
-                  <h3 className="font-semibold text-ink-900">{benefit.title}</h3>
+                <div key={benefit.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/[0.06]">
+                  <h3 className="font-display font-bold text-ink-900">{benefit.title}</h3>
                   <p className="mt-2 text-sm text-pretty text-slate-600">{benefit.description}</p>
                 </div>
               ))}

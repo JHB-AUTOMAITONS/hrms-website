@@ -27,7 +27,7 @@ export function RelatedLinks({
             <Link
               key={link.href}
               href={link.href}
-              className="group flex flex-col justify-between rounded-2xl border border-ink-900/8 bg-white p-5 transition-colors hover:border-brand-300"
+              className="group flex flex-col justify-between rounded-2xl border border-ink-900/8 bg-white p-5 shadow-sm shadow-ink-900/[0.02] transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg hover:shadow-ink-900/[0.06]"
             >
               <div>
                 <h3 className="font-semibold text-ink-900">{link.title}</h3>

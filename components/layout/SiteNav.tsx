@@ -109,7 +109,7 @@ export function MobileMenu() {
             // full-screen overlay inside the header's own (much shorter) box.
             <div className="fixed inset-0 z-50 flex flex-col bg-white">
               <div className="flex items-center justify-between border-b border-ink-900/5 px-4 py-4">
-                <Link href="/" className="text-lg font-bold text-ink-900" onClick={() => setOpen(false)}>
+                <Link href="/" className="font-display text-lg font-bold text-ink-900" onClick={() => setOpen(false)}>
                   {siteConfig.shortName}
                   <span className="text-brand-600">HRMS</span>
                 </Link>

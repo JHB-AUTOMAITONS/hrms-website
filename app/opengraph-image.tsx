@@ -15,7 +15,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background: "linear-gradient(135deg, #0b1120 0%, #312e81 100%)",
+          background: "linear-gradient(135deg, #05070f 0%, #1a2f54 100%)",
           fontFamily: "sans-serif",
         }}
       >
@@ -27,7 +27,7 @@ export default function OpengraphImage() {
             width: 72,
             height: 72,
             borderRadius: 16,
-            background: "#4f46e5",
+            background: "linear-gradient(160deg, #3570bf 0%, #1a2f54 100%)",
             color: "white",
             fontSize: 36,
             fontWeight: 800,
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", marginTop: 40, fontSize: 56, fontWeight: 800, color: "white", maxWidth: 900 }}>
           {siteConfig.tagline}
         </div>
-        <div style={{ display: "flex", marginTop: 24, fontSize: 28, color: "#c7d2fe" }}>
+        <div style={{ display: "flex", marginTop: 24, fontSize: 28, color: "#b8d2f1" }}>
           {siteConfig.name} — Employee Management · Attendance · Payroll
         </div>
       </div>

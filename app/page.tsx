@@ -132,12 +132,24 @@ export default function HomePage() {
           <SectionHeading eyebrow="Pricing" title="Simple pricing that scales with your team" align="center" />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
-              { name: "Starter", blurb: "Core HR, attendance and leave for small teams getting off spreadsheets." },
-              { name: "Growth", blurb: "Adds payroll, performance and recruitment as your HR needs grow." },
-              { name: "Enterprise", blurb: "Multi-location support, custom workflows and dedicated onboarding." },
+              { name: "Starter", blurb: "Core HR, attendance and leave for small teams getting off spreadsheets.", popular: false },
+              { name: "Growth", blurb: "Adds payroll, performance and recruitment as your HR needs grow.", popular: true },
+              { name: "Enterprise", blurb: "Multi-location support, custom workflows and dedicated onboarding.", popular: false },
             ].map((tier) => (
-              <div key={tier.name} className="rounded-2xl border border-ink-900/8 bg-white p-6 text-center">
-                <h3 className="text-lg font-bold text-ink-900">{tier.name}</h3>
+              <div
+                key={tier.name}
+                className={`relative rounded-2xl bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg ${
+                  tier.popular
+                    ? "ring-2 ring-gold-500 shadow-ink-900/[0.06]"
+                    : "border border-ink-900/8 shadow-ink-900/[0.03]"
+                }`}
+              >
+                {tier.popular ? (
+                  <span className="bg-gold-500 absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-3 py-1 text-xs font-semibold text-white shadow-sm">
+                    Most Popular
+                  </span>
+                ) : null}
+                <h3 className="font-display text-lg font-bold text-ink-900">{tier.name}</h3>
                 <p className="mt-2 text-sm text-slate-600">{tier.blurb}</p>
               </div>
             ))}

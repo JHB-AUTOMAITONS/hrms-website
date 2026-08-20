@@ -54,8 +54,8 @@ function ContactCard({
   href?: string;
 }) {
   const content = (
-    <div className="flex items-start gap-3 rounded-2xl border border-ink-900/8 bg-white p-5">
-      <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+    <div className="flex items-start gap-3 rounded-2xl border border-ink-900/8 bg-white p-5 shadow-sm shadow-ink-900/[0.02]">
+      <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-brand-700 ring-1 ring-brand-900/5">
         <Icon className="size-5" aria-hidden="true" />
       </div>
       <div>
