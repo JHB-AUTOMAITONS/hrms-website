@@ -94,6 +94,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-08-21",
     readTime: "7 min read",
   },
+  {
+    slug: "ai-whatsapp-hr-assistant",
+    title: "AI-Powered WhatsApp Assistant: How Employees Get HR Answers Without an App",
+    excerpt: "How an AI assistant on WhatsApp answers leave, attendance and payslip questions instantly, and how it works under the hood.",
+    category: "Product",
+    publishedDate: "2026-08-21",
+    readTime: "5 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

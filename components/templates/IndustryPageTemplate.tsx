@@ -10,7 +10,7 @@ import { RelatedLinks, type RelatedLink } from "@/components/sections/RelatedLin
 import { AppMockup } from "@/components/illustrations/AppMockup";
 import type { FaqItem } from "@/lib/seo/schema";
 
-type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance";
+type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance" | "whatsapp";
 
 export interface IndustryPageContent {
   path: string;

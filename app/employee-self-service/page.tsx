@@ -54,6 +54,7 @@ const content: FeaturePageContent = {
     { title: "Leave Management", description: "How leave requests submitted in self-service get approved.", href: "/leave-management" },
     { title: "Attendance Management", description: "How employees mark attendance from self-service.", href: "/attendance-management" },
     { title: "Payroll Software", description: "Where payslips and tax documents come from.", href: "/payroll-software" },
+    { title: "AI WhatsApp Assistant", description: "The same self-service data, answered by AI on WhatsApp.", href: "/ai-whatsapp-assistant" },
   ],
   ctaTitle: "Give your employees a self-service portal",
   ctaSubtitle: "Book a demo and see the employee-side experience firsthand.",

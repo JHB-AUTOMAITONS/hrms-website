@@ -14,6 +14,7 @@ export const productLinks: NavLink[] = [
   { label: "Recruitment", href: "/recruitment", description: "Job posts, pipeline, hiring" },
   { label: "Employee Self Service", href: "/employee-self-service", description: "Mobile-first ESS portal" },
   { label: "HR Compliance", href: "/hr-compliance", description: "Statutory payroll compliance" },
+  { label: "AI WhatsApp Assistant", href: "/ai-whatsapp-assistant", description: "AI-powered HR answers on WhatsApp" },
 ];
 
 export const industryLinks: NavLink[] = [

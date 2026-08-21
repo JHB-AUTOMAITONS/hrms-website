@@ -4,7 +4,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { AppMockup } from "@/components/illustrations/AppMockup";
 import { siteConfig } from "@/lib/site-config";
 
-const pills = ["Attendance & biometric", "Payroll with PF/ESI/PT/TDS", "Leave & performance", "Employee self-service"];
+const pills = ["Attendance & biometric", "Payroll with PF/ESI/PT/TDS", "Leave & performance", "AI-powered WhatsApp assistant"];
 
 export function Hero() {
   return (
