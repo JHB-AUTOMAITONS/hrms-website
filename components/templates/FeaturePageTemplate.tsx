@@ -53,7 +53,7 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
 
             <div className="mt-5 flex flex-wrap gap-2">
               {content.highlights.map((item) => (
-                <span key={item} className="rounded-full border border-ink-900/8 bg-white px-3 py-1.5 text-xs font-medium text-slate-600">
+                <span key={item} className="glass-subtle rounded-full px-3 py-1.5 text-xs font-medium text-slate-700">
                   {item}
                 </span>
               ))}
@@ -94,7 +94,7 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
         subtitle={content.capabilitiesSubtitle}
         items={content.capabilities}
         columns={3}
-        className="bg-slate-50"
+        className="glass-subtle border-x-0"
       />
 
       {content.benefits && content.benefits.length > 0 ? (
@@ -103,7 +103,7 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
             <SectionHeading title={content.benefitsTitle ?? "Why it matters"} align="center" />
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               {content.benefits.map((benefit) => (
-                <div key={benefit.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/[0.06]">
+                <div key={benefit.title} className="glass rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/[0.06]">
                   <h3 className="font-display font-bold text-ink-900">{benefit.title}</h3>
                   <p className="mt-2 text-sm text-pretty text-slate-600">{benefit.description}</p>
                 </div>
@@ -113,7 +113,7 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
         </section>
       ) : null}
 
-      <FAQSection faqs={content.faqs} className="bg-slate-50" />
+      <FAQSection faqs={content.faqs} className="glass-subtle border-x-0" />
 
       <RelatedLinks links={content.relatedLinks} />
 

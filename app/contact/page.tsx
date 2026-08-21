@@ -27,7 +27,7 @@ export default function ContactPage() {
               <ContactCard icon={Clock} label="Response time" value="Within 1 business day" />
             </div>
 
-            <div className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.02] lg:col-span-3 sm:p-8">
+            <div className="glass rounded-2xl p-6 lg:col-span-3 sm:p-8">
               <LeadForm
                 source="contact"
                 messageLabel="How can we help?"
@@ -54,7 +54,7 @@ function ContactCard({
   href?: string;
 }) {
   const content = (
-    <div className="flex items-start gap-3 rounded-2xl border border-ink-900/8 bg-white p-5 shadow-sm shadow-ink-900/[0.02]">
+    <div className="glass flex items-start gap-3 rounded-2xl p-5">
       <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-brand-700 ring-1 ring-brand-900/5">
         <Icon className="size-5" aria-hidden="true" />
       </div>

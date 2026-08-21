@@ -11,7 +11,7 @@ export function TrustBar() {
   if (customerLogos.length === 0 && usageStats.length === 0) return null;
 
   return (
-    <section className="border-y border-ink-900/5 bg-slate-50 py-10">
+    <section className="border-y border-ink-900/5 py-10">
       <Container>
         {usageStats.length > 0 ? (
           <div className="mb-8 grid grid-cols-2 gap-6 sm:grid-cols-4">

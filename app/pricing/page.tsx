@@ -51,8 +51,8 @@ export default function PricingPage() {
                 key={tier.name}
                 className={`flex flex-col rounded-2xl p-6 transition-all hover:-translate-y-0.5 ${
                   tier.highlighted
-                    ? "ring-2 ring-gold-500 bg-white shadow-xl shadow-ink-900/[0.08]"
-                    : "border border-ink-900/8 bg-white shadow-sm shadow-ink-900/[0.03] hover:shadow-lg hover:shadow-ink-900/[0.06]"
+                    ? "glass-strong ring-2 ring-gold-500 shadow-xl shadow-ink-900/[0.08]"
+                    : "glass hover:shadow-lg hover:shadow-ink-900/[0.06]"
                 }`}
               >
                 {tier.highlighted ? (
@@ -78,10 +78,10 @@ export default function PricingPage() {
         </Container>
       </section>
 
-      <section className="bg-slate-50 py-16 sm:py-20">
+      <section className="py-16 sm:py-20">
         <Container>
           <SectionHeading title="Compare plans" align="center" />
-          <div className="mt-10 overflow-x-auto rounded-2xl border border-ink-900/8 bg-white">
+          <div className="glass mt-10 overflow-x-auto rounded-2xl">
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b border-ink-900/8">

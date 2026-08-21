@@ -21,6 +21,7 @@ export default function PrivacyPolicyPage() {
       <Breadcrumbs items={[{ name: "Privacy Policy", path: "/privacy-policy" }]} />
       <section className="py-14 sm:py-16">
         <Container className="max-w-3xl">
+          <div className="glass rounded-3xl p-6 sm:p-10">
           <SectionHeading title="Privacy Policy" as="h1" />
           <p className="mt-3 text-sm text-slate-500">Last updated: August 2026</p>
 
@@ -80,6 +81,7 @@ export default function PrivacyPolicyPage() {
               This policy is a general template and should be reviewed by qualified legal counsel before this
               website goes live, to ensure it reflects your actual data practices and complies with applicable law.
             </p>
+          </div>
           </div>
         </Container>
       </section>

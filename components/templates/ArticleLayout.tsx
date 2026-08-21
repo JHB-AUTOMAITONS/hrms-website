@@ -23,13 +23,15 @@ export function ArticleLayout({ meta, children, relatedLinks }: ArticleLayoutPro
 
       <article className="py-14 sm:py-16">
         <Container className="max-w-3xl">
-          <Badge>{meta.category}</Badge>
-          <h1 className="font-display mt-3 text-balance text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">{meta.title}</h1>
-          <p className="mt-3 text-sm text-slate-500">
-            {new Date(meta.publishedDate).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })} · {meta.readTime}
-          </p>
+          <div className="glass rounded-3xl p-6 sm:p-10">
+            <Badge>{meta.category}</Badge>
+            <h1 className="font-display mt-3 text-balance text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">{meta.title}</h1>
+            <p className="mt-3 text-sm text-slate-500">
+              {new Date(meta.publishedDate).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })} · {meta.readTime}
+            </p>
 
-          <div className="prose-article mt-8">{children}</div>
+            <div className="prose-article mt-8">{children}</div>
+          </div>
         </Container>
       </article>
 

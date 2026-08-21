@@ -19,7 +19,7 @@ export function RelatedLinks({
   if (links.length === 0) return null;
 
   return (
-    <section className="border-t border-ink-900/5 bg-slate-50 py-16 sm:py-20">
+    <section className="border-t border-ink-900/5 py-16 sm:py-20">
       <Container>
         <SectionHeading title={title} />
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -27,7 +27,7 @@ export function RelatedLinks({
             <Link
               key={link.href}
               href={link.href}
-              className="group flex flex-col justify-between rounded-2xl border border-ink-900/8 bg-white p-5 shadow-sm shadow-ink-900/[0.02] transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg hover:shadow-ink-900/[0.06]"
+              className="group flex flex-col justify-between glass rounded-2xl p-5 transition-all hover:-translate-y-0.5 hover:border-brand-300/60 hover:shadow-lg hover:shadow-ink-900/[0.06]"
             >
               <div>
                 <h3 className="font-semibold text-ink-900">{link.title}</h3>

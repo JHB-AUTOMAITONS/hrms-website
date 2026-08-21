@@ -10,7 +10,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   const trail: BreadcrumbItem[] = [{ name: "Home", path: "/" }, ...items];
 
   return (
-    <nav aria-label="Breadcrumb" className="border-b border-ink-900/5 bg-slate-50">
+    <nav aria-label="Breadcrumb" className="glass-subtle border-x-0 border-t-0">
       <div className="mx-auto max-w-8xl px-4 py-3 sm:px-6 lg:px-8">
         <ol className="flex flex-wrap items-center gap-1.5 text-sm text-slate-500">
           {trail.map((item, index) => {

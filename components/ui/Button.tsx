@@ -6,7 +6,7 @@ const base =
 
 const variants = {
   primary: "bg-brand-600 text-white shadow-md shadow-brand-900/20 hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-900/25",
-  secondary: "bg-white text-ink-900 border border-ink-900/15 hover:border-brand-400 hover:text-brand-700",
+  secondary: "glass-subtle text-ink-900 hover:border-brand-300 hover:text-brand-700",
   ghost: "text-brand-700 hover:bg-brand-50",
   inverse: "bg-white text-brand-800 shadow-md shadow-black/10 hover:bg-brand-50",
   whatsapp: "bg-accent-500 text-white shadow-md shadow-accent-900/20 hover:bg-accent-600",
@@ -14,7 +14,7 @@ const variants = {
   // rather than overriding `secondary`'s bg/text via className, which
   // produces unpredictable white-on-white text depending on Tailwind's
   // generated utility order.
-  outlineLight: "border border-white/20 bg-transparent text-white hover:border-white/40 hover:bg-white/10",
+  outlineLight: "border border-white/20 bg-white/8 backdrop-blur-sm text-white hover:border-white/40 hover:bg-white/15",
 } as const;
 
 const sizes = {
