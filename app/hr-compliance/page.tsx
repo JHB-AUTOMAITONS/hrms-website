@@ -52,6 +52,7 @@ const content: FeaturePageContent = {
     { title: "Payroll Software", description: "See how statutory deductions are calculated during payroll.", href: "/payroll-software" },
     { title: "HRMS Software in India", description: "How the platform is built around Indian HR requirements.", href: "/hrms-software-india" },
     { title: "Employee Self Service", description: "Where employees access their own tax documents.", href: "/employee-self-service" },
+    { title: "New Wage Code 2026", description: "How the labour codes change wage definitions, PF and gratuity.", href: "/resources/new-wage-code-2026-india" },
   ],
   ctaTitle: "Keep statutory compliance organized, not manual",
   ctaSubtitle: "Book a demo and bring your specific PF, ESI or TDS questions.",
