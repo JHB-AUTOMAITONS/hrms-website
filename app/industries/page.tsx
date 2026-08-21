@@ -45,7 +45,7 @@ export default function IndustriesPage() {
               <Link
                 key={industry.href}
                 href={industry.href}
-                className="group flex flex-col rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lg hover:shadow-ink-900/[0.06]"
+                className="group flex flex-col glass rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:border-brand-300/60 hover:shadow-lg hover:shadow-ink-900/[0.06]"
               >
                 <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 text-brand-700 ring-1 ring-brand-900/5">
                   <industry.icon className="size-5" aria-hidden="true" />

@@ -40,7 +40,7 @@ function DesktopDropdown({ label, links, columns = 2 }: { label: string; links: 
       </button>
       {open ? (
         <div
-          className={`absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 rounded-2xl border border-ink-900/5 bg-white p-3 shadow-xl ${
+          className={`glass-opaque absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 rounded-2xl p-3 ${
             columns === 2 ? "w-[520px]" : "w-64"
           }`}
         >
@@ -50,7 +50,7 @@ function DesktopDropdown({ label, links, columns = 2 }: { label: string; links: 
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg p-3 transition-colors hover:bg-slate-50"
+                className="rounded-lg p-3 transition-colors hover:bg-white/50"
               >
                 <p className="text-sm font-semibold text-ink-900">{link.label}</p>
                 {link.description ? <p className="mt-0.5 text-xs text-slate-500">{link.description}</p> : null}
@@ -107,7 +107,7 @@ export function MobileMenu() {
             // backdrop-blur, and a `filter`/`backdrop-filter` ancestor establishes a new
             // containing block for `position: fixed` descendants, which would trap this
             // full-screen overlay inside the header's own (much shorter) box.
-            <div className="fixed inset-0 z-50 flex flex-col bg-white">
+            <div className="glass-opaque fixed inset-0 z-50 flex flex-col rounded-none border-0">
               <div className="flex items-center justify-between border-b border-ink-900/5 px-4 py-4">
                 <Link href="/" className="font-display text-lg font-bold text-ink-900" onClick={() => setOpen(false)}>
                   {siteConfig.shortName}
@@ -159,7 +159,7 @@ function MobileSection({ title, links, onNavigate }: { title: string; links: Nav
             <Link
               href={link.href}
               onClick={onNavigate}
-              className="block rounded-lg px-2 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-brand-700"
+              className="block rounded-lg px-2 py-2 text-sm text-slate-600 hover:bg-white/50 hover:text-brand-700"
             >
               {link.label}
             </Link>

@@ -29,7 +29,7 @@
   --color-gold-500: #c99a3e;
   --color-gold-600: #a97e2c;
 
-  --background: #ffffff;
+  --background: #f4f6fb;
   --foreground: var(--color-ink-900);
 }
 
@@ -91,6 +91,55 @@ body {
   .bg-dot-grid-light {
     background-image: radial-gradient(circle, rgb(15 23 42 / 7%) 1px, transparent 1px);
     background-size: 22px 22px;
+  }
+
+  /* Glassmorphism surface system — layered over <GradientMesh>, the fixed
+     navy/gold background every glass panel blurs and tints. Uses
+     `background-color` rather than the `background` shorthand throughout:
+     a sibling utility on the same element (e.g. a Tailwind `bg-gradient-to-*`)
+     sets `background-image`, and the shorthand would silently null that out —
+     exactly the bug the dot-grid utilities above were already rewritten to
+     avoid, so the glass utilities follow the same rule. */
+  .glass {
+    background-color: color-mix(in srgb, white 45%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid color-mix(in srgb, white 60%, transparent);
+    box-shadow:
+      0 1px 1px color-mix(in srgb, white 40%, transparent) inset,
+      0 8px 30px color-mix(in srgb, var(--color-ink-900) 8%, transparent);
+  }
+  .glass-subtle {
+    background-color: color-mix(in srgb, white 32%, transparent);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid color-mix(in srgb, white 45%, transparent);
+  }
+  .glass-strong {
+    background-color: color-mix(in srgb, white 68%, transparent);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid color-mix(in srgb, white 75%, transparent);
+    box-shadow:
+      0 1px 1px color-mix(in srgb, white 50%, transparent) inset,
+      0 8px 30px color-mix(in srgb, var(--color-ink-900) 8%, transparent);
+  }
+  /* Functional chrome (sticky header, full-screen mobile menu, dropdowns)
+     needs to reliably occlude whatever scrolls underneath it — verified
+     against a real render that blur alone isn't enough at lower opacity,
+     so this stays far less transparent than the decorative tiers above. */
+  .glass-opaque {
+    background-color: color-mix(in srgb, white 98%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid color-mix(in srgb, white 80%, transparent);
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--color-ink-900) 8%, transparent);
+  }
+  .glass-dark {
+    background-color: color-mix(in srgb, var(--color-ink-950) 90%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid color-mix(in srgb, white 10%, transparent);
   }
 }
 

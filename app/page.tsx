@@ -138,10 +138,8 @@ export default function HomePage() {
             ].map((tier) => (
               <div
                 key={tier.name}
-                className={`relative rounded-2xl bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg ${
-                  tier.popular
-                    ? "ring-2 ring-gold-500 shadow-ink-900/[0.06]"
-                    : "border border-ink-900/8 shadow-ink-900/[0.03]"
+                className={`relative rounded-2xl p-6 text-center transition-all hover:-translate-y-0.5 hover:shadow-lg ${
+                  tier.popular ? "glass-strong ring-2 ring-gold-500 shadow-ink-900/[0.06]" : "glass shadow-ink-900/[0.03]"
                 }`}
               >
                 {tier.popular ? (

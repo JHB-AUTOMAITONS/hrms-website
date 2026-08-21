@@ -63,7 +63,7 @@ export function IndustryPageTemplate({ content }: { content: IndustryPageContent
           <SectionHeading title={content.challengesTitle} />
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {content.challenges.map((challenge) => (
-              <div key={challenge.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/[0.06]">
+              <div key={challenge.title} className="glass rounded-2xl p-6 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/[0.06]">
                 <h3 className="font-display font-bold text-ink-900">{challenge.title}</h3>
                 <p className="mt-2 text-sm text-pretty text-slate-600">{challenge.description}</p>
               </div>
@@ -72,14 +72,14 @@ export function IndustryPageTemplate({ content }: { content: IndustryPageContent
         </Container>
       </section>
 
-      <FeatureGrid eyebrow="Fit" title={content.featuresTitle} subtitle={content.featuresSubtitle} items={content.features} columns={3} className="bg-slate-50" />
+      <FeatureGrid eyebrow="Fit" title={content.featuresTitle} subtitle={content.featuresSubtitle} items={content.features} columns={3} className="glass-subtle border-x-0" />
 
       <section className="py-14 sm:py-16">
         <Container>
           <SectionHeading title={content.workflowTitle} />
           <ol className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {content.workflowSteps.map((step, index) => (
-              <li key={step.title} className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.03]">
+              <li key={step.title} className="glass rounded-2xl p-6">
                 <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-brand-700 text-sm font-bold text-white shadow-sm shadow-brand-900/20">
                   {index + 1}
                 </span>
@@ -91,7 +91,7 @@ export function IndustryPageTemplate({ content }: { content: IndustryPageContent
         </Container>
       </section>
 
-      <FAQSection faqs={content.faqs} className="bg-slate-50" />
+      <FAQSection faqs={content.faqs} className="glass-subtle border-x-0" />
 
       <RelatedLinks links={content.relatedLinks} />
 

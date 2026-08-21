@@ -25,7 +25,7 @@ export default function ResourcesPage() {
               <Link
                 key={article.slug}
                 href={`/resources/${article.slug}`}
-                className="group flex flex-col rounded-2xl border border-ink-900/8 bg-white p-6 transition-colors hover:border-brand-300"
+                className="group flex flex-col glass rounded-2xl p-6 transition-colors hover:border-brand-300/60"
               >
                 <Badge>{article.category}</Badge>
                 <h2 className="mt-3 text-lg font-semibold text-ink-900">{article.title}</h2>

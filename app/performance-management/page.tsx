@@ -52,6 +52,7 @@ const content: FeaturePageContent = {
     { title: "Employee Management", description: "How performance data connects to the core employee record.", href: "/employee-management" },
     { title: "Recruitment", description: "See how new hires move into performance tracking after onboarding.", href: "/recruitment" },
     { title: "HRMS Software", description: "See how performance fits into the full platform.", href: "/hrms-software" },
+    { title: "Top Performance Appraisal Software in India", description: "What appraisal software should handle, and how to choose one.", href: "/resources/best-performance-appraisal-software-india" },
   ],
   ctaTitle: "Run your next appraisal cycle without the spreadsheet",
   ctaSubtitle: "Book a demo and we'll show you how goal tracking and reviews work in practice.",

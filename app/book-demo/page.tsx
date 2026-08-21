@@ -41,7 +41,7 @@ export default function BookDemoPage() {
                 ))}
               </ol>
 
-              <div className="mt-8 rounded-2xl border border-ink-900/8 bg-slate-50 p-5">
+              <div className="glass-subtle mt-8 rounded-2xl p-5">
                 <p className="text-sm font-semibold text-ink-900">What we&apos;ll cover</p>
                 <div className="mt-3">
                   <CheckList
@@ -55,7 +55,7 @@ export default function BookDemoPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-ink-900/8 bg-white p-6 shadow-sm shadow-ink-900/[0.02] lg:col-span-3 sm:p-8">
+            <div className="glass rounded-2xl p-6 lg:col-span-3 sm:p-8">
               <LeadForm
                 source="book-demo"
                 messageLabel="What would you like us to cover?"

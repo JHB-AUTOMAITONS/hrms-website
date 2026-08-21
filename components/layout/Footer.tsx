@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
   return (
-    <footer className="border-t border-ink-900/5 bg-ink-950 text-slate-300">
+    <footer className="glass-dark border-x-0 border-b-0 text-slate-300">
       <div className="relative overflow-hidden border-b border-white/5 bg-gradient-to-br from-brand-900 via-ink-950 to-ink-950">
         <div className="bg-dot-grid-dark pointer-events-none absolute inset-0 -z-10" aria-hidden="true" />
         <div

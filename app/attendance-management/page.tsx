@@ -54,6 +54,7 @@ const content: FeaturePageContent = {
     { title: "Leave Management", description: "See how leave requests and attendance work together.", href: "/leave-management" },
     { title: "Payroll Software", description: "How attendance data flows into salary processing.", href: "/payroll-software" },
     { title: "HRMS for Manufacturing", description: "Shift-based, multi-plant attendance for factory teams.", href: "/industries/manufacturing" },
+    { title: "Best Field Staff Tracking Software in India", description: "How GPS attendance works for teams that aren't at a fixed location.", href: "/resources/field-staff-tracking-software-india" },
   ],
   ctaTitle: "See attendance tracking set up for your teams",
   ctaSubtitle: "Book a demo and tell us how your teams currently check in — we'll show you the fit.",

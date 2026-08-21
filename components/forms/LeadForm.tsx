@@ -8,7 +8,7 @@ import { submitLead, type LeadFormState } from "@/lib/actions/submit-lead";
 const initialState: LeadFormState = { status: "idle" };
 
 const inputClasses =
-  "w-full rounded-lg border border-ink-900/15 bg-white px-3.5 py-2.5 text-sm text-ink-900 placeholder:text-slate-400 focus-visible:border-brand-500";
+  "w-full rounded-lg border border-ink-900/15 bg-white/80 px-3.5 py-2.5 text-sm text-ink-900 placeholder:text-slate-400 backdrop-blur-sm focus-visible:border-brand-500 focus-visible:bg-white";
 
 interface LeadFormProps {
   source: "contact" | "book-demo";
@@ -22,7 +22,7 @@ export function LeadForm({ source, messageLabel, messagePlaceholder, submitLabel
 
   if (state.status === "success") {
     return (
-      <div className="flex flex-col items-center gap-3 rounded-2xl border border-accent-500/20 bg-accent-500/5 p-8 text-center">
+      <div className="flex flex-col items-center gap-3 rounded-2xl border border-accent-500/20 bg-accent-500/10 p-8 text-center backdrop-blur-sm">
         <CheckCircle2 className="size-10 text-accent-600" aria-hidden="true" />
         <h3 className="text-lg font-semibold text-ink-900">Thanks — we&apos;ve got your details</h3>
         <p className="text-sm text-slate-600">Our team will reach out shortly. In the meantime, feel free to reach us directly on WhatsApp or email.</p>

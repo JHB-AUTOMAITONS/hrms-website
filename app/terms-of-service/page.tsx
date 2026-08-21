@@ -21,6 +21,7 @@ export default function TermsOfServicePage() {
       <Breadcrumbs items={[{ name: "Terms of Service", path: "/terms-of-service" }]} />
       <section className="py-14 sm:py-16">
         <Container className="max-w-3xl">
+          <div className="glass rounded-3xl p-6 sm:p-10">
           <SectionHeading title="Terms of Service" as="h1" />
           <p className="mt-3 text-sm text-slate-500">Last updated: August 2026</p>
 
@@ -66,6 +67,7 @@ export default function TermsOfServicePage() {
               This is a general template and should be reviewed by qualified legal counsel before this website goes
               live.
             </p>
+          </div>
           </div>
         </Container>
       </section>
