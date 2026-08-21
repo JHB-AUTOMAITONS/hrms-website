@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Users, Fingerprint, CalendarDays, Wallet, LineChart, UserPlus, Smartphone, ShieldCheck, Workflow } from "lucide-react";
+import { Users, Fingerprint, CalendarDays, Wallet, LineChart, UserPlus, Smartphone, ShieldCheck, Workflow, Bot } from "lucide-react";
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { FeatureGrid, type FeatureGridItem } from "@/components/sections/FeatureGrid";
@@ -28,6 +28,7 @@ const modules: FeatureGridItem[] = [
   { icon: Smartphone, title: "Employee Self-Service", description: "Employees apply for leave, check attendance and pull payslips.", href: "/employee-self-service" },
   { icon: ShieldCheck, title: "HR Compliance", description: "PF, ESI and TDS calculations kept organized and audit-ready.", href: "/hr-compliance" },
   { icon: Workflow, title: "HR Automation", description: "Approvals, reminders and notifications that run without manual chasing.", href: "/hrms-software" },
+  { icon: Bot, title: "AI WhatsApp Assistant", description: "AI-powered — employees ask leave, attendance or payslip questions on WhatsApp and get instant answers.", href: "/ai-whatsapp-assistant" },
 ];
 
 const faqs = [
@@ -69,6 +70,11 @@ const faqs = [
     question: "How do I get started?",
     answer:
       "Book a free demo and our team will walk through Manitham HRMS using a setup close to yours, so you can see exactly how it would work for your organization.",
+  },
+  {
+    question: "What is the AI WhatsApp Assistant?",
+    answer:
+      "It's an AI-powered assistant employees message directly on WhatsApp — no app or login required — to ask leave balance, attendance and payslip questions and get instant answers from live HRMS data.",
   },
 ];
 
@@ -113,6 +119,15 @@ export default function HomePage() {
           bullets={["Configurable leave types and policies", "Online requests with approval workflows", "Real-time leave balances", "Company and regional holiday calendars"]}
           mockupKind="leave"
           href="/leave-management"
+        />
+        <ModuleShowcase
+          eyebrow="AI-Powered"
+          title="Employees get HR answers on WhatsApp, powered by AI"
+          description="No app to open, no portal to log into — employees message your company's WhatsApp number and the AI assistant answers instantly from live HRMS data: leave balance, attendance status, payslips and policy questions."
+          bullets={["Leave balance, attendance & payslip questions", "Apply for leave directly from WhatsApp", "Answers pull from live HRMS data, never a stale copy", "No app or login — just a message"]}
+          mockupKind="whatsapp"
+          href="/ai-whatsapp-assistant"
+          reverse
         />
       </div>
 

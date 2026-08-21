@@ -1,4 +1,4 @@
-import { CheckCircle2, Clock, IndianRupee } from "lucide-react";
+import { Bot, CheckCircle2, Clock, IndianRupee } from "lucide-react";
 
 /**
  * Stylized, decorative product illustrations built entirely from CSS/SVG
@@ -7,7 +7,7 @@ import { CheckCircle2, Clock, IndianRupee } from "lucide-react";
  * screenshots we don't actually have.
  */
 
-type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance";
+type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance" | "whatsapp";
 
 function Frame({ children }: { children: React.ReactNode }) {
   return (
@@ -242,6 +242,37 @@ function Compliance() {
   );
 }
 
+function WhatsApp() {
+  const exchanges = [
+    { question: "What's my leave balance?", answer: "You have 6 casual, 4 sick and 9 earned leave days left this year." },
+    { question: "Apply 2 days casual leave next Mon–Tue", answer: "Done — submitted to Priya for approval. You'll get a WhatsApp update once she responds." },
+    { question: "Send my February payslip", answer: "Here's your February payslip. Net pay: ₹51,020." },
+  ];
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center gap-2 rounded-xl bg-accent-500/10 p-3">
+        <Bot className="size-5 text-accent-600" aria-hidden="true" />
+        <div>
+          <p className="text-sm font-semibold text-ink-900">Manitham AI Assistant</p>
+          <p className="text-xs text-accent-600">Active on WhatsApp</p>
+        </div>
+      </div>
+      <div className="space-y-3">
+        {exchanges.map((exchange) => (
+          <div key={exchange.question} className="space-y-1.5">
+            <div className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-tr-sm bg-brand-600 px-3.5 py-2 text-sm text-white">
+              {exchange.question}
+            </div>
+            <div className="mr-auto w-fit max-w-[85%] rounded-2xl rounded-tl-sm border border-ink-900/6 bg-slate-50 px-3.5 py-2 text-sm text-ink-900">
+              {exchange.answer}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 const content: Record<MockupKind, () => React.ReactElement> = {
   overview: Overview,
   attendance: Attendance,
@@ -250,6 +281,7 @@ const content: Record<MockupKind, () => React.ReactElement> = {
   performance: Performance,
   recruitment: Recruitment,
   compliance: Compliance,
+  whatsapp: WhatsApp,
 };
 
 export function AppMockup({ kind }: { kind: MockupKind }) {

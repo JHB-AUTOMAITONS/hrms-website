@@ -170,6 +170,16 @@ export const keywordMap = {
       "Give employees a self-service portal to mark attendance, apply for leave, download payslips, update details and raise HR requests from any device.",
     h1: "Let employees serve themselves, so HR doesn't have to",
   },
+  aiWhatsappAssistant: {
+    path: "/ai-whatsapp-assistant",
+    primaryKeyword: "AI WhatsApp HR assistant",
+    secondaryKeywords: ["WhatsApp HR bot", "AI HRMS assistant", "WhatsApp employee self service"],
+    searchIntent: "commercial",
+    title: "AI WhatsApp Assistant — Ask HR Questions on WhatsApp | Manitham HRMS",
+    description:
+      "An AI-powered assistant on WhatsApp that answers leave balance, attendance and payslip questions instantly — no app, no login, just a message.",
+    h1: "Employees get HR answers on WhatsApp, powered by AI",
+  },
   hrCompliance: {
     path: "/hr-compliance",
     primaryKeyword: "HR compliance software",

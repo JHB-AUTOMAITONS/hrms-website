@@ -5,7 +5,7 @@ import { CheckList } from "@/components/ui/CheckList";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { AppMockup } from "@/components/illustrations/AppMockup";
 
-type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance";
+type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance" | "whatsapp";
 
 interface ModuleShowcaseProps {
   eyebrow: string;
