@@ -1,4 +1,4 @@
-import { MessageCircle, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { AppMockup } from "@/components/illustrations/AppMockup";
@@ -8,58 +8,61 @@ const pills = ["Attendance & biometric", "Payroll with PF/ESI/PT/TDS", "Leave & 
 
 export function Hero() {
   return (
-    <section className="bg-dot-grid-dark relative overflow-hidden bg-ink-950">
+    <section className="relative overflow-hidden bg-gradient-to-b from-brand-50/60 via-white to-white">
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[36rem] bg-[radial-gradient(60%_55%_at_50%_0%,rgba(53,112,191,0.35),transparent_70%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[36rem] bg-[radial-gradient(60%_55%_at_50%_0%,rgba(53,112,191,0.18),transparent_70%)]"
         aria-hidden="true"
       />
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-ink-950" aria-hidden="true" />
+
+      {/* Bold ₹0.50 per employee — top-right corner */}
+      <div className="absolute right-4 top-4 z-10 sm:right-8 sm:top-8">
+        <div className="glass rounded-2xl px-5 py-3 text-center shadow-lg">
+          <p className="text-3xl font-black tracking-tight text-brand-700 sm:text-4xl">₹0.50</p>
+          <p className="text-xs font-semibold text-slate-600">per employee / month</p>
+        </div>
+      </div>
 
       <Container className="grid grid-cols-1 items-center gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:py-28">
         <div>
-          <p className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-brand-200 backdrop-blur-sm">
-            <ShieldCheck className="size-3.5 text-gold-400" aria-hidden="true" />
+          <p className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-white/60 px-3 py-1 text-xs font-semibold text-brand-700 backdrop-blur-sm">
+            <ShieldCheck className="size-3.5 text-gold-500" aria-hidden="true" />
             HRMS Software for Indian Businesses
           </p>
-          <h1 className="font-display mt-5 text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
+          <h1 className="font-display mt-5 text-balance text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
             Complete HRMS software for smarter employee management
           </h1>
-          <p className="mt-5 max-w-xl text-pretty text-lg text-slate-300">
+          <p className="mt-5 max-w-xl text-pretty text-lg text-slate-600">
             {siteConfig.shortName} HRMS brings attendance, leave, payroll and employee records into one system — so
             your HR team stops chasing spreadsheets and starts running people operations properly.
           </p>
-          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-2 text-sm font-semibold text-gold-300 backdrop-blur-sm">
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-2 text-sm font-semibold text-gold-700 backdrop-blur-sm">
             🎉 Get free configuration with WiFi biometrics for ₹0.5
           </div>
 
           <div className="mt-6 flex flex-wrap gap-2">
             {pills.map((pill) => (
-              <span key={pill} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-300">
+              <span key={pill} className="glass-subtle rounded-full px-3 py-1.5 text-xs font-medium text-slate-700">
                 {pill}
               </span>
             ))}
           </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="/book-demo" variant="inverse" size="lg">
+            <ButtonLink href="/book-demo" variant="primary" size="lg">
               Book a Demo
             </ButtonLink>
-            <ButtonLink href="#features" variant="outlineLight" size="lg">
+            <ButtonLink href="#features" variant="secondary" size="lg">
               Explore Features
             </ButtonLink>
           </div>
 
-          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-400">
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-500">
             <span>Free demo · No commitment</span>
-            <a href={siteConfig.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-medium text-accent-500 hover:text-accent-400">
-              <MessageCircle className="size-4" aria-hidden="true" />
-              Chat on WhatsApp
-            </a>
           </div>
         </div>
 
         <div className="relative lg:pl-6">
-          <div className="absolute -inset-x-6 -inset-y-10 -z-10 hidden rounded-[2.5rem] bg-brand-500/25 blur-3xl lg:block" aria-hidden="true" />
+          <div className="absolute -inset-x-6 -inset-y-10 -z-10 hidden rounded-[2.5rem] bg-brand-500/10 blur-3xl lg:block" aria-hidden="true" />
           <AppMockup kind="overview" />
         </div>
       </Container>
