@@ -28,6 +28,9 @@ export function Hero() {
             {siteConfig.shortName} HRMS brings attendance, leave, payroll and employee records into one system — so
             your HR team stops chasing spreadsheets and starts running people operations properly.
           </p>
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-2 text-sm font-semibold text-gold-300 backdrop-blur-sm">
+            🎉 Get free configuration with WiFi biometrics for ₹0.5
+          </div>
 
           <div className="mt-6 flex flex-wrap gap-2">
             {pills.map((pill) => (
