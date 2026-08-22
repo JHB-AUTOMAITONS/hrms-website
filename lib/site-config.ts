@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "Complete HRMS software for smarter employee management",
   // Placeholder production domain — update once the real domain is finalized.
   // Every canonical/OG/sitemap URL in the app derives from this single constant.
-  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.manithamhrms.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://hrms.work",
   description:
     "Manitham HRMS is a cloud-based HR management system for Indian businesses — employee management, attendance, leave, payroll, performance, recruitment and employee self-service in one platform.",
   locale: "en_IN",

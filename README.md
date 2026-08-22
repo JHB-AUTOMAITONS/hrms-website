@@ -17,7 +17,7 @@ A few things are intentionally stubbed rather than fabricated, since real values
 
 | What | Where | Notes |
 |---|---|---|
-| Production domain | `lib/site-config.ts` (`url`), or set `NEXT_PUBLIC_SITE_URL` | Currently `https://www.manithamhrms.com` — drives every canonical URL, sitemap entry and OG tag. |
+| Production domain | `lib/site-config.ts` (`url`), or set `NEXT_PUBLIC_SITE_URL` | Currently `https://hrms.work` — drives every canonical URL, sitemap entry and OG tag. |
 | Contact email/phone/WhatsApp | `lib/site-config.ts` (`contact`) | Placeholder phone number — update before launch. |
 | Lead form delivery | `LEAD_WEBHOOK_URL` env var, read in `lib/actions/submit-lead.ts` | Contact/demo forms validate and "succeed" today but don't deliver anywhere until this points at a CRM intake endpoint or email function. |
 | Analytics | ~~`NEXT_PUBLIC_GA_MEASUREMENT_ID` env var~~ done | Wired to the production GA4 property (`G-LZKB2JYJ4G`) in `components/analytics/GoogleAnalytics.tsx`; override with the env var for a different environment. |
