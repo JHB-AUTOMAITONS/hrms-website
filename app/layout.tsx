@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { GradientMesh } from "@/components/layout/GradientMesh";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/lib/site-config";
 
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <GoogleAnalytics />
+        <MicrosoftClarity />
       </body>
     </html>
   );
