@@ -81,6 +81,22 @@ body {
     text-wrap: pretty;
   }
 
+  /* Entrance for the floating demo prompt — slides/fades in from the edge
+     it's anchored to (bottom on mobile, bottom-right on larger screens). */
+  @keyframes slide-up-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-slide-up-fade-in {
+    animation: slide-up-fade-in 0.35s ease-out;
+  }
+
   /* Subtle dot-grid texture for dark, high-contrast bands (hero, CTA). */
   .bg-dot-grid-dark {
     background-image: radial-gradient(circle, rgb(255 255 255 / 14%) 1px, transparent 1px);
