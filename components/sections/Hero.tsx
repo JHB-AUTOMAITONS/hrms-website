@@ -14,15 +14,6 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      {/* Bold $0.50 per employee — top-right corner */}
-      <div className="absolute right-4 top-4 z-10 sm:right-8 sm:top-8">
-        <div className="glass rounded-2xl px-5 py-3 text-center shadow-lg">
-          <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">Complete HRMS for</p>
-          <p className="text-3xl font-black tracking-tight text-brand-700 sm:text-4xl">$0.50</p>
-          <p className="text-xs font-semibold text-slate-600">per employee / month</p>
-        </div>
-      </div>
-
       <Container className="grid grid-cols-1 items-center gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:py-28">
         <div>
           <p className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-white/60 px-3 py-1 text-xs font-semibold text-brand-700 backdrop-blur-sm">
@@ -36,10 +27,6 @@ export function Hero() {
             {siteConfig.shortName} HRMS brings attendance, leave, payroll and employee records into one system — so
             your HR team stops chasing spreadsheets and starts running people operations properly.
           </p>
-          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-2 text-sm font-semibold text-gold-700 backdrop-blur-sm">
-            🎉 Get free configuration with WiFi biometrics for $0.50
-          </div>
-
           <div className="mt-6 flex flex-wrap gap-2">
             {pills.map((pill) => (
               <span key={pill} className="glass-subtle rounded-full px-3 py-1.5 text-xs font-medium text-slate-700">

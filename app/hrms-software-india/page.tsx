@@ -53,6 +53,7 @@ const content: FeaturePageContent = {
     { title: "Payroll Software", description: "A closer look at how salary processing and payslips work.", href: "/payroll-software" },
     { title: "HR Compliance", description: "How statutory compliance tracking works across PF, ESI and TDS.", href: "/hr-compliance" },
     { title: "HRMS for Manufacturing", description: "How multi-plant, shift-based teams use Manitham HRMS.", href: "/industries/manufacturing" },
+    { title: "Best HRMS Software in India", description: "What to evaluate before choosing an HRMS — a buyer's guide.", href: "/best-hrms-software-india" },
   ],
   ctaTitle: "Talk to a team that understands Indian payroll",
   ctaSubtitle: "Book a demo and bring your specific compliance questions — PF, ESI, PT or TDS.",
