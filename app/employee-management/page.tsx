@@ -55,6 +55,7 @@ const content: FeaturePageContent = {
     { title: "Recruitment", description: "How new hires move from candidate to employee record.", href: "/recruitment" },
     { title: "Employee Self Service", description: "What employees can update themselves.", href: "/employee-self-service" },
     { title: "Employee Management System vs. Software", description: "What separates a real system from a spreadsheet with extra steps.", href: "/resources/employee-management-system-guide" },
+    { title: "Free vs Paid Staff Management Software", description: "Where free tools hold up, and where they quietly cost more.", href: "/resources/free-vs-paid-staff-management-software" },
   ],
   ctaTitle: "Bring your employee data into one place",
   ctaSubtitle: "Book a demo and we'll show you how employee records connect across the platform.",
