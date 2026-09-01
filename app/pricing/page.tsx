@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Check, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -73,7 +74,11 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-slate-500">
-            Custom pricing based on employee count and modules. No hidden fees.
+            Custom pricing based on employee count and modules. No hidden fees. See{" "}
+            <Link href="/resources/hrms-software-pricing-india" className="font-medium text-brand-600 hover:underline">
+              what drives HRMS pricing in India
+            </Link>{" "}
+            for more detail.
           </p>
         </Container>
       </section>
