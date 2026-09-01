@@ -103,6 +103,22 @@ export const articles: ArticleMeta[] = [
     readTime: "5 min read",
   },
   {
+    slug: "hrms-software-pricing-india",
+    title: "How Much Does HRMS Software Cost in India? (2026 Pricing Guide)",
+    excerpt: "What actually drives HRMS pricing — per-employee vs flat fee, which modules cost extra, and the questions to ask before you sign.",
+    category: "Pricing",
+    publishedDate: "2026-08-25",
+    readTime: "6 min read",
+  },
+  {
+    slug: "employee-management-system-guide",
+    title: "Employee Management System vs. Employee Management Software: What's the Difference?",
+    excerpt: "\"System\" and \"software\" get used interchangeably, but what you actually need depends on how far past a spreadsheet your employee records have to go.",
+    category: "HRMS",
+    publishedDate: "2026-08-25",
+    readTime: "6 min read",
+  },
+  {
     slug: "hris-vs-hrms-vs-hcm",
     title: "HRIS vs HRMS vs HCM: What's the Difference?",
     excerpt: "The three terms overlap a lot in practice — what each one originally meant, and why it matters less than the feature list.",
