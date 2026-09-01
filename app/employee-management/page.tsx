@@ -54,6 +54,7 @@ const content: FeaturePageContent = {
     { title: "HRMS Software", description: "See how employee management connects to every other module.", href: "/hrms-software" },
     { title: "Recruitment", description: "How new hires move from candidate to employee record.", href: "/recruitment" },
     { title: "Employee Self Service", description: "What employees can update themselves.", href: "/employee-self-service" },
+    { title: "Free vs Paid Staff Management Software", description: "Where free tools hold up, and where they quietly cost more.", href: "/resources/free-vs-paid-staff-management-software" },
   ],
   ctaTitle: "Bring your employee data into one place",
   ctaSubtitle: "Book a demo and we'll show you how employee records connect across the platform.",

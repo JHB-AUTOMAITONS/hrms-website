@@ -53,6 +53,7 @@ const content: FeaturePageContent = {
     { title: "Employee Self Service", description: "What new hires can access from day one.", href: "/employee-self-service" },
     { title: "HRMS Software", description: "See how recruitment fits into the full platform.", href: "/hrms-software" },
     { title: "Best Applicant Tracking Software in India", description: "What to look for in an ATS, and where a standalone tool falls short.", href: "/resources/best-applicant-tracking-software-india" },
+    { title: "Recruitment CRM vs ATS", description: "What each one actually does, and which this module is.", href: "/resources/recruitment-crm-vs-ats" },
   ],
   ctaTitle: "See recruitment connected to the rest of HR",
   ctaSubtitle: "Book a demo and we'll show you the pipeline-to-onboarding handoff.",

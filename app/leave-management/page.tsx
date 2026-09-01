@@ -54,6 +54,7 @@ const content: FeaturePageContent = {
     { title: "Attendance Management", description: "How leave and attendance work together day to day.", href: "/attendance-management" },
     { title: "Employee Self Service", description: "Where employees apply for leave and check balances.", href: "/employee-self-service" },
     { title: "Payroll Software", description: "How approved leave flows into each payroll run.", href: "/payroll-software" },
+    { title: "Best Leave Management Software in India", description: "What to check before choosing a leave management tool.", href: "/resources/best-leave-management-software-india" },
   ],
   ctaTitle: "Set up leave policies that match your company",
   ctaSubtitle: "Book a demo and we'll show you how policy configuration works for your leave structure.",
