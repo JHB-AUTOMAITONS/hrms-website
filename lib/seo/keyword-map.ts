@@ -40,14 +40,24 @@ export const keywordMap = {
       "See what HRMS software actually does: employee records, attendance, leave, payroll, performance and self-service, unified in one cloud system.",
     h1: "HRMS software that runs your entire employee lifecycle",
   },
+  bestHrmsSoftwareIndia: {
+    path: "/best-hrms-software-india",
+    primaryKeyword: "best HRMS software in India",
+    secondaryKeywords: ["best HRMS software", "how to choose HRMS software", "HRMS software comparison India"],
+    searchIntent: "commercial",
+    title: "Best HRMS Software in India — How to Choose (2026 Guide) | Manitham HRMS",
+    description:
+      "What actually separates the best HRMS software in India — statutory compliance depth, multi-state support, attendance methods and real pricing transparency.",
+    h1: "What actually makes HRMS software \"the best\" for an Indian business",
+  },
   hrmsSoftwareIndia: {
     path: "/hrms-software-india",
     primaryKeyword: "HRMS software in India",
-    secondaryKeywords: ["HR software India", "cloud HRMS India", "HR management software India"],
+    secondaryKeywords: ["HR software India", "cloud HRMS India", "HR management software India", "top HRMS software in India"],
     searchIntent: "commercial",
     title: "HRMS Software in India — Built for Indian Payroll & Compliance",
     description:
-      "HRMS software built around Indian payroll, statutory compliance and multi-state HR needs. PF, ESI, PT and TDS-ready payroll for Indian businesses.",
+      "One of the top HRMS software options in India, built around Indian payroll, statutory compliance and multi-state HR needs. PF, ESI, PT and TDS-ready payroll.",
     h1: "HRMS software built for how Indian businesses run HR",
   },
   hrmsSoftwareUsa: {
@@ -103,11 +113,11 @@ export const keywordMap = {
   payrollSoftware: {
     path: "/payroll-software",
     primaryKeyword: "payroll software",
-    secondaryKeywords: ["payroll management software", "payroll software India", "online payroll software"],
+    secondaryKeywords: ["payroll management software", "payroll software India", "payroll software for India", "cloud based payroll software", "online payroll software"],
     searchIntent: "commercial",
     title: "Payroll Software — Automated Salary Processing | Manitham HRMS",
     description:
-      "Payroll software for Indian businesses: salary processing, payslips, PF, ESI, professional tax, TDS, LWF, Form 16 and payroll reports.",
+      "Cloud based payroll software for India: salary processing, payslips, PF, ESI, professional tax, TDS, LWF, Form 16 and payroll reports.",
     h1: "Payroll software that gets salaries right, every cycle",
   },
   attendanceManagement: {
@@ -143,21 +153,21 @@ export const keywordMap = {
   performanceManagement: {
     path: "/performance-management",
     primaryKeyword: "performance management software",
-    secondaryKeywords: ["employee performance management system", "performance appraisal software"],
+    secondaryKeywords: ["employee performance management software", "performance appraisal software"],
     searchIntent: "commercial",
     title: "Performance Management Software | Manitham HRMS",
     description:
-      "Set goals and KPIs, run structured appraisal cycles, and give managers a simple way to record feedback and track employee performance over time.",
+      "Employee performance management software to set goals and KPIs, run structured appraisal cycles, and give managers a simple way to track performance over time.",
     h1: "Performance management your managers will actually use",
   },
   recruitment: {
     path: "/recruitment",
     primaryKeyword: "recruitment software",
-    secondaryKeywords: ["recruitment management software", "applicant tracking system", "ATS software"],
+    secondaryKeywords: ["recruitment management software", "recruitment software India", "applicant tracking system", "ATS software"],
     searchIntent: "commercial",
     title: "Recruitment Software (ATS) | Manitham HRMS",
     description:
-      "Post jobs, track candidates through your hiring pipeline, schedule interviews and move new hires straight into onboarding — all inside one HRMS.",
+      "Recruitment software for hiring teams in India: post jobs, track candidates through your pipeline, schedule interviews and move new hires straight into onboarding.",
     h1: "Recruitment software that hands off cleanly into HR",
   },
   employeeSelfService: {

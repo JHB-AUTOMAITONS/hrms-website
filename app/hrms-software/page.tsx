@@ -56,6 +56,7 @@ const content: FeaturePageContent = {
     { title: "HRMS Software Worldwide", description: "How the platform handles payroll compliance in the US, UK, Singapore, Malaysia and Australia.", href: "/hrms-software-usa" },
     { title: "Payroll Software", description: "See exactly how salary processing and statutory deductions work.", href: "/payroll-software" },
     { title: "Employee Self Service", description: "What employees can do for themselves in the portal.", href: "/employee-self-service" },
+    { title: "Best HRMS Software in India", description: "What to evaluate before choosing an HRMS — a buyer's guide.", href: "/best-hrms-software-india" },
     { title: "HRIS vs HRMS vs HCM", description: "What the terms mean, and why the feature list matters more than the label.", href: "/resources/hris-vs-hrms-vs-hcm" },
   ],
   ctaTitle: "See the full platform in action",

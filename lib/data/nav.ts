@@ -31,6 +31,7 @@ export const companyLinks: NavLink[] = [
 
 export const resourceLinks: NavLink[] = [
   { label: "All Resources", href: "/resources" },
+  { label: "Best HRMS Software in India", href: "/best-hrms-software-india" },
   { label: "What is HRMS Software?", href: "/resources/what-is-hrms-software" },
   { label: "Payroll Processing Guide", href: "/resources/payroll-processing-guide-india" },
   { label: "Attendance Tracking Guide", href: "/resources/employee-attendance-tracking-guide" },
