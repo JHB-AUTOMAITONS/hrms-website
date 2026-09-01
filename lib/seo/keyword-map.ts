@@ -123,11 +123,11 @@ export const keywordMap = {
   attendanceManagement: {
     path: "/attendance-management",
     primaryKeyword: "attendance management software",
-    secondaryKeywords: ["employee attendance software", "biometric attendance software", "GPS attendance software"],
+    secondaryKeywords: ["attendance management system", "employee attendance software", "biometric attendance software", "GPS attendance software", "attendance management system online"],
     searchIntent: "commercial",
     title: "Attendance Management Software | Manitham HRMS",
     description:
-      "Track employee attendance with biometric devices, GPS check-in or web/mobile punch. Shift management, late marks, overtime and attendance reports.",
+      "An attendance management system for tracking employee attendance online — biometric devices, GPS check-in or web/mobile punch. Shift management, late marks, overtime and reports.",
     h1: "Attendance management that fits how your teams actually work",
   },
   leaveManagement: {
@@ -153,11 +153,11 @@ export const keywordMap = {
   performanceManagement: {
     path: "/performance-management",
     primaryKeyword: "performance management software",
-    secondaryKeywords: ["employee performance management software", "performance appraisal software"],
+    secondaryKeywords: ["performance management system", "employee performance management software", "performance appraisal software"],
     searchIntent: "commercial",
     title: "Performance Management Software | Manitham HRMS",
     description:
-      "Employee performance management software to set goals and KPIs, run structured appraisal cycles, and give managers a simple way to track performance over time.",
+      "A performance management system for HR to set goals and KPIs, run structured appraisal cycles, and give managers a simple way to track employee performance over time.",
     h1: "Performance management your managers will actually use",
   },
   recruitment: {

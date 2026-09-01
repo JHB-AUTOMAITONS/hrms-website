@@ -1,0 +1,33 @@
+# Manitham HRMS
+
+> Manitham HRMS is a cloud-based HR management system for Indian businesses — employee management, attendance, leave, payroll, performance, recruitment and employee self-service in one platform, with an AI-powered WhatsApp assistant for HR questions.
+
+Manitham HRMS is built around Indian statutory compliance (PF, ESI, professional tax, TDS) and also serves teams in the US, UK, Singapore, Malaysia and Australia with country-specific payroll compliance.
+
+## Product
+
+- [HRMS Software](https://hrms.work/hrms-software): overview of the full platform
+- [Employee Management](https://hrms.work/employee-management): employee records, documents, org structure
+- [Attendance Management](https://hrms.work/attendance-management): biometric, GPS and web/mobile attendance tracking
+- [Leave Management](https://hrms.work/leave-management): leave policies, approvals, balances
+- [Payroll Software](https://hrms.work/payroll-software): salary processing, PF, ESI, professional tax, TDS
+- [Performance Management](https://hrms.work/performance-management): goals, KPIs, appraisal cycles
+- [Recruitment Software](https://hrms.work/recruitment): job postings, candidate pipeline, onboarding handoff
+- [Employee Self Service](https://hrms.work/employee-self-service): ESS portal for attendance, leave, payslips
+- [AI WhatsApp Assistant](https://hrms.work/ai-whatsapp-assistant): AI-powered HR answers over WhatsApp
+- [HR Compliance](https://hrms.work/hr-compliance): statutory payroll compliance for India
+- [Pricing](https://hrms.work/pricing): plans and pricing tiers
+
+## By market
+
+- [HRMS Software in India](https://hrms.work/hrms-software-india)
+- [Best HRMS Software in India](https://hrms.work/best-hrms-software-india)
+- [HRMS Software in the US](https://hrms.work/hrms-software-usa)
+- [HRMS Software in the UK](https://hrms.work/hrms-software-uk)
+- [HRMS Software in Singapore](https://hrms.work/hrms-software-singapore)
+- [HRMS Software in Malaysia](https://hrms.work/hrms-software-malaysia)
+- [HRMS Software in Australia](https://hrms.work/hrms-software-australia)
+
+## Resources
+
+Guides on HRMS, payroll, attendance, leave, recruitment and Indian statutory compliance: [https://hrms.work/resources](https://hrms.work/resources)
