@@ -1,8 +1,12 @@
 import { ImageResponse } from "next/og";
+import { readFileSync } from "fs";
+import { join } from "path";
 import { siteConfig } from "@/lib/site-config";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+const logoBase64 = `data:image/png;base64,${readFileSync(join(process.cwd(), "public/logo-mark-180.png")).toString("base64")}`;
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -19,22 +23,8 @@ export default function OpengraphImage() {
           fontFamily: "sans-serif",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 72,
-            height: 72,
-            borderRadius: 16,
-            background: "linear-gradient(160deg, #3570bf 0%, #1a2f54 100%)",
-            color: "white",
-            fontSize: 36,
-            fontWeight: 800,
-          }}
-        >
-          M
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logoBase64} width={80} height={80} alt="" />
         <div style={{ display: "flex", marginTop: 40, fontSize: 56, fontWeight: 800, color: "white", maxWidth: 900 }}>
           {siteConfig.tagline}
         </div>
