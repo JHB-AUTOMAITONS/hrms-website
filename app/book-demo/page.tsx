@@ -61,6 +61,7 @@ export default function BookDemoPage() {
                 messageLabel="What would you like us to cover?"
                 messagePlaceholder="E.g. we need payroll for 80 employees across 2 states…"
                 submitLabel="Book My Demo"
+                successMessage="Thank you! Your demo request has been submitted successfully. Our team will contact you shortly."
               />
             </div>
           </div>

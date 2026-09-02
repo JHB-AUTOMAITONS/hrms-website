@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { productLinks, industryLinks, companyLinks, resourceLinks, type NavLink } from "@/lib/data/nav";
+import { productLinks, industryLinks, companyLinks, resourceLinks, countryLinks, type NavLink } from "@/lib/data/nav";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site-config";
 
@@ -68,6 +68,7 @@ export function DesktopNav() {
     <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
       <DesktopDropdown label="Product" links={productLinks} columns={2} />
       <DesktopDropdown label="Industries" links={industryLinks} columns={1} />
+      <DesktopDropdown label="Countries" links={countryLinks} columns={1} />
       <Link href="/pricing" className="py-2 text-sm font-medium text-ink-700 transition-colors hover:text-brand-700">
         Pricing
       </Link>
@@ -126,6 +127,7 @@ export function MobileMenu() {
               <div className="flex-1 overflow-y-auto px-4 py-4">
                 <MobileSection title="Product" links={productLinks} onNavigate={() => setOpen(false)} />
                 <MobileSection title="Industries" links={industryLinks} onNavigate={() => setOpen(false)} />
+                <MobileSection title="Countries" links={countryLinks} onNavigate={() => setOpen(false)} />
                 <MobileSection title="Resources" links={resourceLinks} onNavigate={() => setOpen(false)} />
                 <MobileSection title="Company" links={companyLinks} onNavigate={() => setOpen(false)} />
               </div>
