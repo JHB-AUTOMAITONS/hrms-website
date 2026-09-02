@@ -49,6 +49,20 @@ export async function submitLead(_prevState: LeadFormState, formData: FormData):
       body: body.toString(),
     });
     if (!response.ok) throw new Error(`Google Apps Script responded with ${response.status}`);
+
+    // Apps Script Web Apps redirect through script.googleusercontent.com and
+    // reply 200 for that hop even when the script itself reports a failure
+    // (e.g. a missing sheet), so the real result has to come from the body.
+    const text = await response.text();
+    let result: { success?: boolean; message?: string } | null = null;
+    try {
+      result = JSON.parse(text);
+    } catch {
+      // Non-JSON response — fall through and treat the 2xx status as success.
+    }
+    if (result?.success === false) {
+      throw new Error(result.message || "Google Apps Script reported a failure.");
+    }
   } catch {
     return {
       status: "error",
