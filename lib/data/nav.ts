@@ -21,6 +21,7 @@ export const industryLinks: NavLink[] = [
   { label: "Small Business", href: "/industries/small-business" },
   { label: "Startups", href: "/industries/startups" },
   { label: "Manufacturing", href: "/industries/manufacturing" },
+  { label: "View All Industries →", href: "/industries" },
 ];
 
 export const companyLinks: NavLink[] = [
@@ -30,11 +31,20 @@ export const companyLinks: NavLink[] = [
 ];
 
 export const resourceLinks: NavLink[] = [
-  { label: "All Resources", href: "/resources" },
   { label: "Best HRMS Software in India", href: "/best-hrms-software-india" },
   { label: "What is HRMS Software?", href: "/resources/what-is-hrms-software" },
   { label: "Payroll Processing Guide", href: "/resources/payroll-processing-guide-india" },
   { label: "Attendance Tracking Guide", href: "/resources/employee-attendance-tracking-guide" },
+  { label: "View All Resources →", href: "/resources" },
+];
+
+export const countryLinks: NavLink[] = [
+  { label: "India", href: "/hrms-software-india" },
+  { label: "USA", href: "/hrms-software-usa" },
+  { label: "UK", href: "/hrms-software-uk" },
+  { label: "Singapore", href: "/hrms-software-singapore" },
+  { label: "Malaysia", href: "/hrms-software-malaysia" },
+  { label: "Australia", href: "/hrms-software-australia" },
 ];
 
 export const legalLinks: NavLink[] = [
