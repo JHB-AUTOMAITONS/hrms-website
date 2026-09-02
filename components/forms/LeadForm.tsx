@@ -15,9 +15,16 @@ interface LeadFormProps {
   messageLabel: string;
   messagePlaceholder: string;
   submitLabel: string;
+  successMessage?: string;
 }
 
-export function LeadForm({ source, messageLabel, messagePlaceholder, submitLabel }: LeadFormProps) {
+export function LeadForm({
+  source,
+  messageLabel,
+  messagePlaceholder,
+  submitLabel,
+  successMessage = "Our team will reach out shortly. In the meantime, feel free to reach us directly on WhatsApp or email.",
+}: LeadFormProps) {
   const [state, formAction, isPending] = useActionState(submitLead, initialState);
 
   if (state.status === "success") {
@@ -25,7 +32,7 @@ export function LeadForm({ source, messageLabel, messagePlaceholder, submitLabel
       <div className="flex flex-col items-center gap-3 rounded-2xl border border-accent-500/20 bg-accent-500/10 p-8 text-center backdrop-blur-sm">
         <CheckCircle2 className="size-10 text-accent-600" aria-hidden="true" />
         <h3 className="text-lg font-semibold text-ink-900">Thanks — we&apos;ve got your details</h3>
-        <p className="text-sm text-slate-600">Our team will reach out shortly. In the meantime, feel free to reach us directly on WhatsApp or email.</p>
+        <p className="text-sm text-slate-600">{successMessage}</p>
       </div>
     );
   }
