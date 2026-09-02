@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { LogoMark } from "@/components/illustrations/LogoMark";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
@@ -13,15 +14,11 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(160deg, #2557a0 0%, #1a2f54 100%)",
+          background: "white",
           borderRadius: 7,
-          color: "white",
-          fontSize: 20,
-          fontWeight: 800,
-          fontFamily: "sans-serif",
         }}
       >
-        M
+        <LogoMark idPrefix="favicon" width={26} height={26} />
       </div>
     ),
     size,

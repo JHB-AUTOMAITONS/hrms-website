@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { productLinks, industryLinks, companyLinks, resourceLinks, countryLinks, legalLinks } from "@/lib/data/nav";
+import { LogoMark } from "@/components/illustrations/LogoMark";
 import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
@@ -10,9 +11,7 @@ export function Footer() {
       <Container className="grid grid-cols-2 gap-8 py-12 sm:grid-cols-3 lg:grid-cols-7">
         <div className="col-span-2 sm:col-span-3 lg:col-span-1">
           <Link href="/" className="flex items-center gap-2 text-lg font-bold text-white">
-            <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-400 to-brand-700 text-sm font-black text-white shadow-sm shadow-black/30">
-              M
-            </span>
+            <LogoMark className="size-8 shrink-0" idPrefix="footer-logo" />
             {siteConfig.shortName}HRMS
           </Link>
           <p className="mt-4 text-sm text-slate-400">{siteConfig.tagline}.</p>

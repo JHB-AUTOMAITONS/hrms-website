@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { DesktopNav, MobileMenu } from "@/components/layout/SiteNav";
+import { LogoMark } from "@/components/illustrations/LogoMark";
 import { siteConfig } from "@/lib/site-config";
 
 export function Header() {
@@ -9,9 +10,7 @@ export function Header() {
     <header className="glass-opaque sticky top-0 z-50 border-x-0 border-t-0">
       <Container className="flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="flex size-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-800 text-base font-black text-white shadow-sm shadow-brand-900/30">
-            M
-          </span>
+          <LogoMark className="size-9 shrink-0" idPrefix="header-logo" />
           <span className="font-display text-lg font-bold text-ink-900">
             {siteConfig.shortName}
             <span className="text-brand-600">HRMS</span>
