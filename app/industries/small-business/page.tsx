@@ -46,6 +46,7 @@ const content: IndustryPageContent = {
     { title: "HRMS Software", description: "See the full platform small businesses grow into.", href: "/hrms-software" },
     { title: "Startups", description: "How HR needs shift as a small team scales fast.", href: "/industries/startups" },
     { title: "Payroll Software", description: "What payroll looks like once you're ready to add it.", href: "/payroll-software" },
+    { title: "Best HRMS Software for Small Business", description: "The checklist to evaluate HRMS software against, sized for a small team.", href: "/resources/best-hrms-software-for-small-business" },
   ],
   ctaTitle: "See what a small-business setup looks like",
   ctaSubtitle: "Book a demo and we'll show you a setup sized for your team, not an enterprise system.",

@@ -54,6 +54,7 @@ const content: FeaturePageContent = {
     { title: "HRMS Software in India", description: "The full platform built around Indian payroll and compliance.", href: "/hrms-software-india" },
     { title: "Payroll Software", description: "How statutory payroll calculations actually work.", href: "/payroll-software" },
     { title: "Pricing", description: "See plan tiers and what's included at each level.", href: "/pricing" },
+    { title: "Best HRMS Software for Small Business", description: "The same evaluation checklist, sized for a small team.", href: "/resources/best-hrms-software-for-small-business" },
   ],
   ctaTitle: "See how Manitham HRMS holds up against this checklist",
   ctaSubtitle: "Book a demo and run through these evaluation criteria yourself, with your own scenarios.",

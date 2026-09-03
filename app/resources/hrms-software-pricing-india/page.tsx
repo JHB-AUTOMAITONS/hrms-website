@@ -24,7 +24,7 @@ export default function HrmsSoftwarePricingIndiaArticle() {
       relatedLinks={[
         { title: "Pricing", description: "See Manitham HRMS plan tiers and what's included.", href: "/pricing" },
         { title: "Best HRMS Software in India", description: "What else to evaluate beyond price.", href: "/best-hrms-software-india" },
-        { title: "HRMS Software in India", description: "The full platform built around Indian payroll and compliance.", href: "/hrms-software-india" },
+        { title: "Best HRMS Software for Small Business", description: "The checklist sized for a small team's budget and needs.", href: "/resources/best-hrms-software-for-small-business" },
       ]}
     >
       <P>

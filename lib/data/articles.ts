@@ -150,6 +150,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-09-01",
     readTime: "6 min read",
   },
+  {
+    slug: "best-hrms-software-for-small-business",
+    title: "Best HRMS Software for Small Business (2026 Guide)",
+    excerpt: "What actually matters when a small business picks HRMS software — a practical checklist to evaluate against, instead of a ranked vendor list.",
+    category: "HRMS",
+    publishedDate: "2026-09-03",
+    readTime: "7 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

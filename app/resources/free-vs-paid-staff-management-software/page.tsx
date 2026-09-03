@@ -24,7 +24,7 @@ export default function FreeVsPaidStaffManagementSoftwareArticle() {
       relatedLinks={[
         { title: "HRMS Software", description: "What a paid, connected HRMS covers end to end.", href: "/hrms-software" },
         { title: "Employee Management", description: "Employee records without spreadsheets.", href: "/employee-management" },
-        { title: "Pricing", description: "See what a paid HRMS actually costs.", href: "/pricing" },
+        { title: "Best HRMS Software for Small Business", description: "The full checklist for evaluating an HRMS at small-business scale.", href: "/resources/best-hrms-software-for-small-business" },
       ]}
     >
       <P>
