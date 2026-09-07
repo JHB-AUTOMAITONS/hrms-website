@@ -25,6 +25,7 @@ export default function AttendanceTrackingGuideArticle() {
         { title: "Attendance Management", description: "See these methods inside Manitham HRMS.", href: "/attendance-management" },
         { title: "HRMS for Manufacturing", description: "How shift-based, biometric attendance works at scale.", href: "/industries/manufacturing" },
         { title: "Leave Management", description: "How attendance and leave work together.", href: "/leave-management" },
+        { title: "Best Attendance Management Software for Businesses", description: "A full checklist for evaluating attendance software.", href: "/resources/best-attendance-management-software" },
       ]}
     >
       <P>

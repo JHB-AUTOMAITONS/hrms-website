@@ -25,6 +25,7 @@ export default function FieldStaffTrackingSoftwareArticle() {
         { title: "Attendance Management", description: "See how GPS and biometric attendance work together.", href: "/attendance-management" },
         { title: "HRMS for Manufacturing", description: "How multi-site, field-heavy teams use Manitham HRMS.", href: "/industries/manufacturing" },
         { title: "Employee Self Service", description: "How field staff check in and view their own records.", href: "/employee-self-service" },
+        { title: "Best Attendance Management Software for Businesses", description: "The checklist to evaluate attendance software against.", href: "/resources/best-attendance-management-software" },
       ]}
     >
       <P>

@@ -158,6 +158,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-09-03",
     readTime: "7 min read",
   },
+  {
+    slug: "best-attendance-management-software",
+    title: "Best Attendance Management Software for Businesses (2026 Guide)",
+    excerpt: "What separates good attendance management software from the rest — attendance methods, payroll integration and a checklist to evaluate vendors against, instead of a ranked list.",
+    category: "Attendance",
+    publishedDate: "2026-09-07",
+    readTime: "7 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
