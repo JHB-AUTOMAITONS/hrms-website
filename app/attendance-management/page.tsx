@@ -55,6 +55,7 @@ const content: FeaturePageContent = {
     { title: "Payroll Software", description: "How attendance data flows into salary processing.", href: "/payroll-software" },
     { title: "HRMS for Manufacturing", description: "Shift-based, multi-plant attendance for factory teams.", href: "/industries/manufacturing" },
     { title: "Best Field Staff Tracking Software in India", description: "How GPS attendance works for teams that aren't at a fixed location.", href: "/resources/field-staff-tracking-software-india" },
+    { title: "Best Attendance Management Software for Businesses", description: "A checklist for evaluating attendance software, instead of a ranked list.", href: "/resources/best-attendance-management-software" },
   ],
   ctaTitle: "See attendance tracking set up for your teams",
   ctaSubtitle: "Book a demo and tell us how your teams currently check in — we'll show you the fit.",
