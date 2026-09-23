@@ -4,7 +4,7 @@ import Script from "next/script";
 // to be public (they ship in every page's client-side source), so this is
 // safe to commit — override with NEXT_PUBLIC_CLARITY_PROJECT_ID for a
 // different environment (e.g. staging) without a code change.
-const DEFAULT_CLARITY_PROJECT_ID = "y68l6b9cd5";
+const DEFAULT_CLARITY_PROJECT_ID = "yk4hza8xlr";
 
 export function MicrosoftClarity() {
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || DEFAULT_CLARITY_PROJECT_ID;
