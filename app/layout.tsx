@@ -8,6 +8,8 @@ import { DemoPrompt } from "@/components/layout/DemoPrompt";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { GoogleAds } from "@/components/analytics/GoogleAds";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/lib/site-config";
@@ -57,6 +59,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <GoogleAnalytics />
+        <GoogleAds />
+        <MetaPixel />
         <MicrosoftClarity />
         <DemoPrompt />
         <WhatsAppButton />
