@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "HRMS Software",
   h1: keywordMap.hrmsSoftware.h1,
   heroSubtitle:
-    "Manitham HRMS replaces spreadsheets and disconnected tools with one system for employee records, attendance, leave, payroll, performance and recruitment — connected end to end.",
+    "Manitham HRMS is complete HRMS software that replaces spreadsheets and disconnected tools with one system for employee records, attendance, leave, payroll, performance and recruitment — connected end to end.",
   highlights: ["Cloud-based", "One employee record", "Mobile access", "Built for Indian payroll"],
   mockupKind: "overview",
   overviewTitle: "What HRMS software actually does",

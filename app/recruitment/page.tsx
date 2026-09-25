@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Recruitment Software",
   h1: keywordMap.recruitment.h1,
   heroSubtitle:
-    "Post openings, track candidates through your hiring pipeline, and move new hires straight into onboarding — without re-entering their details into a separate HR system.",
+    "Manitham's recruitment software lets you post openings, track candidates through your hiring pipeline, and move new hires straight into onboarding — without re-entering their details into a separate HR system.",
   highlights: ["Job postings", "Candidate pipeline", "Interview scheduling", "Onboarding handoff"],
   mockupKind: "recruitment",
   overviewTitle: "Recruitment that hands off cleanly into HR",

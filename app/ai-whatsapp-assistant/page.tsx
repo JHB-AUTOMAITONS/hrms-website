@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "AI-Powered",
   h1: keywordMap.aiWhatsappAssistant.h1,
   heroSubtitle:
-    "No app to open, no portal to log into — employees message Manitham HRMS's WhatsApp number and get an instant, accurate answer. Leave balance, attendance, payslips and policy questions, answered by AI in seconds.",
+    "No app to open, no portal to log into — the AI WhatsApp HR Assistant lets employees message Manitham HRMS's WhatsApp number and get an instant, accurate answer. Leave balance, attendance, payslips and policy questions, answered by AI in seconds.",
   highlights: ["AI-powered answers", "No app or login", "Leave, attendance & payslips", "Available 24/7"],
   mockupKind: "whatsapp",
   overviewTitle: "HR support that lives where employees already are",

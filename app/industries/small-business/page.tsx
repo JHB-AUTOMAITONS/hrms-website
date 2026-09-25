@@ -11,7 +11,7 @@ const content: IndustryPageContent = {
   breadcrumbLabel: "Small Business",
   h1: keywordMap.industrySmallBusiness.h1,
   heroSubtitle:
-    "Small teams don't need enterprise-scale HR software — they need attendance, leave and payroll that stop living in spreadsheets and WhatsApp messages, without the setup overhead of a big system.",
+    "Small teams don't need enterprise-scale HR software — they need HRMS software for small business that gets attendance, leave and payroll out of spreadsheets and WhatsApp messages, without the setup overhead of a big system.",
   mockupKind: "overview",
   challengesTitle: "Where HR breaks down in small teams",
   challenges: [

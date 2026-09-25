@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Employee Self Service (ESS)",
   h1: keywordMap.employeeSelfService.h1,
   heroSubtitle:
-    "Attendance, leave requests, payslips and profile updates shouldn't need an email to HR. The Manitham HRMS self-service portal lets employees handle it themselves, from any device.",
+    "Attendance, leave requests, payslips and profile updates shouldn't need an email to HR. Manitham's employee self service portal lets employees handle it themselves, from any device.",
   highlights: ["Mobile & web access", "Leave & attendance", "Payslip downloads", "Profile updates"],
   mockupKind: "overview",
   overviewTitle: "Let employees serve themselves, so HR doesn't have to",

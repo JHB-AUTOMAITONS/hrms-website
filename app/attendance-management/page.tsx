@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Attendance Management",
   h1: keywordMap.attendanceManagement.h1,
   heroSubtitle:
-    "Office staff, field teams and factory workers don't clock in the same way. Manitham HRMS supports biometric devices, GPS-based mobile check-in and web punch-in — all feeding into the same attendance record.",
+    "Office staff, field teams and factory workers don't clock in the same way. Manitham's attendance management software supports biometric devices, GPS-based mobile check-in and web punch-in — all feeding into the same attendance record.",
   highlights: ["Biometric devices", "GPS check-in", "Shift management", "Overtime tracking"],
   mockupKind: "attendance",
   overviewTitle: "Attendance that matches how your teams actually show up",

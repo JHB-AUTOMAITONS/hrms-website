@@ -11,7 +11,7 @@ const content: IndustryPageContent = {
   breadcrumbLabel: "Startups",
   h1: keywordMap.industryStartups.h1,
   heroSubtitle:
-    "Startups outgrow their first HR setup fast — what worked for 8 people on a spreadsheet breaks down at 40. Manitham HRMS is built to scale with you instead of forcing a system change mid-growth.",
+    "Startups outgrow their first HR setup fast — what worked for 8 people on a spreadsheet breaks down at 40. Manitham HRMS is HR software for startups, built to scale with you instead of forcing a system change mid-growth.",
   mockupKind: "recruitment",
   challengesTitle: "Where startup HR hits a wall",
   challenges: [

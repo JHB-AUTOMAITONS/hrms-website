@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Payroll Software",
   h1: keywordMap.payrollSoftware.h1,
   heroSubtitle:
-    "Run payroll for your whole team with statutory deductions calculated automatically. Attendance and leave feed straight into each pay run, so there's no manual reconciliation.",
+    "Manitham's payroll software runs payroll for your whole team with statutory deductions calculated automatically. Attendance and leave feed straight into each pay run, so there's no manual reconciliation.",
   highlights: ["PF, ESI, PT & TDS", "Payslips & Form 16", "LWF where applicable", "Payroll reports"],
   mockupKind: "payroll",
   overviewTitle: "Payroll that starts from attendance and leave, not a spreadsheet",

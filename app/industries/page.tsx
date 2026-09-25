@@ -38,7 +38,7 @@ export default function IndustriesPage() {
 
       <section className="py-14 sm:py-16">
         <Container>
-          <SectionHeading eyebrow="Industries" title={keywordMap.industries.h1} subtitle="The core Manitham HRMS platform stays the same — but the way you'd set it up looks a little different depending on how your organization runs HR." as="h1" />
+          <SectionHeading eyebrow="Industries" title={keywordMap.industries.h1} subtitle="Manitham's HRMS for industries keeps the core platform the same — but the way you'd set it up looks a little different depending on how your organization runs HR." as="h1" />
 
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((industry) => (

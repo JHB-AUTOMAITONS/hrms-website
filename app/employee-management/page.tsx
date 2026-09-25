@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Employee Management",
   h1: keywordMap.employeeManagement.h1,
   heroSubtitle:
-    "Keep employee profiles, documents, departments and org structure in one searchable record — the same record that attendance, leave, payroll and performance all read from.",
+    "Manitham's employee management software keeps employee profiles, documents, departments and org structure in one searchable record — the same record that attendance, leave, payroll and performance all read from.",
   highlights: ["Employee profiles", "Document storage", "Org structure", "Department & designation"],
   mockupKind: "overview",
   overviewTitle: "One employee record, from onboarding to exit",

@@ -21,11 +21,12 @@ export function Hero() {
             HRMS Software for Indian Businesses
           </p>
           <h1 className="font-display mt-5 text-balance text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
-            Complete HRMS software for smarter employee management
+            Cloud based HR software for smarter employee management
           </h1>
           <p className="mt-5 max-w-xl text-pretty text-lg text-slate-600">
-            {siteConfig.shortName} HRMS brings attendance, leave, payroll and employee records into one system — so
-            your HR team stops chasing spreadsheets and starts running people operations properly.
+            {siteConfig.shortName} is cloud based HR software that brings attendance, leave, payroll and employee
+            records into one system — so your HR team stops chasing spreadsheets and starts running people
+            operations properly.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {pills.map((pill) => (

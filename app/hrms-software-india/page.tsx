@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "HRMS Software in India",
   h1: keywordMap.hrmsSoftwareIndia.h1,
   heroSubtitle:
-    "Indian HR teams deal with things generic HR tools weren't built for — PF and ESI thresholds, professional tax that varies by state, and multi-location attendance. Manitham HRMS is built around those realities.",
+    "Indian HR teams deal with things generic HR tools weren't built for — PF and ESI thresholds, professional tax that varies by state, and multi-location attendance. Manitham HRMS, one of the best HRMS software options in India, is built around those realities.",
   highlights: ["PF, ESI, PT & TDS", "Multi-state support", "Biometric & GPS attendance", "India-based support"],
   mockupKind: "compliance",
   overviewTitle: "HR software built around Indian business requirements",

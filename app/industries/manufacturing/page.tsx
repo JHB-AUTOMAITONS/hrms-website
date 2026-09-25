@@ -11,7 +11,7 @@ const content: IndustryPageContent = {
   breadcrumbLabel: "Manufacturing",
   h1: keywordMap.industryManufacturing.h1,
   heroSubtitle:
-    "Shop-floor HR looks different from office HR — shift rotations, biometric punch-in, contract labour, and payroll that spans multiple plants. Manitham HRMS is built to handle both under one system.",
+    "Shop-floor HR looks different from office HR — shift rotations, biometric punch-in, contract labour, and payroll that spans multiple plants. Manitham HRMS is HR software for manufacturing, built to handle both under one system.",
   mockupKind: "attendance",
   challengesTitle: "Where manufacturing HR gets complicated",
   challenges: [

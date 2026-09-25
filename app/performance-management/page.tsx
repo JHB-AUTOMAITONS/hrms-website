@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Performance Management",
   h1: keywordMap.performanceManagement.h1,
   heroSubtitle:
-    "Set goals, run structured appraisal cycles, and give managers a simple way to record feedback — without a separate spreadsheet for every review period.",
+    "Manitham's performance management software helps you set goals, run structured appraisal cycles, and give managers a simple way to record feedback — without a separate spreadsheet for every review period.",
   highlights: ["Goals & KPIs", "Appraisal cycles", "Manager feedback", "Performance history"],
   mockupKind: "performance",
   overviewTitle: "Performance management your managers will actually use",

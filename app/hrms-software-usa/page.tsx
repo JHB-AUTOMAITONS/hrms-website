@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "HRMS Software in the US",
   h1: keywordMap.hrmsSoftwareUsa.h1,
   heroSubtitle:
-    "US HR teams deal with federal and state payroll tax that varies by jurisdiction, FICA withholding, and year-end W-2 filing. Manitham HRMS is built around those realities instead of treating them as an add-on.",
+    "US HR teams deal with federal and state payroll tax that varies by jurisdiction, FICA withholding, and year-end W-2 filing. Manitham HRMS is HRMS Software USA built around those realities, instead of treating them as an add-on.",
   highlights: ["FICA & federal/state tax", "Multi-state payroll", "W-2 & year-end filing", "ACA-ready"],
   mockupKind: "compliance",
   overviewTitle: "HR software built around US payroll requirements",

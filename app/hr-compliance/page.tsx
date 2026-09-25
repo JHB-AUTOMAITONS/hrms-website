@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "HR Compliance",
   h1: keywordMap.hrCompliance.h1,
   heroSubtitle:
-    "PF, ESI, professional tax and TDS calculations happen automatically as part of payroll, with organized records ready when you need them for review or audit.",
+    "Manitham's HR compliance software calculates PF, ESI, professional tax and TDS automatically as part of payroll, with organized records ready when you need them for review or audit.",
   highlights: ["PF & ESI", "Professional tax", "TDS", "Audit-ready records"],
   mockupKind: "compliance",
   overviewTitle: "HR compliance that doesn't live in a spreadsheet",

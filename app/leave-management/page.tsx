@@ -12,7 +12,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Leave Management",
   h1: keywordMap.leaveManagement.h1,
   heroSubtitle:
-    "Set up leave policies that match how your company actually works, then let employees apply and managers approve online — with balances and holiday calendars visible to everyone.",
+    "Manitham's leave management software lets you set up leave policies that match how your company actually works, then employees apply and managers approve online — with balances and holiday calendars visible to everyone.",
   highlights: ["Configurable policies", "Online approvals", "Real-time balances", "Holiday calendars"],
   mockupKind: "leave",
   overviewTitle: "Leave management without the spreadsheet chasing",
