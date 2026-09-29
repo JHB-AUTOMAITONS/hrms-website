@@ -57,6 +57,7 @@ const content: FeaturePageContent = {
     { title: "Employee Self Service", description: "Where employees access their own payslips and tax documents.", href: "/employee-self-service" },
     { title: "HRA Exemption, Explained", description: "The exemption formula, a worked example, and what HR needs from employees.", href: "/resources/hra-exemption-guide" },
     { title: "EPF Scheme 2026", description: "What HR and payroll teams need to track as EPFO rules evolve.", href: "/resources/epf-scheme-2026-hr-guide" },
+    { title: "Payroll Software South Africa", description: "PAYE, UIF, SDL and SARS returns explained for South African employers.", href: "/resources/payroll-software-south-africa" },
   ],
   ctaTitle: "Run your next payroll cycle without the spreadsheet",
   ctaSubtitle: "Book a demo and we'll walk through a payroll run using a setup similar to yours.",

@@ -58,6 +58,7 @@ const content: FeaturePageContent = {
     { title: "Employee Self Service", description: "What employees can do for themselves in the portal.", href: "/employee-self-service" },
     { title: "Best HRMS Software in India", description: "What to evaluate before choosing an HRMS — a buyer's guide.", href: "/best-hrms-software-india" },
     { title: "HRIS vs HRMS vs HCM", description: "What the terms mean, and why the feature list matters more than the label.", href: "/resources/hris-vs-hrms-vs-hcm" },
+    { title: "HR Software South Africa", description: "A buyer's guide to BCEA, POPIA and payroll requirements for South African businesses.", href: "/resources/hr-software-south-africa" },
   ],
   ctaTitle: "See the full platform in action",
   ctaSubtitle: "Book a demo and we'll walk through the modules that matter most to your team.",

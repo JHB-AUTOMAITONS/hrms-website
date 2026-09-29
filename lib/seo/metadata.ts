@@ -6,6 +6,8 @@ interface BuildMetadataOptions {
   /** Overrides entry.path — use when a page needs a canonical different from its own route (rare). */
   path?: string;
   noindex?: boolean;
+  /** Open Graph locale for market-specific pages (e.g. "en_ZA"). Defaults to siteConfig.locale. */
+  locale?: string;
 }
 
 /**
@@ -33,7 +35,7 @@ export function buildMetadata(entry: PageSeoEntry, options: BuildMetadataOptions
       description: entry.description,
       url,
       siteName: siteConfig.name,
-      locale: siteConfig.locale,
+      locale: options.locale ?? siteConfig.locale,
       type: "website",
     },
     twitter: {

@@ -87,6 +87,7 @@ export function articleSchema(input: {
   path: string;
   datePublished: string;
   dateModified?: string;
+  inLanguage?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -96,6 +97,7 @@ export function articleSchema(input: {
     url: absoluteUrl(input.path),
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
+    ...(input.inLanguage ? { inLanguage: input.inLanguage } : {}),
     author: {
       "@type": "Organization",
       name: siteConfig.name,

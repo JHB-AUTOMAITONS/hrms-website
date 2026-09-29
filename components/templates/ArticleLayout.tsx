@@ -1,20 +1,24 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { CTASection } from "@/components/sections/CTASection";
 import { RelatedLinks, type RelatedLink } from "@/components/sections/RelatedLinks";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { articleSchema } from "@/lib/seo/schema";
+import { articleSchema, type FaqItem } from "@/lib/seo/schema";
 import type { ArticleMeta } from "@/lib/data/articles";
 
 interface ArticleLayoutProps {
   meta: ArticleMeta;
   children: ReactNode;
   relatedLinks: RelatedLink[];
+  /** Optional FAQ block rendered after the article body, with matching FAQPage JSON-LD. */
+  faqs?: FaqItem[];
 }
 
-export function ArticleLayout({ meta, children, relatedLinks }: ArticleLayoutProps) {
+export function ArticleLayout({ meta, children, relatedLinks, faqs }: ArticleLayoutProps) {
   const path = `/resources/${meta.slug}`;
 
   return (
@@ -35,6 +39,8 @@ export function ArticleLayout({ meta, children, relatedLinks }: ArticleLayoutPro
         </Container>
       </article>
 
+      {faqs && faqs.length > 0 && <FAQSection faqs={faqs} className="border-t border-ink-900/5" />}
+
       <RelatedLinks title="Related to this guide" links={relatedLinks} />
 
       <CTASection title="See these concepts inside Manitham HRMS" subtitle="Book a demo and we'll show you how it works in practice, not just in theory." />
@@ -45,6 +51,7 @@ export function ArticleLayout({ meta, children, relatedLinks }: ArticleLayoutPro
           description: meta.excerpt,
           path,
           datePublished: meta.publishedDate,
+          inLanguage: meta.locale,
         })}
       />
     </>
@@ -69,4 +76,13 @@ export function UL({ children }: { children: ReactNode }) {
 
 export function OL({ children }: { children: ReactNode }) {
   return <ol className="mt-4 list-decimal space-y-2 pl-6 text-slate-600">{children}</ol>;
+}
+
+/** Inline internal link styled for article body copy. */
+export function A({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <Link href={href} className="font-medium text-brand-600 hover:underline">
+      {children}
+    </Link>
+  );
 }

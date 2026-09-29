@@ -5,6 +5,8 @@ export interface ArticleMeta {
   category: string;
   publishedDate: string;
   readTime: string;
+  /** BCP 47 language tag for articles aimed at a specific market (e.g. "en-ZA"). Defaults to the site locale. */
+  locale?: string;
 }
 
 /**
@@ -165,6 +167,33 @@ export const articles: ArticleMeta[] = [
     category: "Attendance",
     publishedDate: "2026-09-07",
     readTime: "7 min read",
+  },
+  {
+    slug: "hr-software-south-africa",
+    title: "HR Software South Africa: What to Look For in 2026",
+    excerpt: "HR software South Africa: a buyer's checklist covering BCEA leave, POPIA, payslips and payroll, plus the vendor questions worth asking.",
+    category: "HR",
+    publishedDate: "2026-09-29",
+    readTime: "8 min read",
+    locale: "en-ZA",
+  },
+  {
+    slug: "payroll-software-south-africa",
+    title: "Payroll Software South Africa: PAYE, UIF, SDL and SARS Compliance",
+    excerpt: "Payroll software South Africa: PAYE, UIF, SDL, EMP201, EMP501 and IRP5 explained, with a checklist for choosing the right system.",
+    category: "Payroll",
+    publishedDate: "2026-09-29",
+    readTime: "9 min read",
+    locale: "en-ZA",
+  },
+  {
+    slug: "hr-management-software-south-africa",
+    title: "HR Management Software South Africa: Modules, Costs and Rollout",
+    excerpt: "HR management software South Africa: modules across the employee lifecycle, pricing models, POPIA and a step-by-step implementation plan.",
+    category: "HRMS",
+    publishedDate: "2026-09-29",
+    readTime: "8 min read",
+    locale: "en-ZA",
   },
 ];
 

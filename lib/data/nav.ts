@@ -35,6 +35,8 @@ export const resourceLinks: NavLink[] = [
   { label: "What is HRMS Software?", href: "/resources/what-is-hrms-software" },
   { label: "Payroll Processing Guide", href: "/resources/payroll-processing-guide-india" },
   { label: "Attendance Tracking Guide", href: "/resources/employee-attendance-tracking-guide" },
+  { label: "HR Software South Africa", href: "/resources/hr-software-south-africa" },
+  { label: "Payroll Software South Africa", href: "/resources/payroll-software-south-africa" },
   { label: "View All Resources →", href: "/resources" },
 ];
 
