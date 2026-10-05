@@ -195,6 +195,14 @@ export const articles: ArticleMeta[] = [
     readTime: "8 min read",
     locale: "en-ZA",
   },
+  {
+    slug: "employee-leave-management-software",
+    title: "How to Choose the Right Employee Leave Management Software for Your Business",
+    excerpt: "Learn how employee leave management software simplifies leave requests, approvals, leave balances, policies and HR workflows for growing businesses.",
+    category: "Leave",
+    publishedDate: "2026-10-05",
+    readTime: "7 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

@@ -14,6 +14,12 @@ import type { FaqItem } from "@/lib/seo/schema";
 
 type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance" | "whatsapp";
 
+export interface FeatureContentSection {
+  title: string;
+  paragraphs: ReactNode[];
+  bullets: ReactNode[];
+}
+
 export interface FeaturePageContent {
   path: string;
   breadcrumbLabel: string;
@@ -28,6 +34,8 @@ export interface FeaturePageContent {
   capabilitiesTitle: string;
   capabilitiesSubtitle?: string;
   capabilities: FeatureGridItem[];
+  /** Optional text + checklist sections rendered after the capabilities grid. */
+  contentSections?: FeatureContentSection[];
   benefitsTitle?: string;
   benefits?: { title: string; description: string }[];
   faqs: FaqItem[];
@@ -96,6 +104,26 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
         columns={3}
         className="glass-subtle border-x-0"
       />
+
+      {content.contentSections?.map((section, index) => (
+        <section key={section.title} className={`py-14 sm:py-16 ${index % 2 === 1 ? "glass-subtle border-x-0" : ""}`}>
+          <Container className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
+            <div>
+              <h2 className="font-display text-2xl font-bold text-ink-900 sm:text-3xl">{section.title}</h2>
+              <div className="mt-4 space-y-4">
+                {section.paragraphs.map((paragraph, paragraphIndex) => (
+                  <p key={paragraphIndex} className="text-pretty text-slate-600">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="glass rounded-2xl p-6">
+              <CheckList items={section.bullets} />
+            </div>
+          </Container>
+        </section>
+      ))}
 
       {content.benefits && content.benefits.length > 0 ? (
         <section className="py-14 sm:py-16">
