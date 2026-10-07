@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Fingerprint, MapPin, Smartphone, Clock, CalendarClock, BarChart3 } from "lucide-react";
 import { FeaturePageTemplate, type FeaturePageContent } from "@/components/templates/FeaturePageTemplate";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -12,12 +13,12 @@ const content: FeaturePageContent = {
   heroEyebrow: "Attendance Management",
   h1: keywordMap.attendanceManagement.h1,
   heroSubtitle:
-    "Office staff, field teams and factory workers don't clock in the same way. Manitham's attendance management software supports biometric devices, GPS-based mobile check-in and web punch-in — all feeding into the same attendance record.",
+    "Office staff, field teams and factory workers don't clock in the same way. Manitham's attendance management system supports biometric devices, GPS-based mobile check-in and web punch-in — all feeding into the same attendance record.",
   highlights: ["Biometric devices", "GPS check-in", "Shift management", "Overtime tracking"],
   mockupKind: "attendance",
   overviewTitle: "Attendance that matches how your teams actually show up",
   overviewParagraphs: [
-    "A single attendance method rarely works across an entire organization. Office staff might use a biometric device at the entrance, field sales or service staff need GPS-based check-in from their phone, and remote or hybrid employees need a simple web punch-in. Manitham HRMS supports all three, recording everything into one attendance system.",
+    "A single attendance method rarely works across an entire organization. Office staff might use a biometric device at the entrance, field sales or service staff need GPS-based check-in from their phone, and remote or hybrid employees need a simple web punch-in. Manitham HRMS supports all three, recording everything into one attendance management system.",
     "From there, shift schedules, late marks and overtime are calculated automatically, so HR isn't manually reviewing punch logs every day.",
   ],
   overviewBullets: [
@@ -27,7 +28,7 @@ const content: FeaturePageContent = {
     "Shift scheduling with automatic late-mark and overtime calculation",
     "Attendance regularization requests with manager approval",
   ],
-  capabilitiesTitle: "How attendance tracking works",
+  capabilitiesTitle: "How our attendance management system works",
   capabilities: [
     { icon: Fingerprint, title: "Biometric Attendance", description: "Connect biometric devices at office or factory locations for fingerprint-based check-in." },
     { icon: MapPin, title: "GPS Attendance", description: "Field and site staff check in from their phone with location captured automatically." },
@@ -35,6 +36,34 @@ const content: FeaturePageContent = {
     { icon: Clock, title: "Late Mark & Overtime", description: "Shift timings are compared against check-in/out to calculate late marks and overtime automatically." },
     { icon: CalendarClock, title: "Shift Management", description: "Assign and rotate shifts across teams, with attendance rules matched to each shift." },
     { icon: BarChart3, title: "Attendance Reports", description: "Daily, weekly and monthly attendance reports by team, location or individual." },
+  ],
+  contentSections: [
+    {
+      title: "Attendance Module in HRMS: What It Does",
+      paragraphs: [
+        "An attendance module in HRMS is the part of your HR platform that records when employees work and turns those check-ins into records HR and payroll can rely on. Because it sits inside the HRMS rather than beside it, it already knows each employee's shift, location and leave, so HR doesn't export punch data and match it up by hand.",
+        <>
+          In Manitham HRMS, the same attendance record also connects to{" "}
+          <Link href="/leave-management" className="font-medium text-brand-600 hover:underline">
+            leave management
+          </Link>{" "}
+          and{" "}
+          <Link href="/payroll-software" className="font-medium text-brand-600 hover:underline">
+            payroll
+          </Link>
+          , so an approved leave day isn&apos;t flagged as an absence and hours worked don&apos;t need to be re-entered at month end.
+        </>,
+      ],
+      bullets: [
+        "Captures check-ins from biometric devices, mobile GPS and web punch-in",
+        "Works from the employee records and shift assignments already in the HRMS",
+        "Compares check-in and check-out against shift timings to flag late marks and overtime",
+        "Reflects approved leave so leave days aren't treated as absences",
+        "Sends attendance corrections to the reporting manager for approval",
+        "Passes attendance data into payroll without re-entering hours",
+        "Gives HR daily, weekly and monthly reports by team, location or individual",
+      ],
+    },
   ],
   benefitsTitle: "Why it matters",
   benefits: [
@@ -44,6 +73,7 @@ const content: FeaturePageContent = {
     { title: "Regularization without back-and-forth email", description: "Employees raise attendance corrections in-app, and managers approve or reject them directly." },
   ],
   faqs: [
+    { question: "What is an attendance management system?", answer: "An attendance management system records when employees start and finish work, then calculates late marks, absences and overtime against their shifts. In Manitham HRMS, it supports biometric, GPS and web check-in and feeds the results into payroll." },
     { question: "Can Manitham HRMS handle biometric attendance devices?", answer: "Yes. Biometric devices at your office or factory locations can be connected so fingerprint check-ins record directly into the attendance system." },
     { question: "Does it support GPS attendance for field staff?", answer: "Yes. Field and site employees can check in from their phone, with their location captured at the time of check-in." },
     { question: "Can employees mark attendance from a browser?", answer: "Yes, employees without biometric or GPS requirements can check in through a simple web-based punch-in." },

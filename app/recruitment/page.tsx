@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Briefcase, Users2, GitBranch, CalendarClock, BarChart3, UserPlus } from "lucide-react";
 import { FeaturePageTemplate, type FeaturePageContent } from "@/components/templates/FeaturePageTemplate";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -12,7 +13,7 @@ const content: FeaturePageContent = {
   heroEyebrow: "Recruitment Software",
   h1: keywordMap.recruitment.h1,
   heroSubtitle:
-    "Manitham's recruitment software lets you post openings, track candidates through your hiring pipeline, and move new hires straight into onboarding — without re-entering their details into a separate HR system.",
+    "Manitham's recruitment management software lets you post openings, track candidates through your hiring pipeline, and move new hires straight into onboarding — without re-entering their details into a separate HR system.",
   highlights: ["Job postings", "Candidate pipeline", "Interview scheduling", "Onboarding handoff"],
   mockupKind: "recruitment",
   overviewTitle: "Recruitment that hands off cleanly into HR",
@@ -26,7 +27,7 @@ const content: FeaturePageContent = {
     "Interview scheduling and status updates",
     "Direct handoff from hired candidate to employee record",
   ],
-  capabilitiesTitle: "What recruitment includes",
+  capabilitiesTitle: "What recruitment management software includes",
   capabilities: [
     { icon: Briefcase, title: "Job Postings", description: "Create and manage open roles with role details and requirements." },
     { icon: Users2, title: "Candidate Tracking", description: "Track every applicant's status as they move through your hiring process." },
@@ -34,6 +35,30 @@ const content: FeaturePageContent = {
     { icon: CalendarClock, title: "Interview Scheduling", description: "Coordinate interview rounds and keep status visible to everyone involved in hiring." },
     { icon: UserPlus, title: "Onboarding Handoff", description: "Hired candidates convert directly into employee records, ready for onboarding." },
     { icon: BarChart3, title: "Recruitment Reports", description: "See hiring activity and pipeline health across open roles." },
+  ],
+  contentSections: [
+    {
+      title: "Hiring Management Software for Teams Hiring in India",
+      paragraphs: [
+        "Hiring management software brings the scattered parts of hiring — open roles, applications, interview rounds and offers — into one workflow. Instead of tracking candidates across inboxes and spreadsheets, recruiters and hiring managers work from the same pipeline and see the same status.",
+        <>
+          If you&apos;re comparing recruitment software in India, the useful question is what happens after the offer. A tool that stops at &lsquo;hired&rsquo; leaves HR re-typing details into another system, while Manitham HRMS carries the candidate straight into the employee record. Our guide to{" "}
+          <Link href="/resources/best-applicant-tracking-software-india" className="font-medium text-brand-600 hover:underline">
+            applicant tracking software in India
+          </Link>{" "}
+          covers what else to check before you choose.
+        </>,
+      ],
+      bullets: [
+        "Keep every open role and its applicants in one place",
+        "Move candidates through clear stages, from applied to hired",
+        "Track interview rounds with status visible to the hiring team",
+        "Let hiring managers see pipeline progress without status-update emails",
+        "Convert hired candidates into employee records with no duplicate entry",
+        "Review hiring activity and pipeline health across open roles",
+        "Stay in the same HRMS you use for attendance, leave and payroll",
+      ],
+    },
   ],
   benefitsTitle: "Why it matters",
   benefits: [
@@ -43,6 +68,7 @@ const content: FeaturePageContent = {
     { title: "One system, not two", description: "Recruitment and HR data live together instead of in a separate ATS that doesn't talk to your HRMS." },
   ],
   faqs: [
+    { question: "What is recruitment management software?", answer: "Recruitment management software helps HR teams manage the hiring process in one place: job postings, candidate tracking, interview scheduling and offers. In Manitham HRMS, hired candidates also move directly into the employee record for onboarding." },
     { question: "Can we post job openings and track applicants?", answer: "Yes. You can create job postings and track candidates through your hiring pipeline from application to offer." },
     { question: "Does it support interview scheduling?", answer: "Yes, interview rounds and their status can be tracked as part of each candidate's pipeline stage." },
     { question: "What happens when a candidate is hired?", answer: "Their details move directly into an employee record, ready for onboarding — no need to re-enter information manually." },

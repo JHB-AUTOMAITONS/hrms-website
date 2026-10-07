@@ -122,13 +122,13 @@ export const keywordMap = {
   },
   attendanceManagement: {
     path: "/attendance-management",
-    primaryKeyword: "Attendance Management Software",
-    secondaryKeywords: ["employee attendance software", "biometric attendance software", "GPS attendance software"],
+    primaryKeyword: "Attendance Management System",
+    secondaryKeywords: ["attendance module in HRMS", "attendance management software", "employee attendance software", "biometric attendance software", "GPS attendance software"],
     searchIntent: "commercial",
-    title: "Attendance Management Software | Manitham HRMS",
+    title: "Attendance Management System | Manitham HRMS",
     description:
-      "Attendance management software to track employee attendance with biometric devices, GPS check-in or web/mobile punch. Shift management, late marks, overtime and attendance reports.",
-    h1: "Attendance management software that fits how your teams actually work",
+      "Attendance management system with biometric, GPS and web punch-in. Automate shifts, late marks and overtime, and send attendance straight to payroll.",
+    h1: "Attendance management system that fits how your teams actually work",
   },
   leaveManagement: {
     path: "/leave-management",
@@ -162,13 +162,13 @@ export const keywordMap = {
   },
   recruitment: {
     path: "/recruitment",
-    primaryKeyword: "Recruitment Software",
-    secondaryKeywords: ["recruitment management software", "recruitment software India", "applicant tracking system", "ATS software"],
+    primaryKeyword: "Recruitment Management Software",
+    secondaryKeywords: ["hiring management software", "recruitment software India", "recruitment software", "applicant tracking system", "ATS software"],
     searchIntent: "commercial",
-    title: "Recruitment Software (ATS) | Manitham HRMS",
+    title: "Recruitment Management Software (ATS) | Manitham HRMS",
     description:
-      "Recruitment software for hiring teams in India: post jobs, track candidates through your pipeline, schedule interviews and move new hires straight into onboarding.",
-    h1: "Recruitment software that hands off cleanly into HR",
+      "Recruitment management software for Indian hiring teams: post jobs, track candidates, schedule interviews and move new hires straight into onboarding.",
+    h1: "Recruitment management software that hands off cleanly into HR",
   },
   employeeSelfService: {
     path: "/employee-self-service",
