@@ -4,7 +4,7 @@ import Script from "next/script";
 // public (they ship in every page's client-side source), so this is safe to
 // commit — override with NEXT_PUBLIC_GA_MEASUREMENT_ID for a different
 // environment (e.g. staging) without a code change.
-const DEFAULT_GA_MEASUREMENT_ID = "G-LZKB2JYJ4G";
+const DEFAULT_GA_MEASUREMENT_ID = "G-MW0MG5STY7";
 
 export function GoogleAnalytics() {
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || DEFAULT_GA_MEASUREMENT_ID;
