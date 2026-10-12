@@ -203,6 +203,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-10-05",
     readTime: "7 min read",
   },
+  {
+    slug: "overtime-calculation-formula",
+    title: "Overtime Calculation Formula: How to Calculate Overtime Salary in India",
+    excerpt: "The overtime calculation formula for India explained, with labour code rules, worked salary examples, common payroll mistakes and an HR checklist.",
+    category: "Payroll",
+    publishedDate: "2026-10-12",
+    readTime: "9 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
