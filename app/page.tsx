@@ -8,6 +8,7 @@ import { RelatedLinks } from "@/components/sections/RelatedLinks";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
@@ -15,6 +16,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { softwareApplicationSchema } from "@/lib/seo/schema";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { keywordMap } from "@/lib/seo/keyword-map";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata(keywordMap.home);
 
@@ -75,6 +77,11 @@ const faqs = [
     question: "What is the AI WhatsApp Assistant?",
     answer:
       "It's an AI-powered assistant employees message directly on WhatsApp — no app or login required — to ask leave balance, attendance and payslip questions and get instant answers from live HRMS data.",
+  },
+  {
+    question: "What is cloud based HR software, and how can it help businesses?",
+    answer:
+      "Cloud based HR software runs entirely online, so there's no server to maintain and no local install — you just log in from a browser or the mobile app. It brings employee records, attendance, leave and payroll into one system, so HR spends less time reconciling spreadsheets. Authorized users can check relevant HR information from anywhere, based on their access. Manitham HRMS is built this way from the ground up.",
   },
 ];
 
@@ -171,6 +178,42 @@ export default function HomePage() {
             <ButtonLink href="/pricing" variant="secondary" size="lg">
               See full pricing
             </ButtonLink>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <Container className="max-w-3xl">
+          <SectionHeading eyebrow="Why Cloud Based" title="Cloud Based HR Software for Smarter HR Management" align="center" />
+          <div className="prose-article mt-8">
+            <p className="text-pretty leading-7 text-slate-600">
+              Cloud based HR software runs over the internet instead of on a server your IT team has to maintain —
+              you log in from a browser or a mobile app, and it&apos;s ready to use. For a growing business, this
+              usually means replacing a mix of spreadsheets, paper files and standalone attendance devices with
+              one centralized system that holds every employee&apos;s records, documents and HR history in one
+              place.
+            </p>
+            <p className="mt-4 text-pretty leading-7 text-slate-600">
+              In {siteConfig.shortName}, attendance, leave and payroll all read from that same employee record, so
+              HR isn&apos;t re-entering the same details across separate tools before every pay run — an approved
+              leave request already reflects in attendance, and the same data feeds payroll at salary time. That
+              connected setup cuts down the repetitive manual work of keeping several disconnected systems in sync.
+            </p>
+            <p className="mt-4 text-pretty leading-7 text-slate-600">
+              Because everything lives in one cloud based system, authorized users can check the HR information
+              relevant to them — a leave balance, a payslip, a team&apos;s attendance — from any device, based on
+              the access their role is configured with. HR and managers also get clearer, real-time visibility
+              into attendance, leave and employee records across the organization, instead of piecing it together
+              from exported spreadsheets. See how the full platform fits together in our{" "}
+              <Link href="/hrms-software" className="font-medium text-brand-600 hover:underline">
+                HRMS software overview
+              </Link>
+              , or{" "}
+              <Link href="/book-demo" className="font-medium text-brand-600 hover:underline">
+                book a free demo
+              </Link>{" "}
+              to see it on a setup close to yours.
+            </p>
           </div>
         </Container>
       </section>
