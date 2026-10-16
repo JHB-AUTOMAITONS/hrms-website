@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What does free staff management software typically include?",
+    answer:
+      "Free tiers usually cover basic attendance tracking and sometimes simple leave requests, aimed at a single location with a handful of employees. They generally don't include statutory payroll compliance, biometric or GPS attendance, or integration between modules — those are the areas where free tools most commonly stop.",
+  },
+  {
+    question: "What are the main limitations of free HR software plans?",
+    answer:
+      "The recurring ones are employee or record caps that force an upgrade once crossed, modules that don't talk to each other (so attendance and payroll need manual reconciliation), no tracking of compliance changes like PF or ESI rule updates, limited or no support, and inconsistent data export and backup options.",
+  },
+  {
+    question: "What do you actually get by paying for staff management software?",
+    answer:
+      "Typically: modules that share one employee record instead of operating in isolation, ongoing tracking of statutory compliance changes, dedicated support when something breaks (especially around payroll runs), and clearer data portability and security practices. The value shows up most once you're running payroll or juggling more than attendance alone.",
+  },
+  {
+    question: "Do free plans usually have employee or user limits?",
+    answer:
+      "Most do. Free tiers commonly cap the number of employees or records, and crossing that cap typically moves you to a paid plan automatically, sometimes without much advance notice. Check a specific vendor's current limits directly, since these change and vary significantly between products.",
+  },
+  {
+    question: "How do free and paid tools compare on security, backups and support?",
+    answer:
+      "This varies a lot by vendor and shouldn't be assumed either way, but free tools generally offer less — often community forums instead of a support line, and less transparency around backup frequency or data export options. Paid platforms, especially those built around compliance-sensitive data like payroll, more commonly invest in these areas since customers depend on them.",
+  },
+  {
+    question: "When should a company upgrade from free to paid staff management software?",
+    answer:
+      "Watch for these signals: you're about to run payroll with statutory compliance, you're juggling more than one free tool that don't share data, you're approaching the free tier's employee cap, or HR time spent reconciling data manually is becoming a real, recurring cost even without an invoice attached to it.",
+  },
+  {
+    question: "Is free software cheaper in the long run than a paid HRMS?",
+    answer:
+      "Not necessarily. For a very small, simple team, free tools can genuinely cost less overall. Once you're running payroll, managing leave alongside attendance, or growing past a handful of employees, the hours spent manually reconciling disconnected free tools usually overtake what a paid, connected platform would have cost from the start.",
+  },
+];
+
 export default function FreeVsPaidStaffManagementSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "HRMS Software", description: "What a paid, connected HRMS covers end to end.", href: "/hrms-software" },
         { title: "Employee Management", description: "Employee records without spreadsheets.", href: "/employee-management" },

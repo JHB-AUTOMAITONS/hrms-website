@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What are the current EPF contribution rules?",
+    answer:
+      "Employees contribute 12% of PF wages (basic pay plus DA), matched by a 12% employer contribution, split between EPF and the Employees' Pension Scheme (EPS). Coverage is mandatory for eligible establishments and employees within the applicable wage ceiling rules. Confirm current eligibility specifics against the latest EPFO circular, since procedural details are updated periodically.",
+  },
+  {
+    question: "Has the EPF wage ceiling changed recently?",
+    answer:
+      "Multiple reports describe EPFO raising the PF wage ceiling from ₹15,000 to ₹25,000 a month, effective from around September 2026, bringing more employees into mandatory coverage. This is a significant change if confirmed — verify the exact effective date and notification number (reported as EPFO notification S.O. 5109(E)) directly on epfindia.gov.in before applying it to payroll.",
+  },
+  {
+    question: "Does a higher EPF wage ceiling mean 12% is deducted on an employee's full salary?",
+    answer:
+      "No. A higher wage ceiling brings more employees under mandatory coverage and raises the wage figure contributions are capped at, but it doesn't mean every employee above that figure contributes 12% of their entire salary — contributions are still calculated on PF wages as defined under the scheme, not gross pay. Check the current rules for how your employees' PF wages are specifically defined.",
+  },
+  {
+    question: "What is UAN, and why does it matter for new employees?",
+    answer:
+      "UAN (Universal Account Number) is the unique identifier linking an employee's PF account across employers. A new joiner needs to be added to PF coverage and linked to an active, KYC-verified UAN promptly — incomplete KYC or a delayed UAN link is one of the most common reasons a PF claim or transfer gets held up later.",
+  },
+  {
+    question: "What is ECR filing, and how often does it need to happen?",
+    answer:
+      "ECR (Electronic Challan cum Return) is the monthly filing employers submit to report PF contributions for every covered employee. It needs to go in on time every month — late or missed filings create compliance gaps that are harder to fix retroactively than to avoid by finalizing attendance and payroll data before the filing deadline.",
+  },
+  {
+    question: "What are HR's main EPF compliance responsibilities?",
+    answer:
+      "Beyond calculating contributions correctly, HR needs to keep UAN and KYC records current, file ECR returns on time every month, add new joiners to coverage before their first payroll run, record exit dates accurately for settlements and transfers, and get the underlying wage base right — most PF issues are process gaps like these, not calculation errors.",
+  },
+  {
+    question: "Where can I verify the latest official EPF rules?",
+    answer:
+      "Check the Employees' Provident Fund Organisation's official site (epfindia.gov.in) for current circulars and notifications, since EPFO periodically updates procedural rules and specific details can be revised through the year. Treat any third-party summary, this one included, as a starting point rather than the final word for a specific filing.",
+  },
+];
+
 export default function EpfScheme2026Article() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Payroll Software", description: "How PF and other statutory deductions are calculated automatically.", href: "/payroll-software" },
         { title: "HR Compliance", description: "How Manitham HRMS keeps compliance records audit-ready.", href: "/hr-compliance" },

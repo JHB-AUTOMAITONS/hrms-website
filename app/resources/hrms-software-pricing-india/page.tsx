@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What pricing models do HRMS vendors in India typically use?",
+    answer:
+      "Two common approaches: a flat monthly fee regardless of headcount (simpler to budget, more common for very small teams), or a per-employee-per-month rate that scales with team size (more common past 20-30 employees, since you're not paying for capacity you don't use yet). Most vendors also price in headcount bands rather than a strictly linear per-head rate.",
+  },
+  {
+    question: "Is per-employee pricing better than a fixed subscription?",
+    answer:
+      "It depends on your headcount trajectory. Per-employee pricing scales fairly as you grow or shrink, which suits growing businesses. A flat fee can work out cheaper for a very small, stable team, since the cost doesn't change whether you have 10 or 15 employees on that plan. Compare both against your actual headcount plans, not just the headline rate.",
+  },
+  {
+    question: "Are there implementation or migration costs on top of the subscription?",
+    answer:
+      "This varies by vendor and by how much historical data needs to be migrated. Some HRMS platforms are designed for self-serve setup with no separate implementation fee; others, particularly for larger or multi-location rollouts, may charge for dedicated onboarding support. Ask specifically whether setup and data migration are included before comparing quotes.",
+  },
+  {
+    question: "Do payroll, attendance, recruitment and performance modules cost extra?",
+    answer:
+      "Often, yes. Core HR, attendance and leave are commonly included in a base tier, while payroll with statutory compliance (PF, ESI, professional tax, TDS), performance management and recruitment (ATS) are frequently priced as add-ons or reserved for higher tiers. Confirm exactly which modules are in your quoted price versus billed separately.",
+  },
+  {
+    question: "What hidden costs should I watch for in an HRMS quote?",
+    answer:
+      "Ask specifically about: a minimum employee count or minimum monthly spend, whether support is included at every tier or only above a certain plan, what happens to pricing if headcount drops mid-contract, and whether biometric or GPS attendance features are gated to a higher plan than basic web punch-in.",
+  },
+  {
+    question: "Do HRMS vendors in India offer free trials or free plans?",
+    answer:
+      "Some do, for a limited time or at a limited employee count — this varies by vendor and changes over time, so check the current offer directly on a vendor's pricing page rather than assuming a specific free tier exists. Manitham HRMS does not publish a fixed public rate card; current terms and any trial availability are confirmed when you talk to sales.",
+  },
+  {
+    question: "How do I calculate the total cost of ownership for an HRMS?",
+    answer:
+      "Add up the subscription cost at your actual headcount, any implementation or migration fees, the modules you'll actually use (not just the base tier), and support costs if they're tiered separately. Then weigh that against the cost of the manual work — reconciling spreadsheets, re-entering data between disconnected tools — the software is meant to remove.",
+  },
+];
+
 export default function HrmsSoftwarePricingIndiaArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Pricing", description: "See Manitham HRMS plan tiers and what's included.", href: "/pricing" },
         { title: "Best HRMS Software in India", description: "What else to evaluate beyond price.", href: "/best-hrms-software-india" },

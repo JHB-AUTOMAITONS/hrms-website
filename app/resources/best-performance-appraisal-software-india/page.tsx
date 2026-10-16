@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What does performance appraisal software mean?",
+    answer:
+      "It's software that runs the review cycle — goal-setting, self- and manager assessments, ratings and feedback — in a structured, repeatable workflow instead of email threads and spreadsheets collated once a year. The goal is making the process something managers keep up with, not a scramble in the last two weeks of a cycle.",
+  },
+  {
+    question: "How does goal setting and KPI tracking work in appraisal software?",
+    answer:
+      "Goals are typically set at the start of a review cycle, visible to both the employee and their manager, so progress can be tracked through the period rather than reconstructed from memory at review time. How granular KPI tracking gets — simple goal completion versus detailed metrics — varies by tool.",
+  },
+  {
+    question: "What should a performance review cycle include?",
+    answer:
+      "A complete cycle usually covers goal-setting, a self-appraisal from the employee, a manager review, and a final rating or summary, ideally referencing the previous cycle's record rather than starting from a blank document. Consistent rating structures across teams matter too, since inconsistent scoring makes performance data hard to use for anything beyond the individual review.",
+  },
+  {
+    question: "Should employees complete self-assessments before manager reviews?",
+    answer:
+      "Most structured appraisal processes have employees submit a self-assessment first, which the manager then reviews alongside their own assessment — this surfaces the employee's perspective before the manager's view is finalized, rather than presenting a one-sided review. The two should ideally sit in the same workflow, not separate documents that need manual comparison.",
+  },
+  {
+    question: "Can performance appraisal software support performance improvement plans?",
+    answer:
+      "Having structured review history and ratings over time gives a manager the context to build a performance improvement plan on documented performance, rather than starting from a single bad review. Whether a specific tool has a dedicated PIP workflow, or you'd need to manage that process outside the software, varies by vendor — confirm this if it's a requirement for you.",
+  },
+  {
+    question: "Is appraisal software better than using spreadsheets for reviews?",
+    answer:
+      "Spreadsheets can work for a very small team with one simple review cycle. The limits show up with scale: no consistent rating structure across teams, no history to reference in the next cycle, and HR manually collating scores from a dozen different documents. Appraisal software removes that manual collation and keeps a record tied to each employee.",
+  },
+  {
+    question: "How should a growing business choose performance appraisal software?",
+    answer:
+      "For a single, simple annual cycle, a lightweight standalone tool can be enough. Once you want performance data to inform promotions or compensation, or want a manager to see attendance and performance side by side, appraisal software built into your core HRMS avoids another disconnected tool and another manual export-and-reconcile step for HR.",
+  },
+];
+
 export default function BestPerformanceAppraisalSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Performance Management", description: "See how goals and appraisals work in Manitham HRMS.", href: "/performance-management" },
         { title: "Employee Self Service", description: "How employees track their own goals and feedback.", href: "/employee-self-service" },

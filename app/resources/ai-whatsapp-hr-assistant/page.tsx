@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What does a WhatsApp HR assistant actually do?",
+    answer:
+      "It lets employees ask HR questions through WhatsApp, in plain language, instead of logging into a portal. Manitham HRMS's assistant answers from the same employee record used across attendance, leave and payroll, so a leave balance it reports matches what the self-service portal would show — it's an additional channel into the same data, not a separate system.",
+  },
+  {
+    question: "What HR queries can employees ask a WhatsApp assistant?",
+    answer:
+      "Common ones include checking leave balance, requesting leave, checking today's attendance status or recent history, retrieving payslips and tax documents, and general policy questions like leave policy or the holiday calendar. It's built to understand how people naturally phrase a question, not just a fixed set of exact commands.",
+  },
+  {
+    question: "How does a WhatsApp HR assistant integrate with an HRMS?",
+    answer:
+      "In Manitham HRMS, the assistant reads directly from the same employee record attendance, leave and payroll already use — it doesn't maintain a separate copy of the data. That's a specific design choice in this product; a WhatsApp bot built outside a connected HRMS may instead need its own integration work to stay in sync with HR data.",
+  },
+  {
+    question: "Can employees check leave balances and attendance through WhatsApp?",
+    answer:
+      "Yes, in Manitham HRMS — employees can ask for their current leave balance or recent attendance history, and submit a leave request that goes straight to their manager for approval, the same way it would through the web portal.",
+  },
+  {
+    question: "How does the assistant verify who is messaging?",
+    answer:
+      "The assistant verifies the sender against their registered mobile number already on file in the employee record, rather than requiring a separate login. If someone messages from a number not registered against an employee, it won't return that employee's personal HR data.",
+  },
+  {
+    question: "Is sensitive HR data safe to share over WhatsApp?",
+    answer:
+      "The assistant is designed to only answer the verified employee's own data — their leave balance, their payslip — not another employee's. As with any channel handling personal payroll and HR data, it's worth understanding a vendor's specific data handling and access-control approach rather than assuming WhatsApp messaging itself makes it secure.",
+  },
+  {
+    question: "What are the limitations of an AI WhatsApp HR assistant, and when does it escalate to a human?",
+    answer:
+      "It's built to ask a clarifying question when it isn't sure what's being asked, similar to how a person would, rather than guessing or erroring out. It doesn't replace HR for judgment calls, policy exceptions or anything requiring a human decision — it handles the routine, repetitive questions so HR's time goes to the things that actually need it.",
+  },
+];
+
 export default function AiWhatsappHrAssistantArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "AI WhatsApp Assistant", description: "See the full feature — capabilities, FAQs and how to try it.", href: "/ai-whatsapp-assistant" },
         { title: "Employee Self Service", description: "The web and mobile portal this assistant complements.", href: "/employee-self-service" },

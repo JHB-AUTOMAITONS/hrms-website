@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "Which is more accurate: biometric, GPS or manual attendance?",
+    answer:
+      "Biometric is the most verifiable for a fixed location, since a fingerprint scan is hard to fake. GPS confirms location but not necessarily who checked in. Manual or web punch-in has the least built-in verification. 'Most accurate' depends on what you're trying to confirm — presence at a location, or just that a check-in happened at all.",
+  },
+  {
+    question: "Does mobile attendance tracking work without an internet connection?",
+    answer:
+      "This varies by app. Some mobile attendance tools queue a check-in locally and sync once a connection returns; others require a live connection to record it. If field or site staff will rely on mobile check-in in areas with patchy networks, confirm this behavior with the vendor specifically rather than assuming it's handled.",
+  },
+  {
+    question: "How accurate is GPS attendance, and does it need location permissions?",
+    answer:
+      "GPS check-in typically requires the employee to grant location permission on their phone, and accuracy generally ranges from a few meters to around 20-50 meters depending on the device and signal conditions. It confirms roughly where a check-in happened, not an exact point, so most tools use a radius around a site rather than an exact match.",
+  },
+  {
+    question: "How should remote and field employees mark attendance differently from office staff?",
+    answer:
+      "Office staff at a fixed location are usually well served by biometric devices. Field or site-based employees need GPS-based mobile check-in, since their workplace changes daily. Remote employees typically use web-based punch-in, which needs no hardware or location data. Most growing companies mix all three, assigned by team rather than company-wide.",
+  },
+  {
+    question: "What is attendance regularization, and when is it needed?",
+    answer:
+      "Regularization is the process of correcting a missed or incorrect punch — for example, an employee forgot to check out, or a device failed to register a scan. A regularization workflow lets the employee raise a correction request that routes to their manager for approval, rather than emailing HR directly or leaving the record wrong.",
+  },
+  {
+    question: "Do employees need to consent to GPS or biometric attendance tracking?",
+    answer:
+      "Collecting location or biometric data generally involves personal data, so employees should be informed about what's collected, why, and how it's used, as part of your company's HR policy. Practices vary by organization and jurisdiction, so check your applicable privacy obligations and be transparent with employees rather than tracking silently.",
+  },
+  {
+    question: "How does attendance data flow into payroll?",
+    answer:
+      "Attendance needs to connect to shift schedules (to calculate late marks and overtime), to leave records (so approved leave isn't flagged as an absence), and finally to payroll, so hours and days worked map directly to what's paid. Attendance that sits in a device log without this connection usually means someone manually reconciling it before each payroll run.",
+  },
+];
+
 export default function AttendanceTrackingGuideArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Attendance Management", description: "See these methods inside Manitham HRMS.", href: "/attendance-management" },
         { title: "HRMS for Manufacturing", description: "How shift-based, biometric attendance works at scale.", href: "/industries/manufacturing" },

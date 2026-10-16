@@ -19,10 +19,49 @@ export const metadata: Metadata = buildMetadata(
   },
 );
 
+const faqs = [
+  {
+    question: "What does HRMS stand for?",
+    answer:
+      "HRMS stands for Human Resource Management System — software that manages the employee lifecycle (records, attendance, leave, payroll and often performance) in one connected system instead of across separate spreadsheets and tools.",
+  },
+  {
+    question: "What are the key features of HRMS software?",
+    answer:
+      "Most HRMS platforms cover employee records, attendance tracking, leave management and payroll, with performance management and recruitment as common additions. The feature list varies by vendor, so check which modules are included by default versus sold as add-ons before comparing products.",
+  },
+  {
+    question: "How is HRMS different from manual HR processes?",
+    answer:
+      "Manual HR relies on spreadsheets, email and separate tools that don't share data, so the same employee detail gets re-entered in several places and can drift out of sync. An HRMS keeps one employee record that every module reads from, so updating it once keeps attendance, leave and payroll consistent.",
+  },
+  {
+    question: "What's the difference between HRMS and HRIS?",
+    answer:
+      "HRIS originally meant a system of record for employee data — names, roles, compensation history — without necessarily running processes. HRMS extended that to run HR processes like attendance, leave and payroll on top of the same data. In practice, vendors use both terms loosely, so check the actual feature list rather than the label.",
+  },
+  {
+    question: "How long does HRMS implementation and employee adoption take?",
+    answer:
+      "This depends heavily on company size, data migration needs and how many modules you're rolling out at once. A small team moving from spreadsheets can often be live within days; a larger, multi-location rollout with payroll and historical data migration takes longer. Ask any vendor for a realistic timeline based on your specific setup rather than a generic estimate.",
+  },
+  {
+    question: "Does a small business need an HRMS, or is it only for larger companies?",
+    answer:
+      "There's no fixed employee count where an HRMS becomes necessary. The more useful signal is time spent reconciling data between tools or re-entering the same employee details more than once — once that becomes routine, a connected system usually saves more time than it costs to set up, whether that happens at 20 employees or 200.",
+  },
+  {
+    question: "How do I evaluate an HRMS solution before buying?",
+    answer:
+      "Start from what you actually need today — attendance, leave and eventually payroll — rather than every feature a vendor demos. Check whether modules genuinely share one employee record, how pricing scales with headcount, and what setup looks like without a lengthy implementation project.",
+  },
+];
+
 export default function WhatIsHrmsSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "HRMS Software", description: "See the platform this article describes.", href: "/hrms-software" },
         { title: "HRMS Software in India", description: "How this looks specifically for Indian businesses.", href: "/hrms-software-india" },

@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "Has the new wage code actually been implemented in India?",
+    answer:
+      "The four labour codes, including the Code on Wages, were notified as taking legal effect from 21 November 2025, consolidating around 29 earlier central labour laws. Several state governments were still notifying their own rules under the codes after that date, so confirm the current rules for your specific state and industry via the Ministry of Labour and Employment (labour.gov.in) rather than assuming full rollout is complete everywhere.",
+  },
+  {
+    question: "What does the new wage code actually change about how 'wages' is defined?",
+    answer:
+      "It sets a standardized wage definition requiring basic pay plus dearness allowance to make up at least 50% of an employee's total remuneration. If other allowances push above that 50% threshold, the excess is added back into 'wages' for statutory calculations like PF and gratuity. It isn't a new tax or deduction — it's a rule about how CTC must be structured.",
+  },
+  {
+    question: "How does the wage code affect PF and gratuity calculations?",
+    answer:
+      "Both PF and gratuity are calculated on basic pay plus DA. Because the new wage definition raises the effective basic pay for salary structures that previously kept basic low and allowances high, PF contributions (employee and employer share) and gratuity liability can increase for those employees, even though their CTC hasn't changed.",
+  },
+  {
+    question: "How should employers prepare their payroll for the new wage code?",
+    answer:
+      "Review existing salary structures for how much of CTC currently sits in basic pay plus DA, restructure components that fall below the 50% threshold in line with current guidance for your state, and recalculate PF and gratuity liability under the revised wage figures before rolling changes out — ideally before payroll reflects them, not after.",
+  },
+  {
+    question: "Will my take-home salary change because of the new wage code?",
+    answer:
+      "It can. Because a larger share of CTC may now be routed into statutory deductions rather than paid out directly, monthly take-home pay can decrease even though total CTC is unchanged. The size of the effect depends entirely on how your current salary structure is split between basic pay and other allowances — employees with already-compliant structures may see little or no change.",
+  },
+  {
+    question: "Does the new wage code apply to every employer and employee the same way?",
+    answer:
+      "Applicability, transition timelines and specific thresholds can vary by establishment type, employee category and state, since several states were still finalizing their own rules after the central notification. Treat any general summary, including this one, as a working guide and confirm the current requirements for your specific establishment before making structural payroll changes.",
+  },
+  {
+    question: "Where can employers verify the official status of the wage code?",
+    answer:
+      "The Ministry of Labour and Employment (labour.gov.in) publishes official notifications and the codes' text, and the Employees' Provident Fund Organisation (epfindia.gov.in) covers PF-specific implications. Check these directly, or your state labour department's notifications, rather than relying only on secondary summaries for compliance decisions.",
+  },
+];
+
 export default function NewWageCode2026Article() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "HR Compliance", description: "How Manitham HRMS tracks statutory compliance day to day.", href: "/hr-compliance" },
         { title: "Payroll Software", description: "How salary structures and statutory deductions are calculated.", href: "/payroll-software" },

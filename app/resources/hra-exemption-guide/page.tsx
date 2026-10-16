@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "Who is eligible to claim the HRA exemption?",
+    answer:
+      "You need to be a salaried employee receiving HRA as part of your salary, actually paying rent for accommodation you live in, and have opted for the old tax regime — HRA exemption under Section 10(13A) isn't available under the new (default) tax regime at all, regardless of rent paid.",
+  },
+  {
+    question: "How is the HRA exemption amount calculated?",
+    answer:
+      "The exempt amount is the least of three figures: actual HRA received, rent paid minus 10% of salary (basic pay plus DA), or 50% of salary for a metro city (Delhi, Mumbai, Kolkata, Chennai) or 40% for a non-metro city. Whichever of the three is smallest is the amount that's tax-exempt; the rest of the HRA received is taxable.",
+  },
+  {
+    question: "Does the city I live in affect my HRA exemption?",
+    answer:
+      "Yes. Only Delhi, Mumbai, Kolkata and Chennai count as metro cities for this calculation, using the 50%-of-salary figure. Every other city, including other major cities like Bengaluru, Hyderabad and Pune, uses the 40% figure instead. This directly changes which of the three comparison figures ends up being the smallest.",
+  },
+  {
+    question: "What documents does HR need to process an HRA claim?",
+    answer:
+      "Typically: a declaration of rent paid and the landlord's details at the start of the year, rent receipts or a rent agreement as proof (usually collected at year-end for verification), the landlord's PAN where annual rent exceeds the threshold that requires it, and the employee's city of residence, since that determines the 50%/40% figure used.",
+  },
+  {
+    question: "When is a landlord's PAN required for an HRA claim?",
+    answer:
+      "A landlord's PAN is generally required when the employee's total annual rent paid crosses the threshold set under income tax rules. Below that threshold it typically isn't required, though a declaration may still be requested. Confirm the current threshold against Income Tax Department guidance, since specific limits can be revised.",
+  },
+  {
+    question: "Can I claim HRA exemption under the new tax regime?",
+    answer:
+      "No. The new tax regime, which is the default regime, does not allow the HRA exemption under Section 10(13A) — HRA received is fully taxable under it. Employees paying significant rent should factor this into whichever regime comparison they run, since it can materially change which regime results in higher take-home pay.",
+  },
+  {
+    question: "What are common mistakes when calculating HRA exemption?",
+    answer:
+      "The most frequent ones: assuming the exemption applies regardless of tax regime (it doesn't, under the new regime), using the wrong metro/non-metro percentage for the employee's city, forgetting that the calculation uses basic pay plus DA rather than gross salary, and not comparing all three figures in the formula before picking the exempt amount.",
+  },
+];
+
 export default function HraExemptionGuideArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Payroll Software", description: "How HRA and other salary components are handled in payroll.", href: "/payroll-software" },
         { title: "Employee Self Service", description: "Where employees submit rent receipts and view their payslips.", href: "/employee-self-service" },

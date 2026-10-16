@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What are the main steps in payroll processing in India?",
+    answer:
+      "The typical cycle is: lock attendance and leave data for the period, apply the salary structure and any changes (increments, new joiners, exits), calculate PF, ESI, professional tax and TDS, review and approve the run, generate payslips and disburse salaries, then retain records for compliance. Each step depends on the previous one being accurate.",
+  },
+  {
+    question: "What's the difference between gross salary and net salary?",
+    answer:
+      "Gross salary is total pay before deductions — basic pay, DA, HRA and other allowances combined. Net salary (take-home pay) is gross salary minus statutory deductions like PF, ESI, professional tax and TDS, plus any other deductions. The gap between the two depends on an employee's salary structure and which deductions apply to them.",
+  },
+  {
+    question: "How do attendance and leave affect payroll calculations?",
+    answer:
+      "Payroll is calculated against what was actually worked — confirmed attendance plus approved leave for the period. Unpaid leave or unresolved missed punches directly reduce payable days, so if attendance data isn't finalized before payroll runs, the salary calculated from it will be wrong, regardless of how accurate the rest of the calculation is.",
+  },
+  {
+    question: "Which statutory deductions typically apply to Indian payroll?",
+    answer:
+      "The most common are Provident Fund (PF), Employee State Insurance (ESI) for employees below a defined wage threshold, state-level professional tax, and TDS on salary. Exact applicability depends on current law, your establishment's coverage, each employee's wage level, and their declared tax regime — it isn't the same for every employee or every employer.",
+  },
+  {
+    question: "How long does a typical payroll processing cycle take?",
+    answer:
+      "Most Indian companies run payroll monthly, with attendance and leave data typically locked a few days before disbursal to leave time for calculation, review and approval. The exact timeline depends on company size, how many exceptions (new joiners, exits, corrections) need manual review, and whether payroll is automated or calculated manually each cycle.",
+  },
+  {
+    question: "What are common payroll processing errors to watch for?",
+    answer:
+      "The recurring ones are: running payroll before attendance or leave data is finalized, manually recalculating PF/ESI each cycle (which compounds small errors over time), applying the wrong professional tax slab for an employee who's changed work location, and losing track of past records needed for an audit.",
+  },
+  {
+    question: "Do payroll rules apply the same way to every employee and employer in India?",
+    answer:
+      "No. PF, ESI and professional tax applicability depend on factors like employee wage level, establishment size and state, and TDS depends on an employee's declared tax regime and projected annual income. Confirm which rules apply to your specific establishment and employees rather than assuming one set of rules covers everyone.",
+  },
+];
+
 export default function PayrollProcessingGuideArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Payroll Software", description: "See how this process is automated in Manitham HRMS.", href: "/payroll-software" },
         { title: "HR Compliance", description: "How statutory compliance tracking works alongside payroll.", href: "/hr-compliance" },

@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What is HRIS?",
+    answer:
+      "HRIS (HR Information System) is the oldest of the three terms. It originally described a system of record for employee data — names, roles, departments, compensation history — the digital replacement for a personnel filing cabinet, focused on storing information rather than running processes like payroll.",
+  },
+  {
+    question: "What is HRMS?",
+    answer:
+      "HRMS (Human Resource Management System) extended the HRIS idea to cover HR processes, not just records — attendance, leave, payroll and performance management built on top of the same employee data. Most products marketed as HRMS today cover this broader, process-driven scope rather than just data storage.",
+  },
+  {
+    question: "What is HCM?",
+    answer:
+      "HCM (Human Capital Management) is the broadest and most recent term, generally used by larger enterprise vendors. It layers strategic workforce planning — succession planning, workforce analytics, compensation benchmarking — on top of the operational processes an HRMS already handles.",
+  },
+  {
+    question: "What's the real functional difference between HRIS, HRMS and HCM?",
+    answer:
+      "In theory: HRIS stores data, HRMS runs HR processes on that data, and HCM adds strategic workforce planning on top. In practice, the terms overlap enough that a product's label tells you little — the more useful question is what it actually does, not which category it claims.",
+  },
+  {
+    question: "Do HRIS, HRMS and HCM products all handle payroll and attendance?",
+    answer:
+      "Not necessarily, and not consistently. A vendor calling itself HRIS might still run full payroll; one calling itself HCM might not include something as basic as leave approvals. Check a specific product's actual feature list for payroll and attendance capabilities rather than assuming based on which term it uses.",
+  },
+  {
+    question: "Does HRMS or HCM include talent management and workforce planning?",
+    answer:
+      "Talent management and broader workforce planning are typically associated more with HCM, aimed at larger organizations with dedicated workforce strategy needs. Many HRMS platforms cover performance management, which overlaps with talent management, but deeper workforce analytics and planning tools are less commonly a core HRMS feature.",
+  },
+  {
+    question: "How do I choose between a system marketed as HRIS, HRMS or HCM?",
+    answer:
+      "Ignore the label and check whether the product actually covers employee records, attendance, leave, payroll and performance in one connected system — or whether you'll be stitching several tools together regardless of what any of them call themselves. Vendors use these terms differently, so verify functionality against your specific needs rather than the category name.",
+  },
+];
+
 export default function HrisVsHrmsVsHcmArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "HRMS Software", description: "What a complete HRMS covers, module by module.", href: "/hrms-software" },
         { title: "HRMS Software in India", description: "HRMS positioning for Indian compliance and payroll requirements.", href: "/hrms-software-india" },

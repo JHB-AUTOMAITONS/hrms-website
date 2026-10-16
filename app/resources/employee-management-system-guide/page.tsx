@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What does an employee management system actually mean?",
+    answer:
+      "It's a connected record of every employee — name, contact details, department, role, documents, reporting line — that other HR processes like attendance, leave and payroll read from, rather than a standalone list. The term overlaps heavily with \"employee management software\" in practice; the label matters less than whether the data is actually connected.",
+  },
+  {
+    question: "What features does a proper employee database need?",
+    answer:
+      "Beyond basic fields, look for fast search across hundreds of records, access control (not everyone should see salary or personal documents), and consistency — the same employee's department shouldn't say one thing in one system and another in a different one. A spreadsheet handles storage but typically falls short on all three as a team grows.",
+  },
+  {
+    question: "How should employee records and documents be managed?",
+    answer:
+      "Documents — offer letters, ID proofs, certifications — should attach directly to each employee's record rather than living in a separate shared drive folder disconnected from who they belong to. This matters most when you need to quickly pull a specific employee's full file, for onboarding, an audit, or an exit.",
+  },
+  {
+    question: "How does an employee management system connect to attendance, leave and payroll?",
+    answer:
+      "In a well-built system, attendance, leave and payroll all read from the same employee record rather than maintaining separate copies — update a department or reporting line once, and it's correct everywhere, including leave approval routing and payroll cost allocation. Without that connection, the same detail has to be updated manually in each separate tool.",
+  },
+  {
+    question: "What is employee self-service, and why does it matter?",
+    answer:
+      "Self-service lets employees view and update parts of their own record — contact details, leave balance, payslips — without emailing HR. It reduces routine requests landing in HR's inbox and gives employees faster access to their own information, which matters at any company size, not just larger ones.",
+  },
+  {
+    question: "How is employee data kept secure with role-based access?",
+    answer:
+      "Role-based access controls who can see what — a manager typically sees their own team's records, HR sees what HR needs across the company, and sensitive fields like salary or personal documents are restricted beyond general visibility. An audit trail of changes is also useful, since it answers compliance questions about who changed what, and when.",
+  },
+  {
+    question: "How should a growing company choose an employee management solution?",
+    answer:
+      "The signal worth watching isn't headcount — it's whether employee data is already being maintained in more than one place, like a spreadsheet alongside a separate payroll tool. Once that reconciliation becomes routine, a connected system that other modules (attendance, leave, payroll) can build on usually saves more time than it costs to adopt.",
+  },
+];
+
 export default function EmployeeManagementSystemGuideArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Employee Management", description: "See the employee management module in Manitham HRMS.", href: "/employee-management" },
         { title: "What Is HRMS Software?", description: "How employee management fits into a full HRMS.", href: "/resources/what-is-hrms-software" },

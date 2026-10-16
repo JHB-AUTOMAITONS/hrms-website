@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What features should leave management software have?",
+    answer:
+      "Look for support for multiple leave types with different accrual and carry-forward rules (not one generic bucket), approval routing that goes to the right manager automatically, real-time balance visibility for employees, and awareness of holiday calendars and weekly offs when calculating leave days.",
+  },
+  {
+    question: "How do leave balances and accrual rules work in software, compared to a spreadsheet?",
+    answer:
+      "Good leave software calculates balances automatically from configured accrual rules — fixed grants, monthly accrual, carry-forward caps — and updates them the moment a request is approved. A spreadsheet requires someone to manually update balances after every request, which is where errors and outdated numbers creep in, especially across multiple leave types.",
+  },
+  {
+    question: "What should a leave approval workflow look like in software?",
+    answer:
+      "Requests should route automatically to an employee's manager, with visibility into what's pending so nothing sits unanswered. It's worth checking whether the approval flow works on mobile (not just desktop) and how the system handles exceptions, like leave requiring additional HR sign-off beyond the manager's approval.",
+  },
+  {
+    question: "Does leave software show team calendars and leave visibility?",
+    answer:
+      "Many leave management tools include a team or company-wide calendar view showing who's on leave and when, which helps managers plan coverage and avoid approving conflicting time off across a team. Whether this is included, and how detailed it is, varies by vendor — check it specifically if team visibility matters to you.",
+  },
+  {
+    question: "Why does leave management need to integrate with attendance and payroll?",
+    answer:
+      "Without integration, someone has to manually check who was on unpaid leave, cross-reference it against attendance, and adjust payroll accordingly — every single cycle. When leave, attendance and payroll share the same employee record, approved leave reflects in payroll automatically, removing that manual reconciliation step.",
+  },
+  {
+    question: "Is mobile access important for leave management software?",
+    answer:
+      "Yes, for two groups specifically: employees who want to check balances or apply for leave without a desktop, and managers who need to approve requests promptly rather than letting them sit until they're back at a computer. If managers or employees are often away from a desk, mobile access directly affects how fast approvals actually happen.",
+  },
+  {
+    question: "How do I evaluate leave management software before choosing one?",
+    answer:
+      "Ask a vendor directly: can we configure our own leave types rather than only picking from presets, does the approval flow work on mobile, what happens to balances when an employee changes department or manager, and is leave data visible to payroll automatically or does it need exporting and re-entering?",
+  },
+];
+
 export default function BestLeaveManagementSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Leave Management", description: "See leave policies, approvals and balances in Manitham HRMS.", href: "/leave-management" },
         { title: "How to Set Up an Employee Leave Policy in India", description: "The building blocks of a clear leave policy.", href: "/resources/leave-policy-guide-india" },

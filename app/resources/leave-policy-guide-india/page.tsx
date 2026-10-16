@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What should an employee leave policy in India include?",
+    answer:
+      "At minimum: which leave types you offer (casual, sick, earned/privilege, maternity/paternity), how each accrues, carry-forward and encashment rules, the approval workflow, and the holiday calendar. The policy should be written down and applied consistently — a policy that only exists as a paragraph in a handbook doesn't help once requests start coming in.",
+  },
+  {
+    question: "What are the common leave categories used by Indian companies?",
+    answer:
+      "Most companies use some combination of casual leave (short, often unplanned), sick leave (sometimes requiring documentation past a certain number of days), earned or privilege leave (accrued over time, often carried forward or encashed), and maternity or paternity leave, which is governed by statutory requirements that vary by employer size and state.",
+  },
+  {
+    question: "How does leave accrual and carry-forward typically work?",
+    answer:
+      "Leave can be granted as a fixed number at the start of the year or accrued monthly as the employee works — monthly accrual is common for earned leave, since it ties availability to actual tenure. Carry-forward rules vary: some companies cap how much unused leave rolls into the next year, some don't allow carry-forward at all, and this should be explicit in the policy rather than decided case by case.",
+  },
+  {
+    question: "What is leave encashment, and is it mandatory?",
+    answer:
+      "Leave encashment means an employee is paid for unused leave instead of (or in addition to) carrying it forward. Whether it's offered, and under what conditions, is a company policy decision for most leave types, though some statutory entitlements have specific encashment rules on exit. Confirm your obligations against the applicable state and establishment rules rather than assuming a standard practice.",
+  },
+  {
+    question: "What's the leave approval process, and who should approve requests?",
+    answer:
+      "Most leave requests should route to the employee's direct manager by default. It's worth deciding upfront how exceptions are handled — extended leave, leave during a notice period, or leave that also needs HR sign-off — so managers aren't making inconsistent calls on cases the policy doesn't clearly cover.",
+  },
+  {
+    question: "Does the same leave entitlement apply across all Indian states?",
+    answer:
+      "No. Statutory minimum leave entitlements are set at the state level under each state's Shops and Establishments Act, so requirements can differ by state, and some rules also vary by industry or establishment type. A company operating in multiple states should confirm the specific minimums that apply in each location rather than applying one national standard.",
+  },
+  {
+    question: "What does digital leave management actually solve?",
+    answer:
+      "It replaces a policy that exists on paper but is tracked in a rarely-updated spreadsheet, or approvals granted informally over chat with no record. Digital leave management keeps real-time balances, a documented approval trail, and connects approved leave directly to attendance and payroll, so the policy is enforced the same way every time rather than interpreted differently by each manager.",
+  },
+];
+
 export default function LeavePolicyGuideArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Leave Management", description: "See policy configuration inside Manitham HRMS.", href: "/leave-management" },
         { title: "Employee Self Service", description: "Where employees apply for leave and check balances.", href: "/employee-self-service" },

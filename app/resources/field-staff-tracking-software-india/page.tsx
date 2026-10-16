@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What should field staff tracking software actually include?",
+    answer:
+      "Core features are location-tagged check-in/check-out from the employee's own phone, a record of site or client visits through the day (not just one punch), manager visibility into where field teams are without manual check-in calls, and attendance data that feeds directly into leave and payroll, same as office staff.",
+  },
+  {
+    question: "How does GPS-based check-in work for field staff?",
+    answer:
+      "Employees check in from a mobile app, with their location captured at that moment. This confirms roughly where someone was when they checked in, not an exact point — most tools use a radius around a site or client location. It needs the employee's phone to have location services enabled and granted permission.",
+  },
+  {
+    question: "Can field staff tracking software manage routes and client visits, not just attendance?",
+    answer:
+      "Many field tracking tools go beyond a single daily check-in to record a sequence of site or client visits through the day, which is useful for sales and service teams visiting multiple locations. Whether a specific tool supports route or visit management, and how detailed that tracking is, varies by vendor — check this against your actual workflow.",
+  },
+  {
+    question: "How reliable is GPS attendance and productivity reporting for field teams?",
+    answer:
+      "GPS confirms location at check-in, but location alone doesn't prevent someone checking in on another employee's behalf or leaving right after. Productivity reporting built on top of raw check-ins (visit counts, time on site) is a reasonable proxy but works best combined with manager spot-checks rather than as the only signal.",
+  },
+  {
+    question: "What should I check in a mobile app for field staff before choosing one?",
+    answer:
+      "Confirm it works reliably on patchy mobile networks common in smaller towns and industrial areas — ideally queuing a check-in locally and syncing later rather than requiring a constant connection. Also check whether it distinguishes a genuine site visit from a single check-in followed by leaving, since that's a common gap in basic tools.",
+  },
+  {
+    question: "Does GPS tracking for field employees raise privacy concerns?",
+    answer:
+      "Yes — location data is personal data, so employees should be informed about what's tracked, when (e.g. only during work hours or check-in moments, not continuously), and why. Practices and legal obligations vary by company and jurisdiction, so set this out clearly in your HR policy rather than tracking without disclosure.",
+  },
+  {
+    question: "How do I choose field staff tracking software over a separate office attendance tool?",
+    answer:
+      "Running separate tools for office and field attendance usually means someone manually reconciling two records before payroll — a step where errors creep in. Look for one attendance system that supports both biometric or manual punch for fixed locations and GPS check-in for field staff, feeding into the same employee record and the same payroll run.",
+  },
+];
+
 export default function FieldStaffTrackingSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Attendance Management", description: "See how GPS and biometric attendance work together.", href: "/attendance-management" },
         { title: "HRMS for Manufacturing", description: "How multi-site, field-heavy teams use Manitham HRMS.", href: "/industries/manufacturing" },

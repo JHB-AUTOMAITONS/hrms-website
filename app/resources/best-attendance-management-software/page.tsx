@@ -22,10 +22,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What features should I look for in attendance management software?",
+    answer:
+      "Support for more than one check-in method (biometric, GPS, web) feeding into one employee record, automatic shift and overtime calculation, leave integration so approved leave doesn't flag as absence, a regularization workflow for missed punches, direct payroll integration, and reporting broken down by team, location or individual.",
+  },
+  {
+    question: "How does shift scheduling and overtime work in attendance software?",
+    answer:
+      "Good attendance software calculates late marks and overtime automatically against configured shift schedules, rather than someone tallying it from raw punch logs every cycle. Confirm specifically how a vendor's system handles shift changes, multiple shift patterns, and overtime thresholds, since \"automatic\" calculation can mean very different things between products.",
+  },
+  {
+    question: "How does attendance software connect to payroll reporting?",
+    answer:
+      "In a connected system, confirmed attendance and approved leave flow directly into payroll calculations without being exported and re-entered. Attendance software that doesn't integrate with payroll becomes another data source someone has to manually reconcile before salaries run — which is one of the most common gaps to check for before choosing a tool.",
+  },
+  {
+    question: "Can attendance management software handle multiple office locations?",
+    answer:
+      "It should, if you operate across more than one site — look for attendance that scales across locations and shifts without needing separate systems per office, with reporting that can be broken down by location as well as company-wide. This matters especially for shift-based, multi-plant or multi-branch businesses.",
+  },
+  {
+    question: "What is an attendance regularization workflow, and why does it matter for software evaluation?",
+    answer:
+      "It's the process for correcting a missed or incorrect punch — a device failure, a forgotten check-out. When evaluating software, check that employees can raise a correction request that routes to their manager for approval, rather than requiring an email to HR for every exception, which doesn't scale past a small team.",
+  },
+  {
+    question: "How do I compare attendance software for office, field and remote teams in one system?",
+    answer:
+      "Confirm the same system supports biometric for fixed locations, GPS-based check-in for field staff, and web punch-in for remote or hybrid employees — all recording into one employee record. Running separate tools per team type usually means manually reconciling multiple attendance records before payroll, which defeats the purpose of automating attendance in the first place.",
+  },
+  {
+    question: "What questions should I ask a vendor before choosing attendance management software?",
+    answer:
+      "Does the same system support biometric, GPS and web check-in, or only one? Are overtime and late marks calculated automatically, specifically how? Does approved leave update attendance automatically? Does attendance data flow directly into payroll? Can employees self-serve their own attendance and corrections? A vendor answering these with specifics, not just \"yes, automatic,\" is a good sign.",
+  },
+];
+
 export default function BestAttendanceManagementSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Attendance Management", description: "See these methods inside Manitham HRMS.", href: "/attendance-management" },
         { title: "Employee Attendance Tracking: Biometric vs GPS vs Manual", description: "A closer look at how the three check-in methods compare.", href: "/resources/employee-attendance-tracking-guide" },

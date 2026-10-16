@@ -22,10 +22,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What HRMS features actually matter for a small business?",
+    answer:
+      "Usually just attendance, leave and eventually payroll working reliably without weeks of setup — not multi-level approval chains or cross-entity reporting built for larger organizations. Paying for enterprise depth you won't use for another few years is one of the most common ways small teams overspend on HR software.",
+  },
+  {
+    question: "At what employee count does a small business need an HRMS?",
+    answer:
+      "There's no fixed number. The better signal is whether attendance, leave or payroll still live in spreadsheets and WhatsApp messages and are starting to cause real friction — that can happen anywhere from 10 to 100 employees depending on how complex your HR processes already are.",
+  },
+  {
+    question: "Does a small business need biometric hardware for attendance?",
+    answer:
+      "No — web or mobile check-in should work from day one without any hardware. Biometric devices are useful once you have a fixed office or factory location and want hardware-level verification, but requiring them to even start using attendance software is usually a sign the product is built for a bigger company.",
+  },
+  {
+    question: "What payroll requirements should small businesses look for in HRMS software?",
+    answer:
+      "If you'll run payroll through the system, PF, ESI, professional tax and TDS calculations need to be handled by the software itself, not a separate spreadsheet someone checks by hand. Confirm specifically which statutory calculations are automated — \"automatic\" claims vary a lot between vendors in what they actually cover.",
+  },
+  {
+    question: "How should pricing work for a small business choosing HRMS software?",
+    answer:
+      "Look for a quote based on your actual headcount and the modules you use, rather than an enterprise price list with a \"contact sales\" wall for basic features. Ask what's included at your size, what becomes a paid add-on later, and what it costs to add payroll or another module once you're ready — not before.",
+  },
+  {
+    question: "How important is data security for a small business HRMS?",
+    answer:
+      "Just as important as at any company size, since employee records include personal and payroll data. Check how access is controlled by role, what happens to your data if you switch systems later, and whether the vendor has clear practices around backups and data portability rather than assuming a smaller vendor means less rigor.",
+  },
+  {
+    question: "How do I compare HRMS software options as a small business, instead of just picking a 'best' one?",
+    answer:
+      "Go through a checklist instead of a ranked list: setup you can finish yourself quickly, attendance that works without hardware, payroll compliance genuinely built in, pricing that scales with your size, self-service from day one, and room to add modules later without migrating to a new platform.",
+  },
+];
+
 export default function BestHrmsSoftwareForSmallBusinessArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "HRMS Software for Small Business", description: "See the platform sized for small-team HR, not enterprise overhead.", href: "/industries/small-business" },
         { title: "HRMS Software Pricing", description: "What actually drives the price of an HRMS quote.", href: "/resources/hrms-software-pricing-india" },

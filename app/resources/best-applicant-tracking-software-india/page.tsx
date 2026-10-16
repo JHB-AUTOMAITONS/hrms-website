@@ -17,10 +17,49 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What does an applicant tracking system (ATS) actually do?",
+    answer:
+      "An ATS collects job applications from job boards or a careers page, organizes candidates into pipeline stages (applied, screened, interviewed, offered), lets interviewers leave feedback in one place, and gives recruiters a view of every open role at once instead of a separate inbox per posting.",
+  },
+  {
+    question: "What features should I look for in ATS software?",
+    answer:
+      "Check whether it supports a custom pipeline per role rather than one fixed flow, lets hiring managers review candidates without a full license, hands a hired candidate's details into onboarding automatically, includes a careers page or job-posting flow, and reports on time-to-hire and source of hire rather than just listing candidates.",
+  },
+  {
+    question: "How does resume screening and candidate tracking work in an ATS?",
+    answer:
+      "Candidates who apply get added to a pipeline against a specific role, where recruiters and hiring managers can review their application, move them between stages (screened, interviewed, offered), and leave feedback visible to everyone involved in that hiring decision, instead of tracking status over email threads.",
+  },
+  {
+    question: "What recruitment tasks can an ATS automate?",
+    answer:
+      "Typically: collecting applications into one pipeline instead of a separate inbox per job board, routing candidates through defined stages, and consolidating interviewer feedback. The specific automation capabilities vary significantly between vendors, so confirm exactly what a given product automates rather than assuming every ATS works the same way.",
+  },
+  {
+    question: "What's the difference between an ATS and a recruitment CRM?",
+    answer:
+      "An ATS tracks candidates who've applied to a specific open role, through a defined pipeline. A recruitment CRM is built around nurturing relationships with candidates before any specific role is open — passive candidates, past applicants, referrals. Most companies need an ATS first; a CRM becomes useful once hiring volume or role specialization justifies proactive sourcing.",
+  },
+  {
+    question: "How does an ATS integrate with the rest of an HRMS?",
+    answer:
+      "In a standalone ATS, a hired candidate's details usually need to be re-entered into a separate HR system for onboarding, attendance and payroll. An ATS built into a full HRMS can carry a hired candidate's details, documents and salary structure directly into their employee record, so HR isn't starting from zero in a different tool after an offer is accepted.",
+  },
+  {
+    question: "How should I compare ATS pricing and suitability for my company?",
+    answer:
+      "Compare what's actually included at your hiring volume — some vendors price ATS as a standalone product, others bundle it into a broader HRMS plan. For steady, low-volume hiring, a lightweight standalone tool is often enough; for continuous hiring across multiple roles and interviewers, weigh the cost of a separate ATS against one already connected to your employee records.",
+  },
+];
+
 export default function BestApplicantTrackingSoftwareArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Recruitment", description: "See how applicant tracking works inside Manitham HRMS.", href: "/recruitment" },
         { title: "Employee Management", description: "What happens to a candidate's record after they're hired.", href: "/employee-management" },
