@@ -211,6 +211,15 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-10-12",
     readTime: "9 min read",
   },
+  {
+    slug: "payroll-system-sri-lanka",
+    title: "How to Choose a Payroll System in Sri Lanka: Features & Costs",
+    excerpt: "A practical guide to choosing a payroll system in Sri Lanka — EPF, ETF and APIT compliance, pricing models and the features that matter before you buy.",
+    category: "Payroll",
+    publishedDate: "2026-10-21",
+    readTime: "9 min read",
+    locale: "en-LK",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
