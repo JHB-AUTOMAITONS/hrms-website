@@ -93,7 +93,7 @@ export const keywordMap = {
   hrmsSoftwareMalaysia: {
     path: "/hrms-software-malaysia",
     primaryKeyword: "HRMS software in Malaysia",
-    secondaryKeywords: ["HR software Malaysia", "payroll software Malaysia", "EPF SOCSO payroll software"],
+    secondaryKeywords: ["payroll software Malaysia", "EPF SOCSO payroll software", "HR compliance software Malaysia"],
     searchIntent: "commercial",
     title: "HRMS Software in Malaysia — EPF, SOCSO & EIS | Manitham HRMS",
     description:

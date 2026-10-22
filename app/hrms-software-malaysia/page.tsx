@@ -50,6 +50,7 @@ const content: FeaturePageContent = {
     { question: "Does attendance affect payroll automatically?", answer: "Yes. Approved leave and recorded attendance for the pay period are reflected in payroll without manual data entry." },
   ],
   relatedLinks: [
+    { title: "HR Software Malaysia: Buyer's Guide", description: "How to compare HR software and choose the right one, before you talk to us.", href: "/resources/hr-software-malaysia" },
     { title: "HRMS Software in Australia", description: "How the platform handles STP and superannuation compliance.", href: "/hrms-software-australia" },
     { title: "Payroll Software", description: "A closer look at how salary processing and payslips work.", href: "/payroll-software" },
     { title: "HR Compliance", description: "How statutory compliance tracking works across payroll.", href: "/hr-compliance" },

@@ -220,6 +220,15 @@ export const articles: ArticleMeta[] = [
     readTime: "9 min read",
     locale: "en-LK",
   },
+  {
+    slug: "hr-software-malaysia",
+    title: "HR Software Malaysia: How to Compare Solutions and Choose the Right One",
+    excerpt: "HR software Malaysia: how to compare providers on EPF/SOCSO/EIS payroll, PDPA data protection and pricing — a buyer's checklist, not a feature pitch.",
+    category: "HR",
+    publishedDate: "2026-10-22",
+    readTime: "9 min read",
+    locale: "en-MY",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
