@@ -259,7 +259,9 @@ export default function HrManagementSoftwareSouthAfricaArticle() {
         Manitham HRMS is built as one connected platform: employee records, attendance, leave, payroll,
         performance, recruitment and self-service on a single record, so a change in one place flows to the
         others. The{" "}
-        <A href="/hrms-software">HRMS software overview</A> walks through every module.
+        <A href="/hrms-software">HRMS software overview</A> walks through every module, or see the{" "}
+        <A href="/hrms-software-south-africa">HRMS software South Africa</A> page for how it applies specifically
+        to a South African rollout.
       </P>
       <P>
         If South African payroll and labour-law rules are central to your decision, and they should be, use the
