@@ -229,6 +229,15 @@ export const articles: ArticleMeta[] = [
     readTime: "9 min read",
     locale: "en-MY",
   },
+  {
+    slug: "timesheet-software-singapore",
+    title: "Timesheet Software Singapore: How to Choose the Right One",
+    excerpt: "A selection guide to timesheet software Singapore businesses can evaluate against — essential features, manual vs digital tracking, and vendor questions.",
+    category: "Attendance",
+    publishedDate: "2026-10-23",
+    readTime: "8 min read",
+    locale: "en-SG",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
