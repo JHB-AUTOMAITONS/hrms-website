@@ -257,7 +257,9 @@ export default function HrSoftwareSouthAfricaArticle() {
         Manitham HRMS is a cloud HR platform that connects employee records, attendance, leave, payroll,
         performance, recruitment and self-service on one employee record, with an AI assistant on WhatsApp for
         employee questions. The{" "}
-        <A href="/hrms-software">platform overview</A> shows how the modules fit together.
+        <A href="/hrms-software">platform overview</A> shows how the modules fit together, or see the{" "}
+        <A href="/hrms-software-south-africa">HRMS software South Africa overview</A> for how it applies to a
+        South African business specifically.
       </P>
       <P>
         South African statutory payroll has specific requirements, so we&apos;d rather you check them against your

@@ -232,8 +232,10 @@ export default function PayrollSoftwareSouthAfricaArticle() {
       <P>
         Manitham HRMS builds payroll on the same employee record as attendance and leave, so approved leave,
         overtime and late marks are in the run automatically. Read more on the{" "}
-        <A href="/payroll-software">payroll software page</A>, or see the wider{" "}
-        <A href="/hrms-software">HRMS platform</A>.
+        <A href="/payroll-software">payroll software page</A>, see the wider{" "}
+        <A href="/hrms-software">HRMS platform</A>, or the{" "}
+        <A href="/hrms-software-south-africa">HRMS software South Africa</A> overview for how it all fits
+        together for a South African business.
       </P>
       <P>
         South African statutory outputs, meaning PAYE, UIF, SDL, EMP201 and IRP5 data, are specific and

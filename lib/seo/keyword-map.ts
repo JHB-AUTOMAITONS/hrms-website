@@ -110,6 +110,22 @@ export const keywordMap = {
       "HRMS software for Australian businesses — Single Touch Payroll (STP) reporting to the ATO, Superannuation Guarantee and PAYG withholding.",
     h1: "HRMS software built for Australia payroll and STP compliance",
   },
+  hrmsSoftwareSouthAfrica: {
+    path: "/hrms-software-south-africa",
+    primaryKeyword: "HRMS Software South Africa",
+    secondaryKeywords: [
+      "HR software South Africa",
+      "HR management system South Africa",
+      "employee management software South Africa",
+      "attendance management software South Africa",
+      "payroll management software South Africa",
+    ],
+    searchIntent: "commercial",
+    title: "HRMS Software South Africa | Manitham HRMS",
+    description:
+      "Manitham HRMS is HRMS software for South African businesses — employee management, attendance, leave and payroll workflows in one platform. Book a demo.",
+    h1: "HRMS Software South Africa",
+  },
   payrollSoftware: {
     path: "/payroll-software",
     primaryKeyword: "Payroll Software",
