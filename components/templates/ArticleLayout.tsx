@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
@@ -34,6 +35,18 @@ export function ArticleLayout({ meta, children, relatedLinks, faqs }: ArticleLay
               {new Date(meta.publishedDate).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })} · {meta.readTime}
             </p>
 
+            {meta.image && (
+              <Image
+                src={meta.image.src}
+                alt={meta.image.alt}
+                width={meta.image.width}
+                height={meta.image.height}
+                priority
+                sizes="(min-width: 768px) 672px, 100vw"
+                className="mt-8 h-auto w-full rounded-2xl"
+              />
+            )}
+
             <div className="prose-article mt-8">{children}</div>
           </div>
         </Container>
@@ -52,6 +65,7 @@ export function ArticleLayout({ meta, children, relatedLinks, faqs }: ArticleLay
           path,
           datePublished: meta.publishedDate,
           inLanguage: meta.locale,
+          image: meta.image?.src,
         })}
       />
     </>

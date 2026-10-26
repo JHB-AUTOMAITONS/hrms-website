@@ -7,6 +7,8 @@ export interface ArticleMeta {
   readTime: string;
   /** BCP 47 language tag for articles aimed at a specific market (e.g. "en-ZA"). Defaults to the site locale. */
   locale?: string;
+  /** Optional featured image shown under the title and used in Article schema. */
+  image?: { src: string; alt: string; width: number; height: number };
 }
 
 /**
@@ -246,6 +248,20 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-10-26",
     readTime: "10 min read",
     locale: "en-ZA",
+  },
+  {
+    slug: "how-to-set-up-ess-portal-for-sme",
+    title: "How to set up an ESS portal for your SME: step-by-step checklist and rollout tips",
+    excerpt: "Learn what an ESS portal is, the core features Indian SMEs need, a rollout checklist and login fixes. Book a demo with Manitham HRMS today.",
+    category: "HRMS",
+    publishedDate: "2026-10-26",
+    readTime: "6 min read",
+    image: {
+      src: "/blog/ess-portal-setup-sme-checklist.webp",
+      alt: "Five-step ESS portal rollout for an SME: plan, configure, test, launch and empower employees",
+      width: 1536,
+      height: 1024,
+    },
   },
 ];
 

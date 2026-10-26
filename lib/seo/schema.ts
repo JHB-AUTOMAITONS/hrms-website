@@ -88,6 +88,7 @@ export function articleSchema(input: {
   datePublished: string;
   dateModified?: string;
   inLanguage?: string;
+  image?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -98,6 +99,7 @@ export function articleSchema(input: {
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
     ...(input.inLanguage ? { inLanguage: input.inLanguage } : {}),
+    ...(input.image ? { image: absoluteUrl(input.image) } : {}),
     author: {
       "@type": "Organization",
       name: siteConfig.name,

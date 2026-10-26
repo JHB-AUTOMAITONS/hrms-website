@@ -55,6 +55,7 @@ const content: FeaturePageContent = {
     { title: "Attendance Management", description: "How employees mark attendance from self-service.", href: "/attendance-management" },
     { title: "Payroll Software", description: "Where payslips and tax documents come from.", href: "/payroll-software" },
     { title: "AI WhatsApp Assistant", description: "The same self-service data, answered by AI on WhatsApp.", href: "/ai-whatsapp-assistant" },
+    { title: "How to Set Up an ESS Portal for Your SME", description: "A step-by-step rollout checklist and fixes for common login problems.", href: "/resources/how-to-set-up-ess-portal-for-sme" },
   ],
   ctaTitle: "Give your employees a self-service portal",
   ctaSubtitle: "Book a demo and see the employee-side experience firsthand.",
