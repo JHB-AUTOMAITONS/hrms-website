@@ -238,6 +238,15 @@ export const articles: ArticleMeta[] = [
     readTime: "8 min read",
     locale: "en-SG",
   },
+  {
+    slug: "hr-automation-software-south-africa",
+    title: "HR Automation Software in South Africa: 7 HR Processes Businesses Can Automate in 2026",
+    excerpt: "A practical guide to HR automation software for South African businesses — seven HR processes to automate, the real benefits, and how to choose the right one.",
+    category: "HR",
+    publishedDate: "2026-10-26",
+    readTime: "10 min read",
+    locale: "en-ZA",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
