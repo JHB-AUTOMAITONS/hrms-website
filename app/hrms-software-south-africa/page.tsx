@@ -41,6 +41,7 @@ const southAfricaArticles = [
   getArticleBySlug("hr-software-south-africa")!,
   getArticleBySlug("payroll-software-south-africa")!,
   getArticleBySlug("hr-management-software-south-africa")!,
+  getArticleBySlug("hr-automation-software-south-africa")!,
 ];
 
 const faqs = [
