@@ -21,10 +21,44 @@ export const metadata: Metadata = buildMetadata({
   h1: meta.title,
 });
 
+const faqs = [
+  {
+    question: "What is an ESS portal?",
+    answer:
+      "An ESS (employee self-service) portal is a secure web or mobile feature within an HRMS that lets employees view payslips, check leave balances, apply for leave, mark attendance and update personal details without contacting HR.",
+  },
+  {
+    question: "Do SMEs really need an ESS portal?",
+    answer:
+      "Small HR teams usually cover onboarding, payroll and compliance at once, so every payslip or leave-balance query interrupts other work. An ESS portal lets employees find those answers themselves, which matters most when there is no dedicated HR helpdesk.",
+  },
+  {
+    question: "How long does it take to set up an ESS portal?",
+    answer:
+      "It depends on how clean your employee data is and how many modules you switch on. A sequenced rollout works best: import records, configure leave and approvals, set up attendance, enable payslip access, then pilot with one department or shift before going company-wide. Book a demo for a realistic timeline for your headcount.",
+  },
+  {
+    question: "What should we prepare before configuring an ESS portal?",
+    answer:
+      "Clean and validate every employee record first, then map your leave policies and shift structures, define approval hierarchies and decide which attendance modes you will use: biometric, GPS or web punch-in. Assign approvers, such as plant managers, before onboarding employees.",
+  },
+  {
+    question: "Can factory-floor and field employees use an ESS portal?",
+    answer:
+      "Yes, if the system supports the way they work. Manitham HRMS offers GPS mobile check-in for field staff, biometric attendance for plant gates and an AI WhatsApp assistant, so workers who never open a web portal can still check leave balances and request payslips by message.",
+  },
+  {
+    question: "What should an employee do if they cannot log in to the ESS portal?",
+    answer:
+      "Confirm with HR whether the username is an employee ID or a work email, type the password manually to rule out stale autofill, and avoid repeated retries that extend a lockout. For a blank page, try a private window and clear site cookies. If it still fails, send IT or HR the exact error text, device, browser, time and employee ID, never the password.",
+  },
+];
+
 export default function HowToSetUpEssPortalForSmeArticle() {
   return (
     <ArticleLayout
       meta={meta}
+      faqs={faqs}
       relatedLinks={[
         { title: "Employee Self Service Portal", description: "What employees can do on their own in Manitham HRMS.", href: "/employee-self-service" },
         { title: "AI WhatsApp Assistant", description: "HR answers on WhatsApp, with no app and no login.", href: "/ai-whatsapp-assistant" },
