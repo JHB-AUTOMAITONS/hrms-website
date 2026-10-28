@@ -263,6 +263,14 @@ export const articles: ArticleMeta[] = [
       height: 1024,
     },
   },
+  {
+    slug: "employee-onboarding-software-guide",
+    title: "Employee Onboarding Software: A Complete Guide for HR Teams in India",
+    excerpt: "Employee onboarding software explained for Indian HR teams: key features, onboarding automation, how to choose a tool and questions to ask before you buy.",
+    category: "HRMS",
+    publishedDate: "2026-10-28",
+    readTime: "8 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
