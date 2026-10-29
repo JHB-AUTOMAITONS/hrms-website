@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { A, ArticleLayout, H2, P, UL } from "@/components/templates/ArticleLayout";
+import { A, ArticleLayout, H2, H3, OL, P, UL } from "@/components/templates/ArticleLayout";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getArticleBySlug } from "@/lib/data/articles";
+import { siteConfig } from "@/lib/site-config";
 
 const meta = getArticleBySlug("employee-leave-management-software")!;
 
@@ -12,12 +13,12 @@ export const metadata: Metadata = buildMetadata({
     "employee leave management system",
     "online leave management system",
     "HR leave management software",
-    "leave management solutions",
     "employee leave tracking",
     "leave approval workflow",
+    "leave request and approval process",
   ],
   searchIntent: "informational",
-  title: "Employee Leave Management Software: How to Choose the Right Solution",
+  title: `${meta.title} | ${siteConfig.name}`,
   description: meta.excerpt,
   h1: meta.title,
 });
@@ -34,12 +35,22 @@ const faqs = [
   {
     question: "What is employee leave management software?",
     answer:
-      "Employee leave management software is a system that handles leave policies, leave requests, approvals and balances in one place. Employees apply online and track their requests, managers approve or reject them, and HR keeps policies, holidays and reports up to date.",
+      "It is software that manages leave policies, requests, approvals and balances in one place, replacing spreadsheets and email threads.",
+  },
+  {
+    question: "How does a leave approval workflow work?",
+    answer:
+      "The employee applies for a leave type, the request goes to their manager, and the manager approves or rejects it. Once it is decided, the balance and the records that depend on it update. Some companies add an extra approval step, such as HR, for certain leave types.",
   },
   {
     question: "Is a spreadsheet enough for tracking employee leave?",
     answer:
       "For a very small team with one simple policy, a spreadsheet can work. It tends to break down as headcount grows, because balances need manual updates, approvals happen in chat or email, and nobody has a single reliable view of who is off.",
+  },
+  {
+    question: "What is the difference between leave management software and an HRMS?",
+    answer:
+      "Leave management software covers leave only. An HRMS includes leave as one module alongside employee records, attendance and payroll, so approved leave can feed those directly instead of being re-entered.",
   },
   {
     question: "Should leave management be connected to attendance and payroll?",
@@ -59,97 +70,133 @@ export default function EmployeeLeaveManagementSoftwareArticle() {
       meta={meta}
       faqs={faqs}
       relatedLinks={[
-        { title: "Best Leave Management Software in India", description: "A checklist for evaluating leave tools for Indian leave policies.", href: "/resources/best-leave-management-software-india" },
+        { title: "Leave Management", description: "See how leave policies, approvals and balances work in Manitham HRMS.", href: "/leave-management" },
+        { title: "Best Leave Management Software in India", description: "A scorecard and vendor questions for comparing leave tools.", href: "/resources/best-leave-management-software-india" },
         { title: "How to Set Up an Employee Leave Policy in India", description: "Leave types, accrual, carry-forward and approvals.", href: "/resources/leave-policy-guide-india" },
         { title: "Employee Self Service", description: "Where employees apply for leave and check balances.", href: "/employee-self-service" },
+        { title: "Attendance Management", description: "How approved leave and attendance stay in sync.", href: "/attendance-management" },
       ]}
     >
       <P>
         Most companies start tracking leave the same way: a spreadsheet, a shared calendar and a stream of emails or
         WhatsApp messages to the manager. It works for a while. Then balances drift out of date, approvals get
         buried, HR spends the end of every month reconciling who was actually off, and employees keep asking how many
-        leaves they have left. Employee leave management software exists to fix that, and choosing the right one
-        mostly comes down to a handful of practical questions.
+        leaves they have left. Employee leave management software exists to fix that. This guide explains what it
+        is, how a leave request moves through it, and which features matter in practice.
       </P>
 
       <H2>What Is Employee Leave Management Software?</H2>
       <P>
-        Employee leave management software is a system that manages the whole leave cycle in one place: the leave
-        policy, the request, the approval and the resulting balance. Employees apply for leave online, managers
-        approve or reject, and HR defines the rules and sees the reports. You will also see it described as an
-        employee leave management system or an online leave management system; in practice the terms mean the same
-        thing.
+        Employee leave management software manages the whole leave cycle in one place: the leave policy, the
+        request, the approval and the resulting balance. Employees apply for leave online, managers approve or
+        reject, and HR defines the rules and sees the reports. You will also see it called an employee leave
+        management system or an online leave management system; in practice the terms mean the same thing.
       </P>
       <P>
-        The strongest versions are not standalone tools. They sit inside an HRMS, so the same leave record is visible
-        to attendance and payroll as well.
+        Some tools do only leave. Others are a module inside an HRMS, which means the same leave record is visible to
+        attendance and payroll as well.
       </P>
 
-      <H2>Why Businesses Need Digital Leave Management</H2>
-      <UL>
+      <H2>How the Leave Application and Approval Workflow Works</H2>
+      <P>The exact screens differ between products, but the sequence is much the same.</P>
+      <OL>
         <li>
-          <strong>Spreadsheet problems.</strong> Formulas break, files get copied, and two people end up editing
-          different versions.
+          <strong>HR sets up the rules.</strong> Leave types, how balances accrue, carry-forward limits, holidays and
+          who approves what are configured once.
         </li>
         <li>
-          <strong>Approval delays.</strong> Requests sent by email or chat wait for a reply with no clear status.
+          <strong>The employee applies.</strong> They check their balance, choose a leave type and dates, and submit
+          the request online.
         </li>
         <li>
-          <strong>Leave balance errors.</strong> Balances calculated by hand go wrong around carry-forward, holidays
-          and half-day leave.
+          <strong>The request routes to a manager.</strong> It goes to the employee&apos;s approver and shows as
+          pending, so it does not get lost in an inbox.
         </li>
         <li>
-          <strong>Lack of visibility.</strong> Managers cannot easily see who is off next week, and employees cannot
-          see what they have left.
+          <strong>The manager decides.</strong> They approve or reject, and the employee can see the outcome without
+          asking.
         </li>
         <li>
-          <strong>HR workload.</strong> Answering balance questions and reconciling records is repetitive work that
-          adds up.
+          <strong>Records update.</strong> The leave balance changes, and approved leave carries into attendance and
+          payroll when those modules share the same record.
         </li>
         <li>
-          <strong>No self-service.</strong> If employees cannot check balances and request leave themselves, every
-          question lands on HR.
+          <strong>HR reviews reports.</strong> Leave by employee, team or leave type shows patterns and
+          upcoming absences.
         </li>
-      </UL>
+      </OL>
+      <P>
+        Manitham HRMS follows this pattern: employees apply through{" "}
+        <A href="/employee-self-service">employee self-service</A>, requests route to the right manager, and approved
+        leave reflects in attendance and payroll. The{" "}
+        <A href="/leave-management">leave management module</A> page covers the details.
+      </P>
 
-      <H2>Key Features to Look for in Leave Management Software</H2>
+      <H2>Leave Types and Policy Rules the Software Has to Handle</H2>
+      <P>
+        The workflow is only as good as the policy behind it. Most Indian companies use some mix of the following, and
+        the software should let you configure each one rather than forcing a single generic bucket.
+      </P>
       <UL>
-        <li>
-          <strong>Online leave requests.</strong> Employees should be able to apply for leave and pick the leave type
-          without involving HR.
-        </li>
-        <li>
-          <strong>Approval workflows.</strong> Requests should route to the right manager automatically and show
-          their status, so nothing sits unnoticed.
-        </li>
-        <li>
-          <strong>Leave balances.</strong> Balances should update as requests are approved and be visible to both
-          the employee and HR.
-        </li>
-        <li>
-          <strong>Leave policies.</strong> You should be able to configure leave types, accrual and carry-forward to
-          match your own rules rather than a fixed template.
-        </li>
-        <li>
-          <strong>Holiday calendar.</strong> Company-wide and location-specific holidays should be accounted for when
-          leave days are counted.
-        </li>
-        <li>
-          <strong>Leave reports.</strong> HR should be able to see leave by employee, team or leave type without
-          building a report by hand.
-        </li>
-        <li>
-          <strong>Employee self-service.</strong> Employees should be able to check balances and history themselves.
-        </li>
-        <li>
-          <strong>Attendance and payroll integration.</strong> Approved leave should carry through to attendance and
-          payroll so it is not re-entered.
-        </li>
+        <li>Casual, sick and earned (privilege) leave, each with its own entitlement</li>
+        <li>Maternity and paternity leave, and any special leave your company offers</li>
+        <li>How balances accrue: a fixed grant, monthly accrual, or after a qualifying period</li>
+        <li>Carry-forward limits and whether unused leave can be encashed</li>
+        <li>Company-wide and location-specific holidays</li>
       </UL>
       <P>
-        Businesses looking to simplify employee leave requests, approvals and leave balances can use a dedicated{" "}
-        <A href="/leave-management">Leave Management System</A> to centralize the entire process.
+        Entitlements can depend on your state, industry and contracts, so decide your rules first and use the software
+        to apply them. The guide to{" "}
+        <A href="/resources/leave-policy-guide-india">setting up an employee leave policy in India</A> walks through
+        that step.
       </P>
+
+      <H2>Practical Benefits for Employees, Managers and HR</H2>
+      <H3>For employees</H3>
+      <P>
+        They can check their balance and request leave themselves, see whether a request is pending or decided, and
+        stop asking HR how many leaves they have left.
+      </P>
+      <H3>For managers</H3>
+      <P>
+        Pending requests are in one place instead of scattered across email and chat, and the status of each is clear,
+        which makes it easier to plan coverage.
+      </P>
+      <H3>For HR</H3>
+      <P>
+        Balances are not updated by hand, policies are applied consistently, and leave reports do not have to be built
+        from scratch. When leave is connected to attendance and payroll, there is also less month-end reconciliation.
+      </P>
+
+      <H2>Key Features of Employee Leave Management Software</H2>
+      <UL>
+        <li>
+          <strong>Online leave requests.</strong> Employees apply and pick the leave type without involving HR.
+        </li>
+        <li>
+          <strong>Approval workflows.</strong> Requests route to the right manager and show their status.
+        </li>
+        <li>
+          <strong>Leave balances.</strong> Balances update as requests are approved and are visible to the employee
+          and HR.
+        </li>
+        <li>
+          <strong>Configurable policies.</strong> Leave types, accrual and carry-forward match your rules rather than
+          a fixed template.
+        </li>
+        <li>
+          <strong>Holiday calendar.</strong> Company-wide and location-specific holidays are counted correctly.
+        </li>
+        <li>
+          <strong>Leave reports.</strong> HR can see leave by employee, team or leave type.
+        </li>
+        <li>
+          <strong>Employee self-service.</strong> Employees can check balances and history themselves.
+        </li>
+        <li>
+          <strong>Attendance and payroll integration.</strong> Approved leave carries through so it is not re-entered.
+        </li>
+      </UL>
 
       <H2>Manual Leave Tracking vs Online Leave Management</H2>
       <P>Here is how the two approaches compare in day-to-day use.</P>
@@ -182,48 +229,19 @@ export default function EmployeeLeaveManagementSoftwareArticle() {
         </table>
       </div>
 
-      <H2>How to Choose the Right Leave Management Solution</H2>
-      <P>
-        Rather than comparing long feature lists, test each option against the way your company actually handles
-        leave. These criteria help separate genuinely useful leave management solutions from ones that only look good
-        in a demo.
-      </P>
+      <H2>Is It Time to Move Beyond Spreadsheets?</H2>
+      <P>A few signs suggest a spreadsheet and email process has stopped working:</P>
       <UL>
-        <li>
-          <strong>Ease of use.</strong> If employees and managers find it awkward, they will go back to email.
-        </li>
-        <li>
-          <strong>Leave policy flexibility.</strong> Check that your real leave types, accrual and carry-forward
-          rules can be configured, not only picked from presets.
-        </li>
-        <li>
-          <strong>Approval workflows.</strong> Confirm requests reach the right manager and that pending approvals
-          are easy to see.
-        </li>
-        <li>
-          <strong>Attendance integration.</strong> Ask whether approved leave shows up in attendance records
-          automatically.
-        </li>
-        <li>
-          <strong>Payroll integration.</strong> Ask whether leave reaches payroll without a manual export, since
-          unpaid leave is where mismatches usually appear.
-        </li>
-        <li>
-          <strong>Reporting.</strong> Make sure you can pull leave data by employee, team and leave type.
-        </li>
-        <li>
-          <strong>Employee self-service.</strong> Employees should be able to apply, check balances and view
-          history on their own.
-        </li>
-        <li>
-          <strong>Scalability.</strong> The tool should handle more employees, locations and policies as you grow
-          without a migration.
-        </li>
+        <li>Employees regularly ask HR for their leave balance</li>
+        <li>Approvals take days because requests sit in someone&apos;s inbox</li>
+        <li>Leave data has to be cross-checked against attendance before payroll</li>
+        <li>More than one person edits the leave file, and versions disagree</li>
       </UL>
       <P>
-        A short trial with your own leave rules usually tells you more than any brochure. Take two or three of your
-        trickiest cases, such as a half-day leave over a holiday or a carry-forward at year end, and see how each
-        option handles them.
+        If several of these sound familiar, the next step is to compare options. Our guide to the{" "}
+        <A href="/resources/best-leave-management-software-india">best leave management software in India</A> gives a
+        scorecard, test cases and vendor questions for that, and the{" "}
+        <A href="/leave-management">Manitham HRMS leave management page</A> shows how it works in one product.
       </P>
     </ArticleLayout>
   );

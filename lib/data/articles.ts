@@ -133,7 +133,7 @@ export const articles: ArticleMeta[] = [
   {
     slug: "best-leave-management-software-india",
     title: "Best Leave Management Software in India (2026)",
-    excerpt: "What leave management software needs to handle for Indian leave policies, and how to evaluate one before you commit.",
+    excerpt: "How to choose the best leave management software in India: key features, integration checks, a scoring framework and questions to ask vendors before you buy.",
     category: "Leave",
     publishedDate: "2026-09-01",
     readTime: "6 min read",
@@ -199,8 +199,8 @@ export const articles: ArticleMeta[] = [
   },
   {
     slug: "employee-leave-management-software",
-    title: "How to Choose the Right Employee Leave Management Software for Your Business",
-    excerpt: "Learn how employee leave management software simplifies leave requests, approvals, leave balances, policies and HR workflows for growing businesses.",
+    title: "Employee Leave Management Software: How It Works",
+    excerpt: "What employee leave management software is, how the leave request and approval workflow works, who benefits, and which features matter in practice.",
     category: "Leave",
     publishedDate: "2026-10-05",
     readTime: "7 min read",

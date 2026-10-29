@@ -109,7 +109,9 @@ export default function AttendanceTrackingGuideArticle() {
         Whichever method (or mix) you use, the bigger question is what happens to that data afterward. Attendance
         that just sits in a device log isn&apos;t useful — it needs to connect to shift schedules (to calculate late
         marks and overtime automatically), to leave records (so approved leave doesn&apos;t show as an absence), and
-        eventually to payroll (so hours worked map directly to what&apos;s paid).
+        eventually to payroll (so hours worked map directly to what&apos;s paid). To see how leave requests and
+        approvals work on the other side of that link, read{" "}
+        <Link href="/resources/employee-leave-management-software" className="font-medium text-brand-600 hover:underline">how employee leave management software works</Link>.
       </P>
       <P>
         See how biometric, GPS and web check-in all feed into one system in{" "}

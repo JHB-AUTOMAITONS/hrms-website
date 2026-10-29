@@ -129,6 +129,11 @@ export default function LeavePolicyGuideArticle() {
         approvals work together in{" "}
         <Link href="/leave-management" className="font-medium text-brand-600 hover:underline">Manitham HRMS leave management</Link>.
       </P>
+      <P>
+        New to this kind of software? Our guide to{" "}
+        <Link href="/resources/employee-leave-management-software" className="font-medium text-brand-600 hover:underline">how employee leave management software works</Link>{" "}
+        walks through the request and approval workflow step by step.
+      </P>
     </ArticleLayout>
   );
 }

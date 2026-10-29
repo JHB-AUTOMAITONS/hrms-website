@@ -173,7 +173,7 @@ const content: FeaturePageContent = {
     { title: "Employee Leave Policy Guide", description: "Leave types, accrual, carry-forward and approvals for Indian companies.", href: "/resources/leave-policy-guide-india" },
     { title: "Payroll Software", description: "How approved leave flows into each payroll run.", href: "/payroll-software" },
     { title: "Best Leave Management Software in India", description: "What to check before choosing a leave management tool.", href: "/resources/best-leave-management-software-india" },
-    { title: "How to Choose the Right Employee Leave Management Software for Your Business", description: "Key features, a manual vs online comparison and selection criteria.", href: "/resources/employee-leave-management-software" },
+    { title: "Employee Leave Management Software: How It Works", description: "Understand employee leave management software, its request and approval workflow, key features and benefits.", href: "/resources/employee-leave-management-software" },
   ],
   ctaTitle: "See how leave management works for your policies",
   ctaSubtitle: "Book a demo and we'll walk through policy configuration, approvals and balances using your own leave structure.",
