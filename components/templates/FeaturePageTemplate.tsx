@@ -20,6 +20,13 @@ export interface FeatureContentSection {
   bullets: ReactNode[];
 }
 
+export interface FeatureComparison {
+  title: string;
+  intro?: string;
+  columns: [string, string, string];
+  rows: [string, string, string][];
+}
+
 export interface FeaturePageContent {
   path: string;
   breadcrumbLabel: string;
@@ -36,6 +43,8 @@ export interface FeaturePageContent {
   capabilities: FeatureGridItem[];
   /** Optional text + checklist sections rendered after the capabilities grid. */
   contentSections?: FeatureContentSection[];
+  /** Optional three-column comparison table rendered after the content sections. */
+  comparison?: FeatureComparison;
   benefitsTitle?: string;
   benefits?: { title: string; description: string }[];
   faqs: FaqItem[];
@@ -124,6 +133,45 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
           </Container>
         </section>
       ))}
+
+      {content.comparison ? (
+        <section className="py-14 sm:py-16">
+          <Container className="max-w-4xl">
+            <h2 className="font-display text-2xl font-bold text-ink-900 sm:text-3xl">{content.comparison.title}</h2>
+            {content.comparison.intro ? <p className="mt-4 text-pretty text-slate-600">{content.comparison.intro}</p> : null}
+            <p className="mt-4 text-xs font-medium text-slate-500 sm:hidden">Swipe sideways to see all columns.</p>
+            <div
+              role="region"
+              aria-label={content.comparison.title}
+              tabIndex={0}
+              className="glass mt-2 overflow-x-auto rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 sm:mt-6"
+            >
+              <table className="w-full min-w-[34rem] text-left text-sm">
+                <thead>
+                  <tr className="border-b border-ink-900/10 text-ink-900">
+                    {content.comparison.columns.map((column) => (
+                      <th key={column} scope="col" className="px-4 py-3 font-semibold">
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-ink-900/10 text-slate-600">
+                  {content.comparison.rows.map(([area, manual, automated]) => (
+                    <tr key={area}>
+                      <th scope="row" className="px-4 py-3 align-top font-semibold text-ink-900">
+                        {area}
+                      </th>
+                      <td className="px-4 py-3 align-top">{manual}</td>
+                      <td className="px-4 py-3 align-top">{automated}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Container>
+        </section>
+      ) : null}
 
       {content.benefits && content.benefits.length > 0 ? (
         <section className="py-14 sm:py-16">

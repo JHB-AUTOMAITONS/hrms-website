@@ -153,7 +153,7 @@ export const keywordMap = {
     searchIntent: "commercial",
     title: "Leave Management System for Employees & HR | Manitham HRMS",
     description:
-      "Simplify employee leave tracking with Manitham HRMS. Manage leave policies, online requests, approvals, balances, holidays and payroll integration in one leave management system.",
+      "Looking for a Leave Management System in India? Simplify employee leave requests, approvals, leave balance tracking and holiday management with Manitham HRMS.",
     h1: "Leave Management System for Smarter Employee Leave Tracking",
   },
   employeeManagement: {
