@@ -271,6 +271,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-10-28",
     readTime: "8 min read",
   },
+  {
+    slug: "employee-scheduling-software-guide",
+    title: "Employee Scheduling Software: A Guide to Managing Employee Shifts",
+    excerpt: "Employee scheduling software explained for Indian businesses: key features, manual vs software scheduling, how to choose a tool and where it fits in an HRMS.",
+    category: "Attendance",
+    publishedDate: "2026-10-30",
+    readTime: "7 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
