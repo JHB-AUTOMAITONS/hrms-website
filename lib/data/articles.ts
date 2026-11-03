@@ -293,6 +293,20 @@ export const articles: ArticleMeta[] = [
       height: 1024,
     },
   },
+  {
+    slug: "hrms-implementation-guide",
+    title: "HRMS Implementation in India: A Complete Step-by-Step Guide for Businesses",
+    excerpt: "Learn the HRMS implementation process in India: planning, employee data migration, payroll setup, attendance configuration and successful HRMS deployment.",
+    category: "HRMS",
+    publishedDate: "2026-11-03",
+    readTime: "9 min read",
+    image: {
+      src: "/blog/ess-portal-setup-sme-checklist.webp",
+      alt: "Five-step rollout from plan to configure, test, launch and empower, as followed in an HRMS implementation",
+      width: 1536,
+      height: 1024,
+    },
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
