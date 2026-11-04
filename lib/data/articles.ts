@@ -307,6 +307,14 @@ export const articles: ArticleMeta[] = [
       height: 1024,
     },
   },
+  {
+    slug: "shift-management-software-by-industry",
+    title: "Shift Management Software for Manufacturing, Healthcare and Retail Businesses in India",
+    excerpt: "Shift management software needs differ by industry. A practical breakdown for manufacturing, healthcare, retail, hospitality, IT and field service businesses.",
+    category: "Attendance",
+    publishedDate: "2026-11-04",
+    readTime: "10 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

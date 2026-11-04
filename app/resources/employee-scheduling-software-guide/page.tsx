@@ -62,6 +62,7 @@ export default function EmployeeSchedulingSoftwareGuideArticle() {
         { title: "Attendance Management", description: "Shift schedules, check-ins, late marks and overtime in one place.", href: "/attendance-management" },
         { title: "HRMS Software for Manufacturing", description: "Shift-based attendance for plant and shop-floor teams.", href: "/industries/manufacturing" },
         { title: "Overtime Calculation Formula", description: "How scheduled hours turn into overtime pay in India.", href: "/resources/overtime-calculation-formula" },
+        { title: "Shift Management Software by Industry", description: "What manufacturing, healthcare, retail and other industries specifically need.", href: "/resources/shift-management-software-by-industry" },
       ]}
     >
       <P>
