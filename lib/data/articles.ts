@@ -315,6 +315,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-11-04",
     readTime: "10 min read",
   },
+  {
+    slug: "automate-hr-processes",
+    title: "How to Automate HR Processes and Reduce Manual Work",
+    excerpt: "Learn how to automate HR processes and reduce manual work in India: 10 processes to automate, software features to look for, and how to choose an HRMS.",
+    category: "HR",
+    publishedDate: "2026-11-05",
+    readTime: "10 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
