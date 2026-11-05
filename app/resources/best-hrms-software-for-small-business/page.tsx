@@ -69,6 +69,7 @@ export default function BestHrmsSoftwareForSmallBusinessArticle() {
         { title: "HRMS Software for Small Business", description: "See the platform sized for small-team HR, not enterprise overhead.", href: "/industries/small-business" },
         { title: "HRMS Software Pricing", description: "What actually drives the price of an HRMS quote.", href: "/resources/hrms-software-pricing-india" },
         { title: "Free vs Paid Staff Management Software", description: "Where free tools hold up, and where they quietly cost more.", href: "/resources/free-vs-paid-staff-management-software" },
+        { title: "How to Automate HR Processes", description: "Which repetitive HR tasks to automate first.", href: "/resources/automate-hr-processes" },
       ]}
     >
       <P>

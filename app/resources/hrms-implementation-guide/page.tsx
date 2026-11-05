@@ -75,6 +75,7 @@ export default function HrmsImplementationGuideArticle() {
         { title: "HRMS Software", description: "How Manitham HRMS connects the modules you will be implementing.", href: "/hrms-software" },
         { title: "HRMS Software Pricing", description: "What drives the cost of an HRMS quote.", href: "/resources/hrms-software-pricing-india" },
         { title: "Set Up an ESS Portal", description: "A rollout checklist for the employee-facing side.", href: "/resources/how-to-set-up-ess-portal-for-sme" },
+        { title: "How to Automate HR Processes", description: "Which HR processes to automate first, and how to choose software.", href: "/resources/automate-hr-processes" },
       ]}
     >
       <P>
