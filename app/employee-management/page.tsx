@@ -57,6 +57,7 @@ const content: FeaturePageContent = {
     { title: "Employee Management System vs. Software", description: "What separates a real system from a spreadsheet with extra steps.", href: "/resources/employee-management-system-guide" },
     { title: "Free vs Paid Staff Management Software", description: "Where free tools hold up, and where they quietly cost more.", href: "/resources/free-vs-paid-staff-management-software" },
     { title: "Employee Onboarding Software Guide", description: "What to look for in onboarding software, and how to choose one.", href: "/resources/employee-onboarding-software-guide" },
+    { title: "Manage Employee Documents Digitally", description: "A step-by-step guide to organising employee documents.", href: "/resources/manage-employee-documents-digitally" },
   ],
   ctaTitle: "Bring your employee data into one place",
   ctaSubtitle: "Book a demo and we'll show you how employee records connect across the platform.",

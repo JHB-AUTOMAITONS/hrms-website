@@ -323,6 +323,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-11-05",
     readTime: "10 min read",
   },
+  {
+    slug: "manage-employee-documents-digitally",
+    title: "How to Manage Employee Documents Digitally: A Guide for HR Teams",
+    excerpt: "Learn how to manage employee documents digitally: document types to digitise, a 10-step process, key software features and best practices for HR teams in India.",
+    category: "HRMS",
+    publishedDate: "2026-11-06",
+    readTime: "9 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

@@ -90,6 +90,7 @@ export default function AutomateHrProcessesArticle() {
         { title: "What Is HRMS Software?", description: "HRMS explained in plain terms, and why connected data matters.", href: "/resources/what-is-hrms-software" },
         { title: "HRMS Implementation in India", description: "A step-by-step plan for rolling out an HRMS.", href: "/resources/hrms-implementation-guide" },
         { title: "Best HRMS Software for Small Business", description: "A checklist to evaluate against.", href: "/resources/best-hrms-software-for-small-business" },
+        { title: "Manage Employee Documents Digitally", description: "A deeper look at employee document management (process 7).", href: "/resources/manage-employee-documents-digitally" },
       ]}
     >
       <P>

@@ -64,6 +64,7 @@ export default function EmployeeManagementSystemGuideArticle() {
         { title: "Employee Management", description: "See the employee management module in Manitham HRMS.", href: "/employee-management" },
         { title: "What Is HRMS Software?", description: "How employee management fits into a full HRMS.", href: "/resources/what-is-hrms-software" },
         { title: "Employee Self Service", description: "What employees can update about themselves directly.", href: "/employee-self-service" },
+        { title: "Manage Employee Documents Digitally", description: "A step-by-step process for digital employee records.", href: "/resources/manage-employee-documents-digitally" },
       ]}
     >
       <P>
