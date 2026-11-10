@@ -69,6 +69,7 @@ export default function BestAttendanceManagementSoftwareArticle() {
         { title: "Attendance Management", description: "See these methods inside Manitham HRMS.", href: "/attendance-management" },
         { title: "Employee Attendance Tracking: Biometric vs GPS vs Manual", description: "A closer look at how the three check-in methods compare.", href: "/resources/employee-attendance-tracking-guide" },
         { title: "Best Field Staff Tracking Software in India", description: "What to look for when your team isn't at a fixed location.", href: "/resources/field-staff-tracking-software-india" },
+        { title: "Manage Attendance Across Multiple Branches", description: "How to run consistent attendance across multiple locations.", href: "/resources/manage-employee-attendance-multiple-branches" },
       ]}
     >
       <P>

@@ -46,6 +46,7 @@ const content: IndustryPageContent = {
     { title: "Attendance Management", description: "Full detail on biometric and shift-based tracking.", href: "/attendance-management" },
     { title: "HRMS Software in India", description: "How multi-state, multi-location compliance is handled.", href: "/hrms-software-india" },
     { title: "Payroll Software", description: "How payroll runs across multiple locations.", href: "/payroll-software" },
+    { title: "Manage Attendance Across Multiple Branches", description: "Consistent attendance across plants and branches.", href: "/resources/manage-employee-attendance-multiple-branches" },
   ],
   ctaTitle: "See a multi-plant setup in action",
   ctaSubtitle: "Book a demo and walk through attendance and payroll across your locations.",

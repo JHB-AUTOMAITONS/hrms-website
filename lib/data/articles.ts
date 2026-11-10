@@ -331,6 +331,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-11-06",
     readTime: "9 min read",
   },
+  {
+    slug: "manage-employee-attendance-multiple-branches",
+    title: "How to Manage Employee Attendance Across Multiple Branches",
+    excerpt: "Learn how to manage employee attendance across multiple branches: common challenges, a 12-step process, key software features and payroll coordination.",
+    category: "Attendance",
+    publishedDate: "2026-11-10",
+    readTime: "10 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

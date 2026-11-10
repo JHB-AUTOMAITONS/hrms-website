@@ -73,6 +73,7 @@ export default function ShiftManagementSoftwareByIndustryArticle() {
         { title: "Attendance Management", description: "Shift schedules, check-ins, late marks and overtime in one place.", href: "/attendance-management" },
         { title: "Employee Scheduling Software: How to Manage Shifts", description: "The general buyer's guide to scheduling, rotation and attendance links.", href: "/resources/employee-scheduling-software-guide" },
         { title: "HRMS Software for Manufacturing", description: "Shift-floor HR built around plant and shop-floor realities.", href: "/industries/manufacturing" },
+        { title: "Manage Attendance Across Multiple Branches", description: "Handling attendance and shifts across branches.", href: "/resources/manage-employee-attendance-multiple-branches" },
       ]}
     >
       <P>
