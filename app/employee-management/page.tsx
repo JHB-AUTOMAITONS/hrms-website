@@ -58,6 +58,7 @@ const content: FeaturePageContent = {
     { title: "Free vs Paid Staff Management Software", description: "Where free tools hold up, and where they quietly cost more.", href: "/resources/free-vs-paid-staff-management-software" },
     { title: "Employee Onboarding Software Guide", description: "What to look for in onboarding software, and how to choose one.", href: "/resources/employee-onboarding-software-guide" },
     { title: "Manage Employee Documents Digitally", description: "A step-by-step guide to organising employee documents.", href: "/resources/manage-employee-documents-digitally" },
+    { title: "Employee Exit Management Checklist", description: "An 11-step checklist for employee exits.", href: "/resources/employee-exit-management-checklist" },
   ],
   ctaTitle: "Bring your employee data into one place",
   ctaSubtitle: "Book a demo and we'll show you how employee records connect across the platform.",

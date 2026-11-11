@@ -339,6 +339,14 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-11-10",
     readTime: "10 min read",
   },
+  {
+    slug: "employee-exit-management-checklist",
+    title: "Employee Exit Management: A Complete HR Process Checklist",
+    excerpt: "Employee exit management checklist for HR teams: the 11-step exit process, types of exits, final settlement items, clearance, records and HRMS features.",
+    category: "HRMS",
+    publishedDate: "2026-11-11",
+    readTime: "11 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

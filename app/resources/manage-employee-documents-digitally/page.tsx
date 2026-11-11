@@ -90,6 +90,7 @@ export default function ManageEmployeeDocumentsDigitallyArticle() {
         { title: "HRMS Software", description: "The full platform overview.", href: "/hrms-software" },
         { title: "Employee Onboarding Software Guide", description: "How joining documents flow into the employee record.", href: "/resources/employee-onboarding-software-guide" },
         { title: "How to Automate HR Processes", description: "Ten HR processes to take off your spreadsheets.", href: "/resources/automate-hr-processes" },
+        { title: "Employee Exit Management Checklist", description: "The exit process and checklist that exit documents belong to.", href: "/resources/employee-exit-management-checklist" },
       ]}
     >
       <P>

@@ -63,6 +63,7 @@ export default function EmployeeOnboardingSoftwareGuideArticle() {
         { title: "Recruitment", description: "How hired candidates move straight into onboarding.", href: "/recruitment" },
         { title: "Employee Self Service", description: "What new joiners can access and update themselves.", href: "/employee-self-service" },
         { title: "Manage Employee Documents Digitally", description: "Organising joining documents and employee files digitally.", href: "/resources/manage-employee-documents-digitally" },
+        { title: "Employee Exit Management Checklist", description: "The other end of the lifecycle: an 11-step exit checklist.", href: "/resources/employee-exit-management-checklist" },
       ]}
     >
       <P>

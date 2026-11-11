@@ -92,6 +92,7 @@ export default function AutomateHrProcessesArticle() {
         { title: "Best HRMS Software for Small Business", description: "A checklist to evaluate against.", href: "/resources/best-hrms-software-for-small-business" },
         { title: "Manage Employee Documents Digitally", description: "A deeper look at employee document management (process 7).", href: "/resources/manage-employee-documents-digitally" },
         { title: "Manage Attendance Across Multiple Branches", description: "Centralising attendance records across branches.", href: "/resources/manage-employee-attendance-multiple-branches" },
+        { title: "Employee Exit Management Checklist", description: "A step-by-step HR checklist for employee exits.", href: "/resources/employee-exit-management-checklist" },
       ]}
     >
       <P>

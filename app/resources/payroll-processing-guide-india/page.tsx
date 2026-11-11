@@ -64,6 +64,7 @@ export default function PayrollProcessingGuideArticle() {
         { title: "Payroll Software", description: "See how this process is automated in Manitham HRMS.", href: "/payroll-software" },
         { title: "HR Compliance", description: "How statutory compliance tracking works alongside payroll.", href: "/hr-compliance" },
         { title: "HRMS Software in India", description: "The full platform built around Indian payroll.", href: "/hrms-software-india" },
+        { title: "Employee Exit Management Checklist", description: "The exit steps that feed into final settlement.", href: "/resources/employee-exit-management-checklist" },
       ]}
     >
       <P>
