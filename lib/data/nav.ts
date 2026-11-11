@@ -52,5 +52,6 @@ export const countryLinks: NavLink[] = [
 
 export const legalLinks: NavLink[] = [
   { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Mobile App Privacy", href: "/app-privacy" },
   { label: "Terms of Service", href: "/terms-of-service" },
 ];

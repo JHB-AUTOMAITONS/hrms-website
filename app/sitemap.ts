@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 import { keywordMap } from "@/lib/seo/keyword-map";
 import { articles } from "@/lib/data/articles";
 
-const STATIC_PATHS = ["/privacy-policy", "/terms-of-service"] as const;
+const STATIC_PATHS = ["/privacy-policy", "/app-privacy", "/terms-of-service"] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
