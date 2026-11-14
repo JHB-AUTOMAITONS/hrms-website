@@ -34,7 +34,7 @@ const unverified = {
   callAnalyticsShipped: false,
 };
 
-const LAST_UPDATED = "11 November 2026";
+const LAST_UPDATED = "14 November 2026";
 const APP_PACKAGE = "work.hrms.app";
 const EMAIL = siteConfig.contact.email;
 
@@ -86,9 +86,16 @@ const dataCategories: DataCategory[] = [
   {
     title: "Camera and photos",
     collected:
-      "Photos taken in the app: a face image for Face Attendance, and photos of receipts for expense claims. It also includes any photos or files you choose to attach.",
-    why: "To verify identity when marking attendance and to support expense claims.",
-    how: "Captured only when you use these features and attached to the related attendance or expense record. See Section 5 for when the camera is used.",
+      "Photos you take or choose in the app, such as photos of receipts for expense claims and any photos or files you attach. Separately, on a face-attendance kiosk set up by your employer, the camera takes short frames to check who is at the gate; these frames are used only for that check and are not saved (see \u201cFace Attendance\u201d below).",
+    why: "To support expense claims and attachments you choose, and to verify identity when attendance is marked at a face-attendance kiosk.",
+    how: "Receipt and attachment photos are attached to the related expense or record. Face Attendance frames are not attached to any record.",
+  },
+  {
+    title: "Face Attendance (face template)",
+    collected:
+      "If your employer\u2019s HR team enrolls you for Face Attendance, with your consent, a face template: a set of numbers calculated from your face. It is not a photo and a photo cannot be rebuilt from it. At the gate, short camera frames are turned into numbers the same way and compared with the templates of employees enrolled at that branch.",
+    why: "To recognise who is at the gate and mark check-in and check-out, and to detect a photo or screen held up to the camera.",
+    how: "The comparison happens in your employer\u2019s HRMS workspace. For each attempt, only the gate, the time, the result and match scores are recorded, never an image.",
   },
   {
     title: "Payroll and financial information",
@@ -224,11 +231,14 @@ const sections: Section[] = [
             </article>
           ))}
         </div>
-        <H3>Face Attendance images</H3>
+        <H3>Face Attendance</H3>
         <p>
-          When you mark attendance with Face Attendance, the app uses the camera to capture your face to verify your
-          identity. Retention of any related data follows Section 8 (Data retention); ask your employer&apos;s HR
-          team or write to us if you need specifics for your workspace.
+          When you mark attendance on a face-attendance kiosk, the app uses the camera to take a few short frames. The
+          frames are sent to your employer&apos;s HRMS workspace over an encrypted connection, turned into numbers to
+          check who is there, and then discarded. HRMS does not save the frames, and the phone deletes its own copy as
+          soon as they are sent. Enrollment is done by your employer&apos;s HR team with your consent. Face Attendance
+          is used only on a kiosk phone your employer sets up; it is not used on your personal phone for ordinary
+          check-in.
         </p>
       </>
     ),
@@ -294,7 +304,7 @@ const sections: Section[] = [
         <H3>Camera</H3>
         <UL>
           <li>
-            <strong>Face Attendance:</strong> the camera is opened when you mark attendance using Face Attendance.
+            <strong>Face Attendance:</strong> the camera is used on a face-attendance kiosk phone set up by your employer, when attendance is marked at the gate. It is not used on your personal phone for ordinary check-in.
           </li>
           <li>
             <strong>Receipt photography:</strong> the camera is opened when you choose to photograph a receipt for an
@@ -396,9 +406,16 @@ const sections: Section[] = [
           </li>
         </UL>
         <p>
-          Retention periods for specific data (such as attendance records, location history and Face Attendance
-          images) depend on your employer&apos;s settings and legal obligations. Ask your employer&apos;s HR team
-          for the periods that apply to you.
+          Retention periods for specific data, such as attendance records and location history, depend on your
+          employer&apos;s settings and legal obligations. Ask your employer&apos;s HR team for the periods that apply
+          to you.
+        </p>
+        <p>
+          <strong>Face Attendance.</strong> Camera frames are never kept. A face template is stored encrypted for as
+          long as you are enrolled. Your employer&apos;s HR team can delete it at any time, and it is deleted
+          automatically when you leave your employer. The record of each attempt (gate, time, result and match scores,
+          with no image) is part of the audit trail and is kept for the audit retention period set for your
+          employer&apos;s HRMS workspace.
         </p>
       </>
     ),
@@ -428,7 +445,7 @@ const sections: Section[] = [
         </p>
         <UL>
           <li><strong>Location off:</strong> location-based attendance and location tracking may not work, and check-in may be blocked if your employer requires location.</li>
-          <li><strong>Camera off:</strong> Face Attendance and receipt photos will not work.</li>
+          <li><strong>Camera off:</strong> receipt photos will not work, and a kiosk phone cannot mark attendance by Face Attendance.</li>
           <li><strong>Notifications off:</strong> you will not receive reminders, approval and leave alerts, payslip alerts or announcements, but can still see them in the app.</li>
         </UL>
 
@@ -515,7 +532,7 @@ export default function AppPrivacyPage() {
               {PAGE_TITLE}
             </h1>
             <p className="mt-3 text-sm text-slate-500">
-              Last updated: <time dateTime="2026-11-11">{LAST_UPDATED}</time> · Applies to the Manitham HRMS app
+              Last updated: <time dateTime="2026-11-14">{LAST_UPDATED}</time> · Applies to the Manitham HRMS app
               (Android package {APP_PACKAGE})
             </p>
           </header>
