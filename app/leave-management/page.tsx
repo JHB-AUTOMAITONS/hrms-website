@@ -21,6 +21,7 @@ const content: FeaturePageContent = {
     "A leave management system is software that handles employee leave from policy to payroll: which leave types exist, how balances accrue, how requests are raised and approved, and how the result reaches attendance and payroll records.",
     "Spreadsheets work until balances go stale, approvals get buried in email, and nobody's quite sure how many casual leaves are left. Manitham HRMS keeps policies, requests, approvals and balances in one place that employees and managers can see in real time.",
     "Leave types and policies are configurable, so whether your company uses casual, sick and earned leave, or a different structure entirely, the system can be set up to match.",
+    "Each role has a clear job. Employees apply and track their own requests. Managers approve or reject requests from their team. HR defines the policies, holiday calendars and reports, and payroll teams rely on approved leave being already reflected in attendance and payroll.",
   ],
   overviewBullets: [
     "Configurable leave types and accrual policies",
@@ -82,6 +83,17 @@ const content: FeaturePageContent = {
       paragraphs: [
         "HR configures the rules once, and every request follows them.",
         "Employees and managers do this through the same system HR uses to maintain employee records, so there is no separate leave file to keep in sync.",
+        <>
+          Employees can apply from the{" "}
+          <Link href="/employee-self-service" className="font-medium text-brand-600 hover:underline">
+            employee self-service portal
+          </Link>
+          , or by messaging the{" "}
+          <Link href="/ai-whatsapp-assistant" className="font-medium text-brand-600 hover:underline">
+            AI WhatsApp HR assistant
+          </Link>
+          , which routes the request to the right manager. A rejected request is recorded in the same way as an approved one, so the employee always knows where it stands and the balance stays correct.
+        </>,
       ],
       bullets: [
         "HR sets up leave types, accrual and carry-forward rules, approval workflows and holiday calendars",
@@ -90,6 +102,58 @@ const content: FeaturePageContent = {
         "The manager approves or rejects, and the employee sees the decision in the system",
         "The balance updates, and approved leave reflects in attendance and payroll",
         "HR runs leave reports by employee, team or leave type when needed",
+      ],
+    },
+    {
+      title: "Leave types, accrual and carry-forward",
+      paragraphs: [
+        <>
+          Most Indian companies combine a few core leave types, commonly casual leave, sick leave and earned (privilege) leave, and add maternity, paternity or company-specific leave as needed. In Manitham HRMS, HR configures each leave type with its own accrual and carry-forward rules, and the employee&apos;s balance for each type updates as requests are approved.
+        </>,
+        <>
+          The rules themselves are yours to define. A policy document such as our guide to{" "}
+          <Link href="/resources/leave-policy-guide-india" className="font-medium text-brand-600 hover:underline">
+            leave types, accrual and carry-forward in India
+          </Link>{" "}
+          helps you decide them before you configure anything.
+        </>,
+      ],
+      bullets: [
+        "Set up the leave types your company actually offers",
+        "Define how each type accrues over the leave year",
+        "Set carry-forward rules per leave type",
+        "Employees see a separate balance for each leave type",
+        "Balances change automatically when a request is approved",
+      ],
+    },
+    {
+      title: "Leave management with attendance and payroll",
+      paragraphs: [
+        <>
+          Leave stops being a separate record when it sits beside{" "}
+          <Link href="/attendance-management" className="font-medium text-brand-600 hover:underline">
+            attendance management
+          </Link>{" "}
+          and{" "}
+          <Link href="/payroll-software" className="font-medium text-brand-600 hover:underline">
+            payroll software
+          </Link>{" "}
+          in one system. Approved leave appears in attendance, so a leave day is not mistaken for an absence, and it reaches payroll without anyone re-entering it.
+        </>,
+        <>
+          This is the practical difference between a standalone leave tracker and a leave module in an HRMS: the same{" "}
+          <Link href="/employee-management" className="font-medium text-brand-600 hover:underline">
+            employee record
+          </Link>{" "}
+          serves attendance, leave and payroll, so there is one set of data to maintain and fewer month-end corrections.
+        </>,
+      ],
+      bullets: [
+        "Approved leave shows in attendance records",
+        "Leave days are not treated as unexplained absences",
+        "Approved leave reaches payroll without re-entry",
+        "One employee record shared across leave, attendance and payroll",
+        "Leave reports by employee, team or leave type for HR review",
       ],
     },
     {
@@ -166,6 +230,10 @@ const content: FeaturePageContent = {
     { question: "Does approved leave affect payroll automatically?", answer: "Yes, approved leave is reflected in attendance and payroll without manual re-entry." },
     { question: "Is a leave management system suitable for small businesses?", answer: "Yes. Growing teams often outgrow spreadsheets once there are several managers, locations or leave types. Manitham HRMS is aimed at small teams that don't need enterprise-scale software, and policies are configurable, so you can start with a simple setup." },
     { question: "What should we look for when choosing a leave management system?", answer: "Check that it can model your own leave policies, route approvals to the right manager, show balances to employees and HR, and pass approved leave to attendance and payroll. Our guide to choosing employee leave management software has a fuller checklist." },
+    { question: "What leave types can we set up in Manitham HRMS?", answer: "Leave types are configurable. Many Indian companies use casual, sick and earned leave, and some add maternity, paternity or their own categories. Each type can have its own accrual and carry-forward rules." },
+    { question: "How does leave affect attendance and payroll?", answer: "Approved leave is reflected in attendance, so a leave day is not treated as an absence, and it reaches payroll without being entered again." },
+    { question: "Can employees apply for leave on WhatsApp?", answer: "Yes. The AI WhatsApp HR assistant lets employees apply for leave from a WhatsApp message, and the request is routed to the right manager. See the AI WhatsApp assistant page for details." },
+    { question: "What is the difference between leave management software and an HRMS leave module?", answer: "Standalone leave software tracks leave only. An HRMS leave module shares the employee record with attendance and payroll, so approved leave carries through without re-entry." },
   ],
   relatedLinks: [
     { title: "Attendance Management", description: "How leave and attendance work together day to day.", href: "/attendance-management" },
@@ -174,6 +242,7 @@ const content: FeaturePageContent = {
     { title: "Payroll Software", description: "How approved leave flows into each payroll run.", href: "/payroll-software" },
     { title: "Best Leave Management Software in India", description: "What to check before choosing a leave management tool.", href: "/resources/best-leave-management-software-india" },
     { title: "Employee Leave Management Software: How It Works", description: "Understand employee leave management software, its request and approval workflow, key features and benefits.", href: "/resources/employee-leave-management-software" },
+    { title: "AI WhatsApp HR Assistant", description: "How employees check leave balances and apply for leave from WhatsApp.", href: "/ai-whatsapp-assistant" },
   ],
   ctaTitle: "See how leave management works for your policies",
   ctaSubtitle: "Book a demo and we'll walk through policy configuration, approvals and balances using your own leave structure.",
