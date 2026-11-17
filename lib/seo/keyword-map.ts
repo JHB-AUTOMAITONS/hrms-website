@@ -287,11 +287,19 @@ export const keywordMap = {
   industryManufacturing: {
     path: "/industries/manufacturing",
     primaryKeyword: "HR Software for Manufacturing",
-    secondaryKeywords: ["HR software for manufacturing", "attendance software for factory workers", "biometric attendance for manufacturing"],
+    secondaryKeywords: [
+      "HR software for manufacturing",
+      "HR software for manufacturing companies",
+      "manufacturing HRMS software",
+      "manufacturing payroll software",
+      "HR software for factory workers",
+      "attendance software for factory workers",
+      "biometric attendance for manufacturing",
+    ],
     searchIntent: "commercial",
-    title: "HR Software for Manufacturing | Manitham HRMS",
+    title: "HR Software for Manufacturing | Shifts & Payroll | Manitham HRMS",
     description:
-      "HR software for manufacturing teams: shift-based attendance, biometric punch on the shop floor, contract labour records and multi-plant payroll.",
+      "HR software for manufacturing companies: shift-based and biometric attendance, overtime, PF/ESI payroll, contract labour records and multi-plant payroll.",
     h1: "HR software for manufacturing — built for shift-floor realities, not just office HR",
   },
   resources: {

@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -12,6 +14,15 @@ import type { FaqItem } from "@/lib/seo/schema";
 
 type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance" | "whatsapp";
 
+/** Optional deep-dive section: a heading, a short intro and a card grid. Pages that omit `detailSections` render exactly as before. */
+export interface IndustryDetailSection {
+  id?: string;
+  title: string;
+  intro: string;
+  items: { title: string; description: string; href?: string }[];
+  cta?: { label: string; href: string };
+}
+
 export interface IndustryPageContent {
   path: string;
   breadcrumbLabel: string;
@@ -23,6 +34,7 @@ export interface IndustryPageContent {
   featuresTitle: string;
   featuresSubtitle?: string;
   features: FeatureGridItem[];
+  detailSections?: IndustryDetailSection[];
   workflowTitle: string;
   workflowSteps: { title: string; description: string }[];
   faqs: FaqItem[];
@@ -73,6 +85,35 @@ export function IndustryPageTemplate({ content }: { content: IndustryPageContent
       </section>
 
       <FeatureGrid eyebrow="Fit" title={content.featuresTitle} subtitle={content.featuresSubtitle} items={content.features} columns={3} className="glass-subtle border-x-0" />
+
+      {content.detailSections?.map((section, index) => (
+        <section key={section.title} id={section.id} className={`py-14 sm:py-16 ${index % 2 === 1 ? "glass-subtle border-x-0" : ""}`}>
+          <Container>
+            <SectionHeading title={section.title} subtitle={section.intro} />
+            <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+              {section.items.map((item) => (
+                <div key={item.title} className="glass rounded-2xl p-6">
+                  <h3 className="font-display font-bold text-ink-900">{item.title}</h3>
+                  <p className="mt-2 text-sm text-pretty text-slate-600">{item.description}</p>
+                  {item.href ? (
+                    <Link href={item.href} className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-600 hover:underline">
+                      Learn more
+                      <ArrowRight className="size-3.5" aria-hidden="true" />
+                    </Link>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+            {section.cta ? (
+              <div className="mt-8">
+                <ButtonLink href={section.cta.href} variant="secondary">
+                  {section.cta.label}
+                </ButtonLink>
+              </div>
+            ) : null}
+          </Container>
+        </section>
+      ))}
 
       <section className="py-14 sm:py-16">
         <Container>
