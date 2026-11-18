@@ -67,6 +67,7 @@ export default function WhatIsHrmsSoftwareArticle() {
         { title: "HRMS Software in India", description: "How this looks specifically for Indian businesses.", href: "/hrms-software-india" },
         { title: "Employee Self Service", description: "What employees can do for themselves in an HRMS.", href: "/employee-self-service" },
         { title: "How to Automate HR Processes", description: "Ten HR processes an HRMS can take off your spreadsheets.", href: "/resources/automate-hr-processes" },
+        { title: "Cloud Based HR Management System", description: "How cloud HRMS works, how it compares with traditional software and how to choose one.", href: "/resources/cloud-based-hr-management-system" },
       ]}
     >
       <P>

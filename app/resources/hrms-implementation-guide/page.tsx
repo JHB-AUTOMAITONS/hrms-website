@@ -76,6 +76,7 @@ export default function HrmsImplementationGuideArticle() {
         { title: "HRMS Software Pricing", description: "What drives the cost of an HRMS quote.", href: "/resources/hrms-software-pricing-india" },
         { title: "Set Up an ESS Portal", description: "A rollout checklist for the employee-facing side.", href: "/resources/how-to-set-up-ess-portal-for-sme" },
         { title: "How to Automate HR Processes", description: "Which HR processes to automate first, and how to choose software.", href: "/resources/automate-hr-processes" },
+        { title: "Cloud Based HR Management System", description: "What a cloud HRMS is, how it compares with traditional software and how to choose one.", href: "/resources/cloud-based-hr-management-system" },
       ]}
     >
       <P>

@@ -347,6 +347,20 @@ export const articles: ArticleMeta[] = [
     publishedDate: "2026-11-11",
     readTime: "11 min read",
   },
+  {
+    slug: "cloud-based-hr-management-system",
+    title: "Cloud Based HR Management System: A Complete Guide for Businesses",
+    excerpt: "Cloud based HR management system explained: features, benefits, security, costs and how to choose and implement one for your business in India.",
+    category: "HRMS",
+    publishedDate: "2026-11-18",
+    readTime: "12 min read",
+    image: {
+      src: "/blog/cloud-based-hr-management-system-dashboard.webp",
+      alt: "Cloud based HR management system connecting employee, attendance, leave and payroll modules in one platform",
+      width: 1536,
+      height: 1024,
+    },
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

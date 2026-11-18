@@ -93,6 +93,7 @@ export default function AutomateHrProcessesArticle() {
         { title: "Manage Employee Documents Digitally", description: "A deeper look at employee document management (process 7).", href: "/resources/manage-employee-documents-digitally" },
         { title: "Manage Attendance Across Multiple Branches", description: "Centralising attendance records across branches.", href: "/resources/manage-employee-attendance-multiple-branches" },
         { title: "Employee Exit Management Checklist", description: "A step-by-step HR checklist for employee exits.", href: "/resources/employee-exit-management-checklist" },
+        { title: "Cloud Based HR Management System", description: "How a cloud HR platform works and what to evaluate before choosing one.", href: "/resources/cloud-based-hr-management-system" },
       ]}
     >
       <P>

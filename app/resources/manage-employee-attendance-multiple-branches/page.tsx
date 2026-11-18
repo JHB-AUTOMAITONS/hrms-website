@@ -96,6 +96,7 @@ export default function ManageEmployeeAttendanceMultipleBranchesArticle() {
         { title: "Best Attendance Management Software for Businesses", description: "A checklist for evaluating attendance software.", href: "/resources/best-attendance-management-software" },
         { title: "HRMS for Manufacturing", description: "Shift-based, multi-plant attendance for factory teams.", href: "/industries/manufacturing" },
         { title: "Employee Exit Management Checklist", description: "Verifying attendance and leave records at exit.", href: "/resources/employee-exit-management-checklist" },
+        { title: "Cloud Based HR Management System", description: "How a cloud HR platform gives head office one view across branches.", href: "/resources/cloud-based-hr-management-system" },
       ]}
     >
       <P>
