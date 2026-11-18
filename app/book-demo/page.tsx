@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { CalendarCheck, PhoneCall, MonitorPlay } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CheckList } from "@/components/ui/CheckList";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
-import { LeadForm } from "@/components/forms/LeadForm";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { keywordMap } from "@/lib/seo/keyword-map";
+
+const GHL_FORM_ID = "FFwMb06kNcjvouFDuUqp";
+const GHL_FORM_URL = `https://connect.automationclub.in/widget/form/${GHL_FORM_ID}`;
 
 export const metadata: Metadata = buildMetadata(keywordMap.bookDemo);
 
@@ -56,13 +59,24 @@ export default function BookDemoPage() {
             </div>
 
             <div className="glass rounded-2xl p-6 lg:col-span-3 sm:p-8">
-              <LeadForm
-                source="book-demo"
-                messageLabel="What would you like us to cover?"
-                messagePlaceholder="E.g. we need payroll for 80 employees across 2 states…"
-                submitLabel="Book My Demo"
-                successMessage="Thank you! Your demo request has been submitted successfully. Our team will contact you shortly."
+              <iframe
+                src={GHL_FORM_URL}
+                id={`inline-${GHL_FORM_ID}`}
+                title="Book a demo"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Book a Demo"
+                data-height="520"
+                data-layout-iframe-id={`inline-${GHL_FORM_ID}`}
+                data-form-id={GHL_FORM_ID}
+                className="min-h-[520px] w-full rounded-lg border-0"
               />
+              <Script src="https://connect.automationclub.in/js/form_embed.js" strategy="lazyOnload" />
             </div>
           </div>
         </Container>
