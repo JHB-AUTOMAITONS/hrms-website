@@ -285,7 +285,7 @@ export const articles: ArticleMeta[] = [
     excerpt: "HR analytics software helps Indian businesses turn HR data into better decisions. Learn the key metrics, features and how an HRMS supports HR analytics.",
     category: "HRMS",
     publishedDate: "2026-11-02",
-    readTime: "8 min read",
+    readTime: "14 min read",
     image: {
       src: "/blog/hr-analytics-dashboard.webp",
       alt: "Illustration of an HR analytics software dashboard with attendance, headcount and performance charts",
