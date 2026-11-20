@@ -361,6 +361,14 @@ export const articles: ArticleMeta[] = [
       height: 1024,
     },
   },
+  {
+    slug: "cloud-based-payroll-software",
+    title: "Cloud Based Payroll Software: A Complete Guide for Businesses",
+    excerpt: "Cloud based payroll software explained for Indian businesses: how it works, key features, benefits, comparison with traditional payroll and how to choose.",
+    category: "Payroll",
+    publishedDate: "2026-11-20",
+    readTime: "12 min read",
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {
