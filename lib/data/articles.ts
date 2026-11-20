@@ -368,6 +368,12 @@ export const articles: ArticleMeta[] = [
     category: "Payroll",
     publishedDate: "2026-11-20",
     readTime: "12 min read",
+    image: {
+      src: "/blog/cloud-based-payroll-software-dashboard.webp",
+      alt: "Cloud based payroll software dashboard showing gross pay, deductions, net pay, monthly payroll and payslips",
+      width: 1536,
+      height: 1024,
+    },
   },
 ];
 
