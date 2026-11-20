@@ -149,11 +149,17 @@ export const keywordMap = {
   leaveManagement: {
     path: "/leave-management",
     primaryKeyword: "Leave Management System",
-    secondaryKeywords: ["employee leave management system", "online leave management system", "HR leave management system", "leave management software"],
+    secondaryKeywords: [
+      "leave management software",
+      "employee leave management system",
+      "online leave management software",
+      "employee leave tracking software",
+      "HR leave management system",
+    ],
     searchIntent: "commercial",
-    title: "Leave Management System for Employees & HR | Manitham HRMS",
+    title: "Leave Management System | Employee Leave Software | Manitham HRMS",
     description:
-      "Looking for a Leave Management System in India? Simplify employee leave requests, approvals, leave balance tracking and holiday management with Manitham HRMS.",
+      "Automate employee leave requests, approvals, leave balances and leave policies with cloud-based leave management software. Simplify HR workflows.",
     h1: "Leave Management System for Smarter Employee Leave Tracking",
   },
   employeeManagement: {

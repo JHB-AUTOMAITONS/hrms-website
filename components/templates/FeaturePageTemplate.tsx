@@ -10,14 +10,33 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { RelatedLinks, type RelatedLink } from "@/components/sections/RelatedLinks";
 import { AppMockup } from "@/components/illustrations/AppMockup";
+import { JsonLd } from "@/components/seo/JsonLd";
 import type { FaqItem } from "@/lib/seo/schema";
 
 type MockupKind = "overview" | "attendance" | "payroll" | "leave" | "performance" | "recruitment" | "compliance" | "whatsapp";
 
 export interface FeatureContentSection {
+  /** Optional anchor id for in-page links. */
+  id?: string;
   title: string;
   paragraphs: ReactNode[];
-  bullets: ReactNode[];
+  /** Checklist shown in the side panel. Ignored when `aside` is set. */
+  bullets?: ReactNode[];
+  /** Small label above the checklist, e.g. to mark it as policy questions rather than features. */
+  bulletsTitle?: string;
+  /** Custom visual rendered instead of the checklist panel. */
+  aside?: ReactNode;
+  /** "split" (default) puts text and panel side by side; "stacked" puts the panel full-width below the text. */
+  layout?: "split" | "stacked";
+  /** Small-print note under the paragraphs (caveats, policy disclaimers). */
+  note?: ReactNode;
+}
+
+export interface FeatureInlineCta {
+  title: string;
+  text?: string;
+  primaryLabel?: string;
+  secondaryLabel?: string;
 }
 
 export interface FeatureComparison {
@@ -45,6 +64,12 @@ export interface FeaturePageContent {
   contentSections?: FeatureContentSection[];
   /** Optional three-column comparison table rendered after the content sections. */
   comparison?: FeatureComparison;
+  /** Optional inline call-to-action rendered directly after the comparison table. */
+  comparisonCta?: FeatureInlineCta;
+  /** Optional text sections rendered after the comparison table, before benefits. */
+  contentSectionsAfterComparison?: FeatureContentSection[];
+  /** Optional extra JSON-LD for the page (breadcrumb and FAQ schema are already emitted). */
+  structuredData?: object | object[];
   benefitsTitle?: string;
   benefits?: { title: string; description: string }[];
   faqs: FaqItem[];
@@ -53,7 +78,43 @@ export interface FeaturePageContent {
   ctaSubtitle?: string;
 }
 
+function ContentSection({ section, shaded }: { section: FeatureContentSection; shaded: boolean }) {
+  const stacked = section.layout === "stacked";
+  const panel =
+    section.aside ??
+    (section.bullets && section.bullets.length > 0 ? (
+      <div className="glass rounded-2xl p-6">
+        {section.bulletsTitle ? (
+          <p className="mb-4 text-xs font-semibold tracking-wide text-brand-700 uppercase">{section.bulletsTitle}</p>
+        ) : null}
+        <CheckList items={section.bullets} />
+      </div>
+    ) : null);
+
+  return (
+    <section id={section.id} className={`scroll-mt-24 py-14 sm:py-16 ${shaded ? "glass-subtle border-x-0" : ""}`}>
+      <Container className={stacked ? "" : "grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12"}>
+        <div className={stacked ? "max-w-3xl" : ""}>
+          <h2 className="font-display text-pretty text-2xl font-bold text-ink-900 sm:text-3xl">{section.title}</h2>
+          <div className="mt-4 space-y-4">
+            {section.paragraphs.map((paragraph, paragraphIndex) => (
+              <p key={paragraphIndex} className="text-pretty text-slate-600">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+          {section.note ? <p className="mt-4 text-sm text-pretty text-slate-500">{section.note}</p> : null}
+        </div>
+        {panel ? <div className={stacked ? "mt-8" : ""}>{panel}</div> : null}
+      </Container>
+    </section>
+  );
+}
+
 export function FeaturePageTemplate({ content }: { content: FeaturePageContent }) {
+  const sectionsBefore = content.contentSections ?? [];
+  const sectionsAfter = content.contentSectionsAfterComparison ?? [];
+
   return (
     <>
       <Breadcrumbs items={[{ name: content.breadcrumbLabel, path: content.path }]} />
@@ -114,24 +175,8 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
         className="glass-subtle border-x-0"
       />
 
-      {content.contentSections?.map((section, index) => (
-        <section key={section.title} className={`py-14 sm:py-16 ${index % 2 === 1 ? "glass-subtle border-x-0" : ""}`}>
-          <Container className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div>
-              <h2 className="font-display text-2xl font-bold text-ink-900 sm:text-3xl">{section.title}</h2>
-              <div className="mt-4 space-y-4">
-                {section.paragraphs.map((paragraph, paragraphIndex) => (
-                  <p key={paragraphIndex} className="text-pretty text-slate-600">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="glass rounded-2xl p-6">
-              <CheckList items={section.bullets} />
-            </div>
-          </Container>
-        </section>
+      {sectionsBefore.map((section, index) => (
+        <ContentSection key={section.title} section={section} shaded={index % 2 === 1} />
       ))}
 
       {content.comparison ? (
@@ -169,9 +214,29 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
                 </tbody>
               </table>
             </div>
+            {content.comparisonCta ? (
+              <div className="mt-8 flex flex-col items-start gap-5 rounded-2xl border border-brand-200/70 bg-brand-50/70 p-6 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="font-display text-lg font-bold text-ink-900">{content.comparisonCta.title}</p>
+                  {content.comparisonCta.text ? (
+                    <p className="mt-1 text-sm text-pretty text-slate-600">{content.comparisonCta.text}</p>
+                  ) : null}
+                </div>
+                <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:flex-row">
+                  <ButtonLink href="/book-demo">{content.comparisonCta.primaryLabel ?? "Book a Demo"}</ButtonLink>
+                  <ButtonLink href="/contact" variant="secondary">
+                    {content.comparisonCta.secondaryLabel ?? "Talk to Sales"}
+                  </ButtonLink>
+                </div>
+              </div>
+            ) : null}
           </Container>
         </section>
       ) : null}
+
+      {sectionsAfter.map((section, index) => (
+        <ContentSection key={section.title} section={section} shaded={index % 2 === 0} />
+      ))}
 
       {content.benefits && content.benefits.length > 0 ? (
         <section className="py-14 sm:py-16">
@@ -194,6 +259,8 @@ export function FeaturePageTemplate({ content }: { content: FeaturePageContent }
       <RelatedLinks links={content.relatedLinks} />
 
       <CTASection title={content.ctaTitle} subtitle={content.ctaSubtitle} />
+
+      {content.structuredData ? <JsonLd data={content.structuredData} /> : null}
     </>
   );
 }

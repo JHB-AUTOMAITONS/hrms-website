@@ -27,15 +27,16 @@ export function websiteSchema() {
  * `aggregateRating`/`review` — do not add those unless backed by real,
  * verifiable reviews on the page.
  */
-export function softwareApplicationSchema() {
+export function softwareApplicationSchema(overrides: { path?: string; description?: string; featureList?: string[] } = {}) {
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: siteConfig.name,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web, iOS, Android",
-    url: siteConfig.url,
-    description: siteConfig.description,
+    url: overrides.path ? absoluteUrl(overrides.path) : siteConfig.url,
+    description: overrides.description ?? siteConfig.description,
+    ...(overrides.featureList ? { featureList: overrides.featureList } : {}),
   };
 }
 
