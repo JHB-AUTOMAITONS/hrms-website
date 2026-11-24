@@ -126,6 +126,28 @@ export const keywordMap = {
       "Manitham HRMS is HRMS software for South African businesses — employee management, attendance, leave and payroll workflows in one platform. Book a demo.",
     h1: "HRMS Software South Africa",
   },
+  hrSoftwareSriLanka: {
+    path: "/hr-software-sri-lanka",
+    primaryKeyword: "HR software Sri Lanka",
+    secondaryKeywords: [
+      "payroll software Sri Lanka",
+      "HRMS software Sri Lanka",
+      "payroll software in Sri Lanka",
+      "HR and payroll software",
+      "human resource management software",
+      "employee management software",
+      "staff management software",
+      "attendance management software",
+      "employee leave management software",
+      "HR software for small businesses",
+      "cloud based HR software",
+    ],
+    searchIntent: "commercial",
+    title: "HR Software Sri Lanka | HR & Payroll Software | Manitham HRMS",
+    description:
+      "HR software for Sri Lankan businesses: manage employees, attendance, leave and payroll workflows in one cloud HRMS. Book a Manitham HRMS demo.",
+    h1: "HR & Payroll Software for Businesses in Sri Lanka",
+  },
   payrollSoftware: {
     path: "/payroll-software",
     primaryKeyword: "Payroll Software",

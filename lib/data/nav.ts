@@ -48,6 +48,7 @@ export const countryLinks: NavLink[] = [
   { label: "Malaysia", href: "/hrms-software-malaysia" },
   { label: "Australia", href: "/hrms-software-australia" },
   { label: "South Africa", href: "/hrms-software-south-africa" },
+  { label: "Sri Lanka", href: "/hr-software-sri-lanka" },
 ];
 
 export const legalLinks: NavLink[] = [
