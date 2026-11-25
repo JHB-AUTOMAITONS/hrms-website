@@ -375,6 +375,20 @@ export const articles: ArticleMeta[] = [
       height: 1024,
     },
   },
+  {
+    slug: "hrms-leave-application",
+    title: "HRMS Leave Application: A Complete Guide to Applying for Leave Online",
+    excerpt: "Learn how an HRMS leave application system helps employees apply for leave online, simplifies approval workflows and makes employee leave management easier.",
+    category: "Leave",
+    publishedDate: "2026-11-25",
+    readTime: "11 min read",
+    image: {
+      src: "/blog/hrms-leave-application.webp",
+      alt: "HRMS leave application system for managing employee leave requests online",
+      width: 1600,
+      height: 900,
+    },
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

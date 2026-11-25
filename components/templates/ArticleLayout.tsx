@@ -17,9 +17,11 @@ interface ArticleLayoutProps {
   relatedLinks: RelatedLink[];
   /** Optional FAQ block rendered after the article body, with matching FAQPage JSON-LD. */
   faqs?: FaqItem[];
+  /** Optional heading for the FAQ block; defaults to "Frequently asked questions". */
+  faqTitle?: string;
 }
 
-export function ArticleLayout({ meta, children, relatedLinks, faqs }: ArticleLayoutProps) {
+export function ArticleLayout({ meta, children, relatedLinks, faqs, faqTitle }: ArticleLayoutProps) {
   const path = `/resources/${meta.slug}`;
 
   return (
@@ -52,7 +54,7 @@ export function ArticleLayout({ meta, children, relatedLinks, faqs }: ArticleLay
         </Container>
       </article>
 
-      {faqs && faqs.length > 0 && <FAQSection faqs={faqs} className="border-t border-ink-900/5" />}
+      {faqs && faqs.length > 0 && <FAQSection faqs={faqs} title={faqTitle} className="border-t border-ink-900/5" />}
 
       <RelatedLinks title="Related to this guide" links={relatedLinks} />
 
