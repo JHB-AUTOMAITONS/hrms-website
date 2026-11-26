@@ -7,6 +7,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { CheckList } from "@/components/ui/CheckList";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { PricingCalculator } from "@/components/sections/PricingCalculator";
 import { CTASection } from "@/components/sections/CTASection";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { keywordMap } from "@/lib/seo/keyword-map";
@@ -17,7 +18,7 @@ export const metadata: Metadata = buildMetadata(keywordMap.pricing);
 const faqs = [
   {
     question: "How is Manitham HRMS priced?",
-    answer: "Pricing is based on the number of employees and the modules you need. Talk to sales and we'll put together a quote based on your team size and requirements.",
+    answer: "Manitham HRMS costs ₹45 per employee per month, with a minimum of 10 employees (₹450/month). Annual billing is ₹45 × 10 months per employee for 12 months of service — for example, ₹4,500/year for 10 employees.",
   },
   {
     question: "Can I start with fewer modules and add more later?",
@@ -29,7 +30,7 @@ const faqs = [
   },
   {
     question: "Do you offer discounts for annual billing?",
-    answer: "Talk to sales about your preferred billing cycle — we'll go through the options available for your plan.",
+    answer: "Yes. Annual billing gives you 12 months of service for the price of 10 — 2 months free. That works out to ₹37.50 per employee per month, billed upfront (minimum ₹4,500/year for 10 employees).",
   },
 ];
 
@@ -40,12 +41,13 @@ export default function PricingPage() {
 
       <section className="py-14 sm:py-16">
         <Container>
-          <SectionHeading eyebrow="Pricing" title={keywordMap.pricing.h1} subtitle="Plans scale from small teams to large multi-location organizations. Talk to sales for a quote based on your headcount and the modules you need." align="center" as="h1" />
+          <SectionHeading eyebrow="Pricing" title={keywordMap.pricing.h1} subtitle="₹45 per employee per month, with a minimum of 10 employees. Pay annually and get 2 months free." align="center" as="h1" />
         </Container>
       </section>
 
       <section className="pb-16">
         <Container>
+          <PricingCalculator />
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             {pricingTiers.map((tier) => (
               <div
@@ -74,7 +76,7 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-slate-500">
-            Custom pricing based on employee count and modules. No hidden fees. See{" "}
+            ₹45 per employee per month · minimum 10 employees (₹450/month) · annual billing is 10 months for 12 months of service. No hidden fees. See{" "}
             <Link href="/resources/hrms-software-pricing-india" className="font-medium text-brand-600 hover:underline">
               what drives HRMS pricing in India
             </Link>{" "}
@@ -127,7 +129,7 @@ export default function PricingPage() {
 
       <FAQSection faqs={faqs} />
 
-      <CTASection title="Get a quote for your team" subtitle="Tell us your headcount and the modules you need — we'll put together a plan that fits." primaryLabel="Talk to Sales" primaryHref="/contact" secondaryLabel="Book a Demo" secondaryHref="/book-demo" />
+      <CTASection title="Get started for your team" subtitle="Tell us your headcount and the modules you need — we'll help you get set up." primaryLabel="Talk to Sales" primaryHref="/contact" secondaryLabel="Book a Demo" secondaryHref="/book-demo" />
     </>
   );
 }
