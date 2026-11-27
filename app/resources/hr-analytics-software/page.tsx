@@ -81,6 +81,16 @@ const faqs = [
     answer:
       "It shows time to hire, drop-off by stage and which sources produce hires that stay, so you can fix slow approvals or weak channels.",
   },
+  {
+    question: "What is the difference between HR reporting and HR analytics?",
+    answer:
+      "HR reporting tells you what happened, such as a list of absences last month. HR analytics looks across data and time to explain why it happened and what is changing, such as absence rising in one team alongside overtime.",
+  },
+  {
+    question: "How do you calculate employee attrition rate?",
+    answer:
+      "Divide the number of employees who left in a period by average headcount for that period. For example, 12 leavers against an average headcount of 160 is 7.5%. Use the same definition each period so trends are comparable.",
+  },
 ];
 
 export default function HrAnalyticsSoftwareArticle() {
@@ -114,6 +124,53 @@ export default function HrAnalyticsSoftwareArticle() {
         Analytics ranges from basic to advanced. Basic reporting answers &quot;what happened?&quot;, for example how
         many days were lost to leave last quarter. Advanced analytics tries to predict what will happen, such as who
         might leave. Most Indian SMEs get real value from the basic end long before they need the advanced end.
+      </P>
+
+      <H2>HR reporting vs HR analytics vs people analytics</H2>
+      <P>
+        These terms overlap and vendors use them loosely, but the distinction helps you decide what you actually need.
+      </P>
+      <div className="mt-6 overflow-x-auto rounded-2xl border border-ink-900/8">
+        <table className="w-full min-w-[560px] border-collapse text-left text-sm">
+          <thead>
+            <tr className="bg-brand-50">
+              <th className="px-4 py-3 font-semibold text-ink-900">&nbsp;</th>
+              <th className="px-4 py-3 font-semibold text-ink-900">HR reporting</th>
+              <th className="px-4 py-3 font-semibold text-ink-900">HR analytics</th>
+              <th className="px-4 py-3 font-semibold text-ink-900">People analytics</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-ink-900/8">
+            <tr>
+              <td className="px-4 py-3 font-medium text-ink-900">Core question</td>
+              <td className="px-4 py-3 text-slate-600">What happened?</td>
+              <td className="px-4 py-3 text-slate-600">Why did it happen, and what is changing?</td>
+              <td className="px-4 py-3 text-slate-600">What drives performance, engagement and retention?</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-ink-900">Typical data</td>
+              <td className="px-4 py-3 text-slate-600">One module: attendance, leave or payroll</td>
+              <td className="px-4 py-3 text-slate-600">Several modules read together over time</td>
+              <td className="px-4 py-3 text-slate-600">HR data plus surveys, feedback and performance data</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-ink-900">Example</td>
+              <td className="px-4 py-3 text-slate-600">Monthly list of absences by employee</td>
+              <td className="px-4 py-3 text-slate-600">Absence rising in one team for three months, alongside overtime</td>
+              <td className="px-4 py-3 text-slate-600">Whether manager changes relate to engagement and exits</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-3 font-medium text-ink-900">Typical user</td>
+              <td className="px-4 py-3 text-slate-600">HR executives, payroll teams</td>
+              <td className="px-4 py-3 text-slate-600">HR managers, finance, operations heads</td>
+              <td className="px-4 py-3 text-slate-600">HR leadership, analysts</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <P>
+        Most growing businesses should get solid, accurate reporting first. Analytics builds on it, and people
+        analytics usually needs more data sources and more history.
       </P>
 
       <H2>Why is HR analytics important for businesses?</H2>
@@ -196,6 +253,30 @@ export default function HrAnalyticsSoftwareArticle() {
         alerts are configurable. Live views are only as current as the data entered.
       </P>
 
+      <H2>Advanced HR analytics capabilities to look for</H2>
+      <P>
+        Modern analytics platforms differ widely in depth. These are the capabilities worth asking about in any
+        demo. This list describes the industry in general, not any one product.
+      </P>
+      <UL>
+        <li><strong>Custom reports and a report builder:</strong> choosing your own fields, filters and periods instead of relying only on fixed reports.</li>
+        <li><strong>Drill-down reporting:</strong> clicking a company-level figure, such as overtime, down to department, team and then individual records, where the user&apos;s role allows it.</li>
+        <li><strong>Comparative analytics:</strong> month-over-month, quarter-over-quarter and year-over-year views, so a number is read against its own history. Comparing like with like matters: festival months against festival months.</li>
+        <li><strong>Automated insights and anomaly detection:</strong> the tool flags unusual movements for review. Treat flags as prompts to investigate, not conclusions.</li>
+        <li><strong>Role-based access:</strong> different views for HR, managers, finance and leadership, with salary data restricted.</li>
+        <li><strong>Mobile analytics:</strong> checking key figures from a phone. Check whether this means full reports or only approvals and alerts.</li>
+        <li><strong>Dashboard customisation:</strong> adjusting which KPIs appear, without vendor help.</li>
+      </UL>
+      <H3>What Manitham HRMS offers today</H3>
+      <P>
+        Manitham HRMS provides module-level reporting: attendance reports by team, location or individual, leave
+        reports by employee, team or leave type with trends over a period, recruitment reports, payroll cost reports
+        and role-based permissions on employee records. Custom reporting is listed on the Enterprise plan; see{" "}
+        <A href="/pricing">pricing</A> for what each plan includes. We do not state a report builder, drill-down,
+        month-over-month or year-over-year comparison, automated anomaly detection or mobile reporting as available,
+        so if any of these matter to you, ask for it in a demo and get confirmation first.
+      </P>
+
       <H2>Important HR metrics every business should track</H2>
       <P>
         Pick a handful that match a real problem. These are common definitions; adapt them to your own policies.
@@ -243,6 +324,19 @@ export default function HrAnalyticsSoftwareArticle() {
           </tbody>
         </table>
       </div>
+
+      <H3>HR metrics with worked examples</H3>
+      <P>
+        Illustrative figures only; use your own policy definitions.
+      </P>
+      <UL>
+        <li><strong>Attrition rate:</strong> 12 employees left in a year; headcount was 150 at the start and 170 at the end, so average headcount is 160. 12 ÷ 160 = <strong>7.5%</strong>. Recording exits properly is covered in the <A href="/resources/employee-exit-management-checklist">employee exit checklist</A>.</li>
+        <li><strong>Absenteeism rate:</strong> a 40-person team has 1,040 scheduled working days in a month (40 × 26) and 52 unplanned absence days. 52 ÷ 1,040 = <strong>5%</strong>.</li>
+        <li><strong>Overtime cost:</strong> 150 overtime hours at an hourly rate of ₹100 and a multiplier of 2 gives 150 × 100 × 2 = <strong>₹30,000</strong>. The multiplier and wage base depend on your situation; see the <A href="/resources/overtime-calculation-formula">overtime calculation guide</A>.</li>
+        <li><strong>Time to hire:</strong> three roles took 28, 35 and 42 days from opening to accepted offer. (28 + 35 + 42) ÷ 3 = <strong>35 days</strong>. Look at each role as well as the average.</li>
+        <li><strong>Payroll cost per employee:</strong> total monthly payroll cost of ₹48,00,000 across 80 employees is <strong>₹60,000</strong> each. See how payroll data is produced in the <A href="/resources/payroll-processing-guide-india">payroll processing guide</A>.</li>
+        <li><strong>Leave utilisation:</strong> 540 leave days taken against 900 entitled is <strong>60%</strong>. Compare it across teams, and see the <A href="/resources/employee-leave-management-software">leave management software guide</A> for how balances are tracked.</li>
+      </UL>
 
       <H2>HR analytics dashboard examples: what to include</H2>
       <P>
@@ -294,6 +388,11 @@ export default function HrAnalyticsSoftwareArticle() {
       <P>
         <strong>KPIs:</strong> current versus planned headcount, open roles, expected exits, skills coverage and
         hiring plan versus actual. <strong>How to use it:</strong> review quarterly to decide where to hire or redeploy.
+      </P>
+
+      <P>
+        Want to see how these views work with your own data?{" "}
+        <A href="/book-demo">See how HRMS reporting works in a Manitham HRMS demo</A>.
       </P>
 
       <H2>HR analytics software use cases</H2>
@@ -354,6 +453,60 @@ export default function HrAnalyticsSoftwareArticle() {
           </tbody>
         </table>
       </div>
+
+      <H2>Real-world HR analytics examples</H2>
+      <P>
+        Each example follows the same path: a problem, the metric that measures it, the analysis, and a possible
+        action. These are illustrations, not promised outcomes.
+      </P>
+
+      <H3>Rising overtime</H3>
+      <UL>
+        <li><strong>Problem:</strong> overtime cost has grown for three months.</li>
+        <li><strong>Metric:</strong> overtime hours and cost by team and shift.</li>
+        <li><strong>Analysis:</strong> split by shift and compare with headcount and leave. Is it one team, or a pattern of unplanned absence?</li>
+        <li><strong>Possible action:</strong> rebalance shifts or fill the gap; see <A href="/resources/employee-scheduling-software-guide">employee scheduling</A>.</li>
+      </UL>
+
+      <H3>Employee attrition</H3>
+      <UL>
+        <li><strong>Problem:</strong> several people left in a short period.</li>
+        <li><strong>Metric:</strong> attrition rate by team, manager and tenure.</li>
+        <li><strong>Analysis:</strong> check whether exits cluster in the first year or under one manager, and read exit reasons.</li>
+        <li><strong>Possible action:</strong> review onboarding or management practice in the affected area.</li>
+      </UL>
+
+      <H3>Absenteeism</H3>
+      <UL>
+        <li><strong>Problem:</strong> one department keeps running short.</li>
+        <li><strong>Metric:</strong> absenteeism rate and late marks by day of week.</li>
+        <li><strong>Analysis:</strong> look for Monday or post-holiday patterns, and rule out approved leave and seasonal causes.</li>
+        <li><strong>Possible action:</strong> adjust the roster or review leave policy; see the <A href="/resources/leave-policy-guide-india">leave policy guide</A>.</li>
+      </UL>
+
+      <H3>Hiring delays</H3>
+      <UL>
+        <li><strong>Problem:</strong> key roles stay open for months.</li>
+        <li><strong>Metric:</strong> time to hire and candidates per stage.</li>
+        <li><strong>Analysis:</strong> find the stage with the longest wait or biggest drop-off, such as interview scheduling or offer approval.</li>
+        <li><strong>Possible action:</strong> shorten that step or change the sourcing channel.</li>
+      </UL>
+
+      <H3>Payroll cost growth</H3>
+      <UL>
+        <li><strong>Problem:</strong> payroll is rising faster than headcount.</li>
+        <li><strong>Metric:</strong> payroll cost per employee and overtime share of cost, by department.</li>
+        <li><strong>Analysis:</strong> separate the effect of new hires, increments and overtime.</li>
+        <li><strong>Possible action:</strong> address the specific driver, or reflect it in the next budget.</li>
+      </UL>
+
+      <H3>Performance trends</H3>
+      <UL>
+        <li><strong>Problem:</strong> ratings differ sharply between teams.</li>
+        <li><strong>Metric:</strong> rating distribution and goal completion by team across cycles.</li>
+        <li><strong>Analysis:</strong> check whether managers rate on different standards before concluding that performance differs.</li>
+        <li><strong>Possible action:</strong> calibrate reviews across managers.</li>
+      </UL>
 
       <H2>Workforce planning analytics</H2>
       <P>
